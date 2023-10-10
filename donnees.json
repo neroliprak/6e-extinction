@@ -1,1675 +1,1668 @@
 [
- {
-   "A": "Ordre",
-   "B": "Famille d'espèce",
-   "C": "Nom de l'espèce",
-   "D": "Date/Période d'extinction",
-   "E": "Continent d'habitation"
- },
- {
-   "A": "Mammifères",
-   "B": "Marsupiaux",
-   "C": "Thylacine (Thylacinus cynocephalus)",
-   "D": "1936",
-   "E": "Océanie"
- },
- {
-   "A": "Mammifères",
-   "B": "Marsupiaux",
-   "C": "Rat-kangourou du désert (Caloprymnus campestris)",
-   "D": "1935",
-   "E": "Océanie"
- },
- {
-   "A": "Mammifères",
-   "B": "Marsupiaux",
-   "C": "Potorou à face large (Potorous platyops)",
-   "D": "1875",
-   "E": "Océanie"
- },
- {
-   "A": "Mammifères",
-   "B": "Marsupiaux",
-   "C": "Onychogale croissant (Onychogalea lunata)",
-   "D": "1956",
-   "E": "Océanie"
- },
- {
-   "A": "Mammifères",
-   "B": "Marsupiaux",
-   "C": "Bandicoot du désert (Perameles eremiana)",
-   "D": "1943",
-   "E": "Océanie"
- },
- {
-   "A": "Mammifères",
-   "B": "Marsupiaux",
-   "C": "Lièvre-wallaby de l'Est (Lagorchestes leporides)",
-   "D": "1889",
-   "E": "Océanie"
- },
- {
-   "A": "Mammifères",
-   "B": "Marsupiaux",
-   "C": "Lièvre-wallaby du Centre (Lagorchestes asomatus)",
-   "D": "entre 1940 et 1970",
-   "E": "Océanie"
- },
- {
-   "A": "Mammifères",
-   "B": "Marsupiaux",
-   "C": "Bandicoot-lapin à queue blanche (Macrotis leucura)",
-   "D": "1950",
-   "E": "Océanie"
- },
- {
-   "A": "Mammifères",
-   "B": "Marsupiaux",
-   "C": "Bandicoot à pied de porc du Nord (Chaeropus yirratji)",
-   "D": "1950",
-   "E": "Océanie"
- },
- {
-   "A": "Mammifères",
-   "B": "Marsupiaux",
-   "C": "Bandicoot à pied de porc (Chaeropus ecaudatus)",
-   "D": "1950",
-   "E": "Océanie"
- },
- {
-   "A": "Mammifères",
-   "B": "Marsupiaux",
-   "C": "Wallaby de Grey (Macropus greyi)",
-   "D": "1939",
-   "E": "Océanie"
- },
- {
-   "A": "Mammifères",
-   "B": "Marsupiaux",
-   "C": "Opossum gracile à ventre rouge (Cryptonatus ignitus)",
-   "D": "1962",
-   "E": "Amérique du Sud"
- },
- {
-   "A": "Mammifères",
-   "B": "Marsupiaux",
-   "C": "Opossum à rayure unique (Monodelphis unistriata)",
-   "D": "1899",
-   "E": "Amérique du Sud"
- },
- {
-   "A": "Mammifères",
-   "B": "Marsupiaux",
-   "C": "Bettong de Nullarbor (Bettongia pusilla)",
-   "D": "inconnue",
-   "E": "Océanie"
- },
- {
-   "A": "Mammifères",
-   "B": "Marsupiaux",
-   "C": "Couscous des Telefols (Phalanger matanim)",
-   "D": "1997",
-   "E": "Océanie"
- },
- {
-   "A": "Mammifères",
-   "B": "Chiroptères",
-   "C": "Chauve-souris frugivore de Porto Rico (Phyllonycterismajor)",
-   "D": "Inconnue",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Chiroptères",
-   "C": "Pipistrelle de Sturdee (Pipistrellus sturdeei)",
-   "D": "2000",
-   "E": "Asie"
- },
- {
-   "A": "Mammifères",
-   "B": "Chiroptères",
-   "C": "Pipistrelle de l'île Christmas (Pipistrellus murrayi)",
-   "D": "2009",
-   "E": "Asie"
- },
- {
-   "A": "Mammifères",
-   "B": "Chiroptères",
-   "C": "Roussette à nez en tube de Nendo (Nyctimenesanctacrucis)",
-   "D": "1907",
-   "E": "Océanie"
- },
- {
-   "A": "Mammifères",
-   "B": "Chiroptères",
-   "C": "Renard volant d'Aru (Pteropus aruensis)",
-   "D": "1992",
-   "E": "Océanie"
- },
- {
-   "A": "Mammifères",
-   "B": "Chiroptères",
-   "C": "Renard volant de l'île Percy (Pteropus brunneus)",
-   "D": "1874",
-   "E": "Océanie"
- },
- {
-   "A": "Mammifères",
-   "B": "Chiroptères",
-   "C": "Renard volant d'Okinawa (Pteropus loochoensis)",
-   "D": "Inconnue",
-   "E": "Asie"
- },
- {
-   "A": "Mammifères",
-   "B": "Chiroptères",
-   "C": "Grand renard volant des Palaos (Pteropus pilosus)",
-   "D": "1874",
-   "E": "Océanie"
- },
- {
-   "A": "Mammifères",
-   "B": "Chiroptères",
-   "C": "Roussette rougette (Pteropus subniger)",
-   "D": "entre 1864 et 1873",
-   "E": "Afrique"
- },
- {
-   "A": "Mammifères",
-   "B": "Chiroptères",
-   "C": "Renard volant de Guam (Pteropus tokudae)",
-   "D": "1970",
-   "E": "Océanie"
- },
- {
-   "A": "Mammifères",
-   "B": "Chiroptères",
-   "C": "Grande chauve-souris à queue courte de Nouvelle-Zélande(Mystacina robusta)",
-   "D": "1965",
-   "E": "Océanie"
- },
- {
-   "A": "Mammifères",
-   "B": "Chiroptères",
-   "C": "Chauve-souris sombre à nez en tube (Murina tenebrosa)",
-   "D": "1962",
-   "E": "Asie"
- },
- {
-   "A": "Mammifères",
-   "B": "Chiroptères",
-   "C": "Chauve-souris à grandes oreilles de Lord Howe (Nyctophilus howensis)",
-   "D": "1972",
-   "E": "Océanie"
- },
- {
-   "A": "Mammifères",
-   "B": "Chiroptères",
-   "C": "Chauve-souris des hauteurs à tête de singe (Pteralopex pulchra)",
-   "D": "1990",
-   "E": "Océanie"
- },
- {
-   "A": "Mammifères",
-   "B": "Chiroptères",
-   "C": "Chauve-souris des Hauts (Scotophilus borbonicus)",
-   "D": "1902",
-   "E": "Afrique"
- },
- {
-   "A": "Mammifères",
-   "B": "Chiroptères",
-   "C": "Chauve-souris à longues oreilles de Lord Howe (Nyctophilus howensis)",
-   "D": "1972",
-   "E": "Océanie"
- },
- {
-   "A": "Mammifères",
-   "B": "Insectivores",
-   "C": "Nésophonte d'Atalaye (Nesophontes hypomicrus)",
-   "D": "inconnue",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Insectivores",
-   "C": "Nésophonte de l'ouest de Cuba (Nesophontes micrus)",
-   "D": "xvie siècle",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Insectivores",
-   "C": "Nésophonte de Saint Michel (Nesophontes paramicrus)",
-   "D": "xvie siècle",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Insectivores",
-   "C": "Nésophonte haïtien (Nesophontes zamicrus)",
-   "D": "xvie siècle",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Insectivores",
-   "C": "Petit nésophonte de Cuba (Nesophontes submicrus)",
-   "D": "inconnue",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Insectivores",
-   "C": "Nésophonte de Porto Rico (Nesophontes edithae)",
-   "D": "xvie siècle",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Insectivores",
-   "C": "Nésophonte des Iles Caïmans (Nesophontes hemicingulus)",
-   "D": "entre 1504 et 1774",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Insectivores",
-   "C": "Nésophonte effilé de Cuba (Nesophontes longirostris)",
-   "D": "inconnue",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Insectivores",
-   "C": "Grand nésophonte de Cuba (Nesophontes major)",
-   "D": "xvie siècle",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Insectivores",
-   "C": "Nésophonte cubain (Nesophontes superstes)",
-   "D": "inconnue",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Insectivores",
-   "C": "Solénodon géant (Solenodon arredondoi)",
-   "D": "inconnue",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Insectivores",
-   "C": "Solénodon de Marcano (Solenodon marcanoi)",
-   "D": "inconnue",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Insectivores",
-   "C": "Musaraigne géante de Corse (Asoriculus corsicanus)",
-   "D": "inconnue",
-   "E": "Europe"
- },
- {
-   "A": "Mammifères",
-   "B": "Insectivores",
-   "C": "Musaraigne de l'île Christmas (Crocidura trichura)",
-   "D": "1985",
-   "E": "Asie"
- },
- {
-   "A": "Mammifères",
-   "B": "Insectivores",
-   "C": "Musaraigne de Wimmer (Crocidura wimmeri)",
-   "D": "1976",
-   "E": "Afrique"
- },
- {
-   "A": "Mammifères",
-   "B": "Insectivores",
-   "C": "Taupe dorée de De Winton (Cryptochloris wintoni)",
-   "D": "1937",
-   "E": "Afrique"
- },
- {
-   "A": "Mammifères",
-   "B": "Primates",
-   "C": "Lémurs koalas (genre Megaladapis)",
-   "D": "entre 1280 et 1420",
-   "E": "Afrique"
- },
- {
-   "A": "Mammifères",
-   "B": "Primates",
-   "C": "Archéoindris (Archaeoindris fontoynontii)",
-   "D": "vers 350 av. J.-C.",
-   "E": "Afrique"
- },
- {
-   "A": "Mammifères",
-   "B": "Primates",
-   "C": "Archéolémurs (genre Archaeolemur)",
-   "D": "entre 1047 et 1280",
-   "E": "Afrique"
- },
- {
-   "A": "Mammifères",
-   "B": "Primates",
-   "C": "Babakotia (Babakotia radiofilai)",
-   "D": "inconnue",
-   "E": "Afrique"
- },
- {
-   "A": "Mammifères",
-   "B": "Primates",
-   "C": "Aye-aye géant (Daubentonia robusta)",
-   "D": "1000",
-   "E": "Afrique"
- },
- {
-   "A": "Mammifères",
-   "B": "Primates",
-   "C": "Hadropithèque (Hadropithecus stenognathus)",
-   "D": "entre 444 et 772",
-   "E": "Afrique"
- },
- {
-   "A": "Mammifères",
-   "B": "Primates",
-   "C": "Mésopropithèques (genre Mesopropithecus)",
-   "D": "entre 570 et 679",
-   "E": "Afrique"
- },
- {
-   "A": "Mammifères",
-   "B": "Primates",
-   "C": "Pachylémurs (genre Pachylemur)",
-   "D": "entre 680 et 960",
-   "E": "Afrique"
- },
- {
-   "A": "Mammifères",
-   "B": "Primates",
-   "C": "Paléopropithèques (genre Palaeopropithecus)",
-   "D": "entre 1300 et 1620",
-   "E": "Afrique"
- },
- {
-   "A": "Mammifères",
-   "B": "Primates",
-   "C": "Singe de la Jamaïque (Xenothrix mcgregori)",
-   "D": "1100",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Primates",
-   "C": "Singe d'Hispaniola (Antillothrix bernensis)",
-   "D": "xvie siècle",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Primates",
-   "C": "Singe d'Haïti (Insulacebus toussaintiana)",
-   "D": "inconnue",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Primates",
-   "C": "Colobe rouge de Miss Waldron (Piliocolobus waldronae)",
-   "D": "inconnue",
-   "E": "Afrique"
- },
- {
-   "A": "Mammifères",
-   "B": "Lagomorphes",
-   "C": "Pika sarde (Prolagus sardus)",
-   "D": "xviiie ou xixe siècle",
-   "E": "Europe"
- },
- {
-   "A": "Mammifères",
-   "B": "Lagomorphes",
-   "C": "Lapin à queue blanche (Sylvilagus insonus)",
-   "D": "inconnue",
-   "E": "Amérique du Sud"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Souris épineuse de Chypre (Acomys nesiotes)",
-   "D": "2007",
-   "E": "Asie"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Rat des grottes d'Oriente (Boromys offella)",
-   "D": "inconnue",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Rat des grottes de Torre (Boromys torrei)",
-   "D": "inconnue",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Rat comestible d'Haïti (Brotomys contractus)",
-   "D": "inconnue",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Rat comestible d'Hispaniola (Brotomys voratus)",
-   "D": "inconnue",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Rat géant de Tenerife (Canariomys bravoi)",
-   "D": "vers 1000 av. J.-C.",
-   "E": "Afrique"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Rat géant de la Grande Canarie (Canariomys tamarani)",
-   "D": "inconnue",
-   "E": "Afrique"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Rat-lièvre à pieds blancs (Conilurus albipes)",
-   "D": "1857",
-   "E": "Océanie"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Rat-lièvre des grottes du Capricorne (Conilurus capricornensis)",
-   "D": "inconnue",
-   "E": "Océanie"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Rat de Buhler (Coryphomys buehleri)",
-   "D": "inconnue",
-   "E": "Asie"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Lapin cubain (Geocapromys columbianus)",
-   "D": "xve ou xvie siècle",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Hutia de la Petite Ile Swan (Geocapromys thoracatus)",
-   "D": "1955",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Hutia géant à dents plates (Elasmodontomys obliquus)",
-   "D": "vers 460 av. J.-C.",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Rat cavernicole antillais (Heteropsomys antillensis)",
-   "D": "inconnue",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Rat cavernicole insulaire (Heteropsomys insulans)",
-   "D": "inconnue",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Faux hutia (Hexolobodon phenax)",
-   "D": "inconnue",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Hutia des hauteurs (Isolobodon montanus)",
-   "D": "inconnue",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Hutia de Porto Rico (Isolobodon portoricensis)",
-   "D": "xixe ou xxe siècle",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Souris de Candango (Juscelinomys candango)",
-   "D": "1960",
-   "E": "Amérique du Sud"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Petit rat des brindilles (Leporillus apicalis)",
-   "D": "1933",
-   "E": "Océanie"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Rat musqué de Barbuda (Megalomys audreyae)",
-   "D": "inconnue",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Rat musqué de la Martinique (Megalomys desmarestii)",
-   "D": "1902",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Rat musqué de Sainte-Lucie (Megalomys luciae)",
-   "D": "1881",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Rat géant des Galapagos (Megaoryzomys curioi)",
-   "D": "inconnue",
-   "E": "Amérique du Sud"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Rat sombre de Zuniga (Melanomys zunigae)",
-   "D": "1949",
-   "E": "Amérique du Sud"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Rat de Bramble Cay (Melomys rubicola)",
-   "D": "2015",
-   "E": "Océanie"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Hutia nain (Mesocapromys nanus)",
-   "D": "1937",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Hutia de San Felipe (Mesocapromys sanfelipensis)",
-   "D": "1978",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Campagnol endémique de Corse (Microtus henseli)",
-   "D": "inconnue",
-   "E": "Europe"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Hutia de Garrido (Mysateles garridoi)",
-   "D": "1989",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Rat des bois d'Anthony (Neotoma anthonyi)",
-   "D": "inconnue",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Rat des bois de Bunker (Neotoma bunkeri)",
-   "D": "1930",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Rat des bois de Saint Martin (Neotoma martinensis)",
-   "D": "1950",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Souris de Darwin (Nesoryzomys darwini)",
-   "D": "1930",
-   "E": "Amérique du Sud"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Souris de Santa Cruz (Nesoryzomys indefessus)",
-   "D": "1930",
-   "E": "Amérique du Sud"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Souris d'eau éthiopienne (Nilopegamys plumbeus)",
-   "D": "1928",
-   "E": "Afrique"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Rat de Vespucci (Noronhomys vespucii)",
-   "D": "xvie siècle",
-   "E": "Amérique du Sud"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Souris sauteuse d'Australie à queue courte (Notomys amplus)",
-   "D": "1896",
-   "E": "Océanie"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Souris sauteuse d'Australie à longue queue (Notomyslongicaudatus)",
-   "D": "1901",
-   "E": "Océanie"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Souris sauteuse d'Australie à grandes oreilles (Notomys macrotis)",
-   "D": "1843",
-   "E": "Océanie"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Souris sauteuse des Darling Downs (Notomys mordax)",
-   "D": "1840",
-   "E": "Océanie"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Grande souris sauteuse (Notomys robustus)",
-   "D": "inconnue",
-   "E": "Océanie"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Rat pygmée de Saint-Vincent (Oligoryzomys victus)",
-   "D": "1892",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Rat de la Jamaïque (Oryzomys antillarum)",
-   "D": "xixe siècle",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Rat des Tres Marias (Oryzomys nelsoni)",
-   "D": "1897",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Rat arboricole géant de Verhoeven (Papagomystheodorverhoeveni)",
-   "D": "inconnue",
-   "E": "Asie"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Rat de Niévès (Pennatomys nivalis)",
-   "D": "inconnue",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Souris de l'île Angel de la Guarda (Peromyscus guardia)",
-   "D": "1991",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Souris de Puebla (Peromyscus mekisturus)",
-   "D": "1950",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Souris de Pemberton (Peromyscus pembertoni)",
-   "D": "1931",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Souris à grandes oreilles (Pseudomys auritus)",
-   "D": "xixe siècle",
-   "E": "Océanie"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Souris bleue-grise (Pseudomys glaucus)",
-   "D": "1956",
-   "E": "Océanie"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Souris de Gould (Pseudomys gouldii)",
-   "D": "1857",
-   "E": "Océanie"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Hutia à dents blanches (Plagiodontia araeum)",
-   "D": "inconnue",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Hutia de Samaná (Plagiodontia ipnaeum)",
-   "D": "inconnue",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Rat de Maclear (Rattus macleari)",
-   "D": "1903",
-   "E": "Asie"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Rat bouledogue (Rattus nativitatis)",
-   "D": "1903",
-   "E": "Asie"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Mulot endémique corse (Rhagamys orthodon)",
-   "D": "inconnue",
-   "E": "Europe"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Rat à queue nue des îles Florida (Solomys salamonis)",
-   "D": "xixe ou xxe siècle (incertain, classé \"données insuffisantes par l'UICN)",
-   "E": "Océanie"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Rat à queue nue de Buka (Solomys spriggsarum)",
-   "D": "inconnue",
-   "E": "Océanie"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Rat des cavernes de Florès (Spelaeomys florensis)",
-   "D": "inconnue",
-   "E": "Asie"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Rat géant d'Emma (Uromys emmae)",
-   "D": "1990",
-   "E": "Océanie"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Rat impérial (Uromys imperator)",
-   "D": "inconnue (incertain, classé \"en danger critique d'extinction par l'UICN)",
-   "E": "Océanie"
- },
- {
-   "A": "Mammifères",
-   "B": "Rongeur",
-   "C": "Rat de Guadalcanal (Uromys porculus)",
-   "D": "1888",
-   "E": "Océanie"
- },
- {
-   "A": "Mammifères",
-   "B": "Xénarthres",
-   "C": "Paresseux géants des Antilles (genres Acratocnus, Megalocnus, Neocnus)",
-   "D": "inconnue",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Proboscidiens",
-   "C": "Eléphant nain de Sicile (Elephas falconeri)",
-   "D": "vers 500 av. J.-C.",
-   "E": "Europe"
- },
- {
-   "A": "Mammifères",
-   "B": "Proboscidiens",
-   "C": "Mammouth laineux (Mammuthus primigenius)",
-   "D": "vers 1800 av. J.-C.",
-   "E": "Europe, Asie, Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Artiodactyles",
-   "C": "Aurochs (Bos primigenius)",
-   "D": "1627",
-   "E": "Europe, Asie, Afrique"
- },
- {
-   "A": "Mammifères",
-   "B": "Artiodactyles",
-   "C": "Kouprey (Bos sauveli)",
-   "D": "1970",
-   "E": "Asie"
- },
- {
-   "A": "Mammifères",
-   "B": "Artiodactyles",
-   "C": "Buffle géant (Pelorovis antiquus)",
-   "D": "vers 3000 av. J.-C.",
-   "E": "Afrique"
- },
- {
-   "A": "Mammifères",
-   "B": "Artiodactyles",
-   "C": "Chèvre des cavernes des îles Baléares (Myotragus balearicus)",
-   "D": "vers 3000 av. J.-C.",
-   "E": ""
- },
- {
-   "A": "Mammifères",
-   "B": "Artiodactyles",
-   "C": "Hippotrague bleu (Hippotragus leucophaeus)",
-   "D": "1799",
-   "E": "Afrique"
- },
- {
-   "A": "Mammifères",
-   "B": "Artiodactyles",
-   "C": "Gazelle rouge (Eudorcas rufina)",
-   "D": "xixe siècle (validité du taxon incertaine, classée \"données insuffisantes\" par l'UICN)",
-   "E": "Afrique"
- },
- {
-   "A": "Mammifères",
-   "B": "Artiodactyles",
-   "C": "Gazelle de la Reine de Saba (Gazella bilkis)",
-   "D": "1951",
-   "E": "Asie"
- },
- {
-   "A": "Mammifères",
-   "B": "Artiodactyles",
-   "C": "Gazelle saoudienne (Gazella saudiya)",
-   "D": "2008",
-   "E": "Asie"
- },
- {
-   "A": "Mammifères",
-   "B": "Artiodactyles",
-   "C": "Cerf de Schomburgk (Cervusschomburgki)",
-   "D": "1938",
-   "E": "Asie"
- },
- {
-   "A": "Mammifères",
-   "B": "Artiodactyles",
-   "C": "Hippopotame nain de Madagascar (Hippopotamus lemerlei)",
-   "D": "500",
-   "E": "Afrique"
- },
- {
-   "A": "Mammifères",
-   "B": "Artiodactyles",
-   "C": "Hippopotame de Madagascar (Hippopotamus madgascariensis)",
-   "D": "1500",
-   "E": "Afrique"
- },
- {
-   "A": "Mammifères",
-   "B": "Artiodactyles",
-   "C": "Grand hippopotame de Madagascar (Hippopotamus laloumena)",
-   "D": "inconnue",
-   "E": "Afrique"
- },
- {
-   "A": "Mammifères",
-   "B": "Artiodactyles",
-   "C": "Cochon de Heude (Sus bucculentus)",
-   "D": "1995",
-   "E": "Asie"
- },
- {
-   "A": "Mammifères",
-   "B": "Siréniens",
-   "C": "Rhytine de Steller (Hydrodamalis gigas)",
-   "D": "1768",
-   "E": "Pacifique"
- },
- {
-   "A": "Mammifères",
-   "B": "Carnivore",
-   "C": "Loup des Malouines (Dusicyon australis)",
-   "D": "1876",
-   "E": "Amérique du Sud"
- },
- {
-   "A": "Mammifères",
-   "B": "Carnivore",
-   "C": "Loup de Patagonie (Dusicyon avus)",
-   "D": "entre 1454 et 1626",
-   "E": "Amérique du Sud"
- },
- {
-   "A": "Mammifères",
-   "B": "Carnivore",
-   "C": "Vison de mer (Neovison macrodon)",
-   "D": "1894",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Carnivore",
-   "C": "Otarie du Japon (Zalophus japonicus)",
-   "D": "1974",
-   "E": "Asie"
- },
- {
-   "A": "Mammifères",
-   "B": "Carnivore",
-   "C": "Phoque moine des Caraïbes (Monachus tropicalis)",
-   "D": "1952",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Mammifères",
-   "B": "Carnivore",
-   "C": "Fossa géant (Cryptoprocta spelea)",
-   "D": "avant 1400",
-   "E": "Afrique"
- },
- {
-   "A": "Mammifères",
-   "B": "Carnivore",
-   "C": "Civette à grandes tâches (Viverra civettina)",
-   "D": "1990",
-   "E": "Asie"
- },
- {
-   "A": "Reptils",
-   "B": "Crocodiliens",
-   "C": "Crocodile terrestre de Nouvelle-Calédonie (Mekosuchus inexpectatus)",
-   "D": "inconnue",
-   "E": "Océanie"
- },
- {
-   "A": "Reptils",
-   "B": "Crocodiliens",
-   "C": "Crocodile terrestre du Vanuatu (Mekosuchus kalpokasi)",
-   "D": "vers 1000 av. J.-C.",
-   "E": "Océanie"
- },
- {
-   "A": "Reptils",
-   "B": "Tortues",
-   "C": "Tortue géante de La Réunion (Cylindraspis indica)",
-   "D": "1840",
-   "E": "Afrique"
- },
- {
-   "A": "Reptils",
-   "B": "Tortues",
-   "C": "Tortue géante à selle de Maurice (Cylindraspis inepta)",
-   "D": "entre 1735 et 1845",
-   "E": "Afrique"
- },
- {
-   "A": "Reptils",
-   "B": "Tortues",
-   "C": "Tortue géante à dôme de Rodrigues (Cylindraspis peltastes)",
-   "D": "entre 1790 et 1802",
-   "E": "Afrique"
- },
- {
-   "A": "Reptils",
-   "B": "Tortues",
-   "C": "Tortue géante à dôme de Maurice (Cylindraspis triserrata)",
-   "D": "entre 1735 et 1845",
-   "E": "Afrique"
- },
- {
-   "A": "Reptils",
-   "B": "Tortues",
-   "C": "Tortue géante à selle de Rodrigues (Cylindraspis vosmaeri)",
-   "D": "entre 1790 et 1802",
-   "E": "Afrique"
- },
- {
-   "A": "Reptils",
-   "B": "Tortues",
-   "C": "Tortue géante de l'île Pinta (Chelonoidis abingdonii)",
-   "D": "2012 ( Réapparation de l'espèce fin 2012, puis janvier 2020 : à confirmer par l'UICN )",
-   "E": "Amérique du Sud"
- },
- {
-   "A": "Reptils",
-   "B": "Tortues",
-   "C": "Meiolania de Nouvelle-Calédonie (Meiolania mackayi)",
-   "D": "vers 450",
-   "E": "Océanie"
- },
- {
-   "A": "Reptils",
-   "B": "Lézards",
-   "C": "Caméléon nain de Chapman (Rhampholeon chapmanorum)",
-   "D": "1998",
-   "E": "Afrique"
- },
- {
-   "A": "Reptils",
-   "B": "Lézards",
-   "C": "Lézard géant de La Palma (Gallotia auaritae)",
-   "D": "2007",
-   "E": "Afrique"
- },
- {
-   "A": "Reptils",
-   "B": "Lézards",
-   "C": "Gecko diurne géant de Rodrigues (Phelsuma gigas)",
-   "D": "1842",
-   "E": "Afrique"
- },
- {
-   "A": "Reptils",
-   "B": "Lézards",
-   "C": "Gecko diurne de Rodrigues (Phelsuma edwardnewtoni)",
-   "D": "1917",
-   "E": "Afrique"
- },
- {
-   "A": "Reptils",
-   "B": "Lézards",
-   "C": "Gecko de Delcourt (Hoplodactylus delcourti)",
-   "D": "1870",
-   "E": "Océanie"
- },
- {
-   "A": "Reptils",
-   "B": "Lézards",
-   "C": "Lézard à queue bouclée de la Navasse (Leiocephalus eremitus)",
-   "D": "xixe siècle",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Reptils",
-   "B": "Lézards",
-   "C": "Holotropide de L'Herminier (Leiocephalus herminieri)",
-   "D": "1830",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Reptils",
-   "B": "Lézards",
-   "C": "Améive de la Guadeloupe (Pholidoscelis cineraceus)",
-   "D": "1928",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Reptils",
-   "B": "Lézards",
-   "C": "Grand améive (Pholidoscelis major)",
-   "D": "inconnue",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Reptils",
-   "B": "Lézards",
-   "C": "Lézard géant de la Jamaïque (Celestus occiduus)",
-   "D": "1940",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Reptils",
-   "B": "Lézards",
-   "C": "Grand scinque de Sainte-Croix (Spondylurus magnacruzae)",
-   "D": "inconnue (incertain, classé \"en danger critique d'extinction\" par l'UICN)",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Reptils",
-   "B": "Lézards",
-   "C": "Scinque de Monito (Spondylurus monitae)",
-   "D": "inconnue (incertain, classé \"en danger critique d'extinction\" par l'UICN)",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Reptils",
-   "B": "Lézards",
-   "C": "Grand scinque des Iles Vierges (Spondylurus spilonotus)",
-   "D": "inconnue (incertain, classé \"en danger critique d'extinction\" par l'UICN)",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Reptils",
-   "B": "Lézards",
-   "C": "Petit scinque de Sainte-Croix (Capitellum parvicruzae)",
-   "D": "inconnue (incertain, classé \"en danger critique d'extinction\" par l'UICN)",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Reptils",
-   "B": "Lézards",
-   "C": "Grand scinque (Leiolopisma ceciliae)",
-   "D": "inconnue",
-   "E": "Afrique"
- },
- {
-   "A": "Reptils",
-   "B": "Lézards",
-   "C": "Scinque géant de Maurice (Leiolopisma mauritiana)",
-   "D": "entre 1600 et 1650",
-   "E": "Afrique"
- },
- {
-   "A": "Reptils",
-   "B": "Lézards",
-   "C": "Scinque géant du Cap-Vert (Chioninia coctei)",
-   "D": "1940",
-   "E": "Afrique"
- },
- {
-   "A": "Reptils",
-   "B": "Lézards",
-   "C": "Scinque terrestre des Tonga (Tachygyia microlepis)",
-   "D": "inconnue",
-   "E": "Océanie"
- },
- {
-   "A": "Reptils",
-   "B": "Lézards",
-   "C": "Scinque du Northland (Oligosoma northlandi)",
-   "D": "inconnue",
-   "E": "Océanie"
- },
- {
-   "A": "Reptils",
-   "B": "Lézards",
-   "C": "Seps à longue queue d'Eastwood (Tetradactylus eastwoodae)",
-   "D": "1911",
-   "E": "Afrique"
- },
- {
-   "A": "Reptils",
-   "B": "Lézards",
-   "C": "Anole géante de Roosevelt (Anolis roosevelti)",
-   "D": "entre 1932 et 1980 (incertain, classé \"en danger critique d'extinction par l'UICN)",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Reptils",
-   "B": "Lézards",
-   "C": "Scinque de Whiptail de l'île Chrismas (Emoia nativitatis)",
-   "D": "2019",
-   "E": "Asie"
- },
- {
-   "A": "Reptils",
-   "B": "Lézards",
-   "C": "Léiocéphale roquet (Leiocephalus roquetus)",
-   "D": "1900",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Reptils",
-   "B": "Serpents",
-   "C": "Boa fouisseur de l'île Ronde (Bolyeria multocarinata)",
-   "D": "1974",
-   "E": "Afrique"
- },
- {
-   "A": "Reptils",
-   "B": "Serpents",
-   "C": "Typhlops de Maurice (Madatyphlops cariei)",
-   "D": "xviie siècle",
-   "E": "Afrique"
- },
- {
-   "A": "Reptils",
-   "B": "Serpents",
-   "C": "Couleuvre de la Jamaïque (Hypsirhynchus ater)",
-   "D": "années 1970 (incertain, classée \"en danger critique d'extinction\" par l'UICN)",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Reptils",
-   "B": "Serpents",
-   "C": "Couleuvre de Sainte-Croix (Borikenophis sanctaecrucis)",
-   "D": "1898",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Reptils",
-   "B": "Serpents",
-   "C": "Couresse de la Barbade (Erythrolamprus perfuscus)",
-   "D": "1961",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Reptils",
-   "B": "Serpents",
-   "C": "Couleuvre de la Sierra de Agalta (Omoadiphas cannula)",
-   "D": "inconnue (incertain, classée \"en danger critique d'extinction\" par l'UICN)",
-   "E": "Amérique centrale"
- },
- {
-   "A": "Amphibiens",
-   "B": "",
-   "C": "Grenouille feuille du genou épineux (Phrynomedusa fimbriata)",
-   "D": "1920",
-   "E": "Amérique du Sud"
- },
- {
-   "A": "Amphibiens",
-   "B": "",
-   "C": "Grenouille léopard de Tlaloc (Rana tlaloci)",
-   "D": "inconnue (incertain, classée \"en danger critique d'extinction\" par l'UICN)",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Amphibiens",
-   "B": "",
-   "C": "Grenouille plate à incubation gastrique (Rheobatrachus silus)",
-   "D": "2001",
-   "E": "Australie"
- },
- {
-   "A": "Amphibiens",
-   "B": "",
-   "C": "Grenouille à incubation gastrique (Rheobatrachus vitellinus)",
-   "D": "2001",
-   "E": "Australie"
- },
- {
-   "A": "Amphibiens",
-   "B": "",
-   "C": "Crapaud de Monteverde (Incilius periglenes)",
-   "D": "vers 1989",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Amphibiens",
-   "B": "",
-   "C": "Grenouille arlequin Chiriqui (Atelopus chiriquiensis)",
-   "D": "vers 1996",
-   "E": "Amérique centrale"
- },
- {
-   "A": "Amphibiens",
-   "B": "",
-   "C": "Crapaud à pied rond (Atelopus senex)",
-   "D": "vers 2010",
-   "E": "Amérique centrale"
- },
- {
-   "A": "Amphibiens",
-   "B": "",
-   "C": "Aucun nom vernaculaire trouvée (Craugastor myllomyllon)",
-   "D": "inconnue",
-   "E": "Amérique centrale"
- },
- {
-   "A": "Amphibiens",
-   "B": "",
-   "C": "Aucun nom vernaculaire trouvée (Craugastor chrysozetetes)",
-   "D": "inconnue (incertain, classée \"en danger critique d'extinction\" par l'UICN)",
-   "E": "Amérique centrale"
- },
- {
-   "A": "Amphibiens",
-   "B": "",
-   "C": "Triton du lac Yunnan (Cynops wolterstorffi)",
-   "D": "1979",
-   "E": "Asie"
- },
- {
-   "A": "Amphibiens",
-   "B": "",
-   "C": "Salamandre de Bay Springs (Plethodon ainsworthi)",
-   "D": "1964",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Poissons",
-   "B": "",
-   "C": "Meunier de la rivière Snake (Chasmistes muriei)",
-   "D": "1981",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Poissons",
-   "B": "",
-   "C": "Meunier de Harelip (Lagochila lacera)",
-   "D": "1910",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Poissons",
-   "B": "",
-   "C": "Chabot du lac Utah (Cottus echinatus)",
-   "D": "1928",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Poissons",
-   "B": "",
-   "C": "Naseux mexicain (Evarra bustamantei)",
-   "D": "1983",
-   "E": "Amérique centrale"
- },
- {
-   "A": "Poissons",
-   "B": "",
-   "C": "Chevet du Plateau (Evarra eigenmanni)",
-   "D": "1894",
-   "E": "Amérique centrale"
- },
- {
-   "A": "Poissons",
-   "B": "",
-   "C": "Chevet endoréique (Evarra tlahuacensis)",
-   "D": "1901",
-   "E": "Amérique centrale"
- },
- {
-   "A": "Poissons",
-   "B": "",
-   "C": "Whiteline Topminnow (Fundulus albolineatus)",
-   "D": "1900",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Poissons",
-   "B": "",
-   "C": "Lac Titicaca poisson à tête plate (Orestias cuvieri)",
-   "D": "1937",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Poissons",
-   "B": "",
-   "C": "Killifish de Ash Meadows (Empetrichthys merriami)",
-   "D": "1950",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Poissons",
-   "B": "",
-   "C": "San Marcos Gambusia (Gambusia georgei)",
-   "D": "1953",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Poissons",
-   "B": "",
-   "C": "Ombre néo-zélandaise (Prototroctes oxyrhynchus)",
-   "D": "1920",
-   "E": "Australie"
- },
- {
-   "A": "Poissons",
-   "B": "",
-   "C": "Cisco à longues mâchoires (Coregonus alpenae)",
-   "D": "1978",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Poissons",
-   "B": "",
-   "C": "Cisco d'eau profonde (Coregonus johannae)",
-   "D": "1955",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Poissons",
-   "B": "",
-   "C": "Truite argentée (Salvelinus agassizii)",
-   "D": "1930",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Poissons",
-   "B": "",
-   "C": "Houting de la mer du Nord (Coregonus oxyrinchus)",
-   "D": "2005",
-   "E": "Europe"
- },
- {
-   "A": "Poissons",
-   "B": "",
-   "C": "Greasefish (Rhizosomichthys totae)",
-   "D": "inconnue (incertain, classée \"en danger critique d'extinction\" par l'UICN)",
-   "E": "Amérique du Sud"
- },
- {
-   "A": "Poissons",
-   "B": "",
-   "C": "Poisson-chat plat siamois (Platytropius siamensis)",
-   "D": "1980",
-   "E": "Asie"
- },
- {
-   "A": "Poissons",
-   "B": "",
-   "C": "Poisson à main lisse (Sympterichthys unipennis)",
-   "D": "1950",
-   "E": "Océanie"
- },
- {
-   "A": "Poissons",
-   "B": "",
-   "C": "Puntius amarus (barbodes amarus)",
-   "D": "2000",
-   "E": "Asie"
- },
- {
-   "A": "Poissons",
-   "B": "",
-   "C": "Puntius baolan (barbodes baoulan)",
-   "D": "2000",
-   "E": "Asie"
- },
- {
-   "A": "Poissons",
-   "B": "",
-   "C": "Puntius clemensi (barbodes clemensi)",
-   "D": "1926",
-   "E": "Asie"
- },
- {
-   "A": "Poissons",
-   "B": "",
-   "C": "Puntius disa (barbodes disa)",
-   "D": "1932",
-   "E": "Asie"
- },
- {
-   "A": "Poissons",
-   "B": "",
-   "C": "Espadon chinois (Psephurus gladius)",
-   "D": "2005",
-   "E": "Asie"
- },
- {
-   "A": "Poissons",
-   "B": "",
-   "C": "Requin perdu (Carcharrhinus obsolerus)",
-   "D": "inconnue (incertain, classée \"en danger critique d'extinction\" par l'UICN)",
-   "E": "Asie"
- },
- {
-   "A": "Poissons",
-   "B": "",
-   "C": "Bitungu (Barbodes truncatulus)",
-   "D": "2000",
-   "E": "Asie"
- },
- {
-   "A": "Poissons",
-   "B": "",
-   "C": "Requin-baliai (Carcharhinus hemiodon)",
-   "D": "inconnue (incertain, classée \"en danger critique d'extinction\" par l'UICN)",
-   "E": "Asie"
- },
- {
-   "A": "Poissons",
-   "B": "",
-   "C": "Parras Pupfish (Cyprinodon latifasciatus)",
-   "D": "1930",
-   "E": "Amérique Centrale"
- },
- {
-   "A": "Insectes",
-   "B": "",
-   "C": "Ephémère de la rivière Pecatonica (Acanthametropus pecatonica)",
-   "D": "1990",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Insectes",
-   "B": "",
-   "C": "Katydid à dos de bouclier des dunes d'Antioche (Neduba extincta)",
-   "D": "1996",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Insectes",
-   "B": "",
-   "C": "Dard de Sainte-Hélène (Sympetrum dilatatum)",
-   "D": "inconnue (incertain, classée \"en danger critique d'extinction\" par l'UICN)",
-   "E": "Afrique"
- },
- {
-   "A": "Insectes",
-   "B": "",
-   "C": "Dendroctone de l'île Stephens (Mecodema punctellum)",
-   "D": "1931",
-   "E": "Océanie"
- },
- {
-   "A": "Insectes",
-   "B": "",
-   "C": "Papillon hedyleptan du bananier de Maui (Hedylepta musicola)",
-   "D": "inconnue (classé \"données insuffisantes\" par l'UINC)",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Insectes",
-   "B": "",
-   "C": "Papillon Levuana (Levuana iridescens)",
-   "D": "1920",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Insectes",
-   "B": "",
-   "C": "Chamois de la rivière Mbashe (Deloneura immaculata)",
-   "D": "1864",
-   "E": "Afrique"
- },
- {
-   "A": "Insectes",
-   "B": "",
-   "C": "Bleu de Xerces (Glaucopsyche xerces)",
-   "D": "1940",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Insectes",
-   "B": "",
-   "C": "Bleu de Morant (Lepidochrysops hypopolia)",
-   "D": "1879",
-   "E": "Afrique"
- },
- {
-   "A": "Insectes",
-   "B": "",
-   "C": "Urania de Sloane (Urania sloanus)",
-   "D": "1905",
-   "E": "Amérique du Nord"
- },
- {
-   "A": "Insectes",
-   "B": "",
-   "C": "Caddysfly de Tobias (Hydropsyche tobiasi)",
-   "D": "1920",
-   "E": "Europe"
- },
- {
-   "A": "Insectes",
-   "B": "",
-   "C": "Criquet des montagnes Rocheuses (Melanoplus spretus)",
-   "D": "1902",
-   "E": "Amérique du Nord"
- }
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Marsupiaux",
+    "Espece": "Thylacine (Thylacinus cynocephalus)",
+    "Date": 1936,
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Marsupiaux",
+    "Espece": "Rat-kangourou du désert (Caloprymnus campestris)",
+    "Date": 1935,
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Marsupiaux",
+    "Espece": "Potorou à face large (Potorous platyops)",
+    "Date": 1875,
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Marsupiaux",
+    "Espece": "Onychogale croissant (Onychogalea lunata)",
+    "Date": 1956,
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Marsupiaux",
+    "Espece": "Bandicoot du désert (Perameles eremiana)",
+    "Date": 1943,
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Marsupiaux",
+    "Espece": "Lièvre-wallaby de l'Est (Lagorchestes leporides)",
+    "Date": 1889,
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Marsupiaux",
+    "Espece": "Lièvre-wallaby du Centre (Lagorchestes asomatus)",
+    "Date": "entre 1940 et 1970",
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Marsupiaux",
+    "Espece": "Bandicoot-lapin à queue blanche (Macrotis leucura)",
+    "Date": 1950,
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Marsupiaux",
+    "Espece": "Bandicoot à pied de porc du Nord (Chaeropus yirratji)",
+    "Date": 1950,
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Marsupiaux",
+    "Espece": "Bandicoot à pied de porc (Chaeropus ecaudatus)",
+    "Date": 1950,
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Marsupiaux",
+    "Espece": "Wallaby de Grey (Macropus greyi)",
+    "Date": 1939,
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Marsupiaux",
+    "Espece": "Opossum gracile à ventre rouge (Cryptonatus ignitus)",
+    "Date": 1962,
+    "Continent": "Amérique du Sud"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Marsupiaux",
+    "Espece": "Opossum à rayure unique (Monodelphis unistriata)",
+    "Date": 1899,
+    "Continent": "Amérique du Sud"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Marsupiaux",
+    "Espece": "Bettong de Nullarbor (Bettongia pusilla)",
+    "Date": "inconnue",
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Marsupiaux",
+    "Espece": "Couscous des Telefols (Phalanger matanim)",
+    "Date": 1997,
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Chiroptères",
+    "Espece": "Chauve-souris frugivore de Porto Rico (Phyllonycterismajor)",
+    "Date": "Inconnue",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Chiroptères",
+    "Espece": "Pipistrelle de Sturdee (Pipistrellus sturdeei)",
+    "Date": 2000,
+    "Continent": "Asie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Chiroptères",
+    "Espece": "Pipistrelle de l'île Christmas (Pipistrellus murrayi)",
+    "Date": 2009,
+    "Continent": "Asie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Chiroptères",
+    "Espece": "Roussette à nez en tube de Nendo (Nyctimenesanctacrucis)",
+    "Date": 1907,
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Chiroptères",
+    "Espece": "Renard volant d'Aru (Pteropus aruensis)",
+    "Date": 1992,
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Chiroptères",
+    "Espece": "Renard volant de l'île Percy (Pteropus brunneus)",
+    "Date": 1874,
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Chiroptères",
+    "Espece": "Renard volant d'Okinawa (Pteropus loochoensis)",
+    "Date": "Inconnue",
+    "Continent": "Asie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Chiroptères",
+    "Espece": "Grand renard volant des Palaos (Pteropus pilosus)",
+    "Date": 1874,
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Chiroptères",
+    "Espece": "Roussette rougette (Pteropus subniger)",
+    "Date": "entre 1864 et 1873",
+    "Continent": "Afrique"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Chiroptères",
+    "Espece": "Renard volant de Guam (Pteropus tokudae)",
+    "Date": 1970,
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Chiroptères",
+    "Espece": "Grande chauve-souris à queue courte de Nouvelle-Zélande(Mystacina robusta)",
+    "Date": 1965,
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Chiroptères",
+    "Espece": "Chauve-souris sombre à nez en tube (Murina tenebrosa)",
+    "Date": 1962,
+    "Continent": "Asie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Chiroptères",
+    "Espece": "Chauve-souris à grandes oreilles de Lord Howe (Nyctophilus howensis)",
+    "Date": 1972,
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Chiroptères",
+    "Espece": "Chauve-souris des hauteurs à tête de singe (Pteralopex pulchra)",
+    "Date": 1990,
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Chiroptères",
+    "Espece": "Chauve-souris des Hauts (Scotophilus borbonicus)",
+    "Date": 1902,
+    "Continent": "Afrique"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Chiroptères",
+    "Espece": "Chauve-souris à longues oreilles de Lord Howe (Nyctophilus howensis)",
+    "Date": 1972,
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Insectivores",
+    "Espece": "Nésophonte d'Atalaye (Nesophontes hypomicrus)",
+    "Date": "inconnue",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Insectivores",
+    "Espece": "Nésophonte de l'ouest de Cuba (Nesophontes micrus)",
+    "Date": "xvie siècle",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Insectivores",
+    "Espece": "Nésophonte de Saint Michel (Nesophontes paramicrus)",
+    "Date": "xvie siècle",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Insectivores",
+    "Espece": "Nésophonte haïtien (Nesophontes zamicrus)",
+    "Date": "xvie siècle",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Insectivores",
+    "Espece": "Petit nésophonte de Cuba (Nesophontes submicrus)",
+    "Date": "inconnue",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Insectivores",
+    "Espece": "Nésophonte de Porto Rico (Nesophontes edithae)",
+    "Date": "xvie siècle",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Insectivores",
+    "Espece": "Nésophonte des Iles Caïmans (Nesophontes hemicingulus)",
+    "Date": "entre 1504 et 1774",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Insectivores",
+    "Espece": "Nésophonte effilé de Cuba (Nesophontes longirostris)",
+    "Date": "inconnue",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Insectivores",
+    "Espece": "Grand nésophonte de Cuba (Nesophontes major)",
+    "Date": "xvie siècle",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Insectivores",
+    "Espece": "Nésophonte cubain (Nesophontes superstes)",
+    "Date": "inconnue",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Insectivores",
+    "Espece": "Solénodon géant (Solenodon arredondoi)",
+    "Date": "inconnue",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Insectivores",
+    "Espece": "Solénodon de Marcano (Solenodon marcanoi)",
+    "Date": "inconnue",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Insectivores",
+    "Espece": "Musaraigne géante de Corse (Asoriculus corsicanus)",
+    "Date": "inconnue",
+    "Continent": "Europe"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Insectivores",
+    "Espece": "Musaraigne de l'île Christmas (Crocidura trichura)",
+    "Date": 1985,
+    "Continent": "Asie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Insectivores",
+    "Espece": "Musaraigne de Wimmer (Crocidura wimmeri)",
+    "Date": 1976,
+    "Continent": "Afrique"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Insectivores",
+    "Espece": "Taupe dorée de De Winton (Cryptochloris wintoni)",
+    "Date": 1937,
+    "Continent": "Afrique"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Primates",
+    "Espece": "Lémurs koalas (genre Megaladapis)",
+    "Date": "entre 1280 et 1420",
+    "Continent": "Afrique"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Primates",
+    "Espece": "Archéoindris (Archaeoindris fontoynontii)",
+    "Date": "vers 350 av. J.-C.",
+    "Continent": "Afrique"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Primates",
+    "Espece": "Archéolémurs (genre Archaeolemur)",
+    "Date": "entre 1047 et 1280",
+    "Continent": "Afrique"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Primates",
+    "Espece": "Babakotia (Babakotia radiofilai)",
+    "Date": "inconnue",
+    "Continent": "Afrique"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Primates",
+    "Espece": "Aye-aye géant (Daubentonia robusta)",
+    "Date": 1000,
+    "Continent": "Afrique"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Primates",
+    "Espece": "Hadropithèque (Hadropithecus stenognathus)",
+    "Date": "entre 444 et 772",
+    "Continent": "Afrique"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Primates",
+    "Espece": "Mésopropithèques (genre Mesopropithecus)",
+    "Date": "entre 570 et 679",
+    "Continent": "Afrique"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Primates",
+    "Espece": "Pachylémurs (genre Pachylemur)",
+    "Date": "entre 680 et 960",
+    "Continent": "Afrique"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Primates",
+    "Espece": "Paléopropithèques (genre Palaeopropithecus)",
+    "Date": "entre 1300 et 1620",
+    "Continent": "Afrique"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Primates",
+    "Espece": "Singe de la Jamaïque (Xenothrix mcgregori)",
+    "Date": 1100,
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Primates",
+    "Espece": "Singe d'Hispaniola (Antillothrix bernensis)",
+    "Date": "xvie siècle",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Primates",
+    "Espece": "Singe d'Haïti (Insulacebus toussaintiana)",
+    "Date": "inconnue",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Primates",
+    "Espece": "Colobe rouge de Miss Waldron (Piliocolobus waldronae)",
+    "Date": "inconnue",
+    "Continent": "Afrique"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Lagomorphes",
+    "Espece": "Pika sarde (Prolagus sardus)",
+    "Date": "xviiie ou xixe siècle",
+    "Continent": "Europe"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Lagomorphes",
+    "Espece": "Lapin à queue blanche (Sylvilagus insonus)",
+    "Date": "inconnue",
+    "Continent": "Amérique du Sud"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Souris épineuse de Chypre (Acomys nesiotes)",
+    "Date": 2007,
+    "Continent": "Asie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Rat des grottes d'Oriente (Boromys offella)",
+    "Date": "inconnue",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Rat des grottes de Torre (Boromys torrei)",
+    "Date": "inconnue",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Rat comestible d'Haïti (Brotomys contractus)",
+    "Date": "inconnue",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Rat comestible d'Hispaniola (Brotomys voratus)",
+    "Date": "inconnue",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Rat géant de Tenerife (Canariomys bravoi)",
+    "Date": "vers 1000 av. J.-C.",
+    "Continent": "Afrique"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Rat géant de la Grande Canarie (Canariomys tamarani)",
+    "Date": "inconnue",
+    "Continent": "Afrique"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Rat-lièvre à pieds blancs (Conilurus albipes)",
+    "Date": 1857,
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Rat-lièvre des grottes du Capricorne (Conilurus capricornensis)",
+    "Date": "inconnue",
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Rat de Buhler (Coryphomys buehleri)",
+    "Date": "inconnue",
+    "Continent": "Asie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Lapin cubain (Geocapromys columbianus)",
+    "Date": "xve ou xvie siècle",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Hutia de la Petite Ile Swan (Geocapromys thoracatus)",
+    "Date": 1955,
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Hutia géant à dents plates (Elasmodontomys obliquus)",
+    "Date": "vers 460 av. J.-C.",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Rat cavernicole antillais (Heteropsomys antillensis)",
+    "Date": "inconnue",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Rat cavernicole insulaire (Heteropsomys insulans)",
+    "Date": "inconnue",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Faux hutia (Hexolobodon phenax)",
+    "Date": "inconnue",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Hutia des hauteurs (Isolobodon montanus)",
+    "Date": "inconnue",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Hutia de Porto Rico (Isolobodon portoricensis)",
+    "Date": "xixe ou xxe siècle",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Souris de Candango (Juscelinomys candango)",
+    "Date": 1960,
+    "Continent": "Amérique du Sud"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Petit rat des brindilles (Leporillus apicalis)",
+    "Date": 1933,
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Rat musqué de Barbuda (Megalomys audreyae)",
+    "Date": "inconnue",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Rat musqué de la Martinique (Megalomys desmarestii)",
+    "Date": 1902,
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Rat musqué de Sainte-Lucie (Megalomys luciae)",
+    "Date": 1881,
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Rat géant des Galapagos (Megaoryzomys curioi)",
+    "Date": "inconnue",
+    "Continent": "Amérique du Sud"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Rat sombre de Zuniga (Melanomys zunigae)",
+    "Date": 1949,
+    "Continent": "Amérique du Sud"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Rat de Bramble Cay (Melomys rubicola)",
+    "Date": 2015,
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Hutia nain (Mesocapromys nanus)",
+    "Date": 1937,
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Hutia de San Felipe (Mesocapromys sanfelipensis)",
+    "Date": 1978,
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Campagnol endémique de Corse (Microtus henseli)",
+    "Date": "inconnue",
+    "Continent": "Europe"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Hutia de Garrido (Mysateles garridoi)",
+    "Date": 1989,
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Rat des bois d'Anthony (Neotoma anthonyi)",
+    "Date": "inconnue",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Rat des bois de Bunker (Neotoma bunkeri)",
+    "Date": 1930,
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Rat des bois de Saint Martin (Neotoma martinensis)",
+    "Date": 1950,
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Souris de Darwin (Nesoryzomys darwini)",
+    "Date": 1930,
+    "Continent": "Amérique du Sud"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Souris de Santa Cruz (Nesoryzomys indefessus)",
+    "Date": 1930,
+    "Continent": "Amérique du Sud"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Souris d'eau éthiopienne (Nilopegamys plumbeus)",
+    "Date": 1928,
+    "Continent": "Afrique"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Rat de Vespucci (Noronhomys vespucii)",
+    "Date": "xvie siècle",
+    "Continent": "Amérique du Sud"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Souris sauteuse d'Australie à queue courte (Notomys amplus)",
+    "Date": 1896,
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Souris sauteuse d'Australie à longue queue (Notomyslongicaudatus)",
+    "Date": 1901,
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Souris sauteuse d'Australie à grandes oreilles (Notomys macrotis)",
+    "Date": 1843,
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Souris sauteuse des Darling Downs (Notomys mordax)",
+    "Date": 1840,
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Grande souris sauteuse (Notomys robustus)",
+    "Date": "inconnue",
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Rat pygmée de Saint-Vincent (Oligoryzomys victus)",
+    "Date": 1892,
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Rat de la Jamaïque (Oryzomys antillarum)",
+    "Date": "xixe siècle",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Rat des Tres Marias (Oryzomys nelsoni)",
+    "Date": 1897,
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Rat arboricole géant de Verhoeven (Papagomystheodorverhoeveni)",
+    "Date": "inconnue",
+    "Continent": "Asie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Rat de Niévès (Pennatomys nivalis)",
+    "Date": "inconnue",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Souris de l'île Angel de la Guarda (Peromyscus guardia)",
+    "Date": 1991,
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Souris de Puebla (Peromyscus mekisturus)",
+    "Date": 1950,
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Souris de Pemberton (Peromyscus pembertoni)",
+    "Date": 1931,
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Souris à grandes oreilles (Pseudomys auritus)",
+    "Date": "xixe siècle",
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Souris bleue-grise (Pseudomys glaucus)",
+    "Date": 1956,
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Souris de Gould (Pseudomys gouldii)",
+    "Date": 1857,
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Hutia à dents blanches (Plagiodontia araeum)",
+    "Date": "inconnue",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Hutia de Samaná (Plagiodontia ipnaeum)",
+    "Date": "inconnue",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Rat de Maclear (Rattus macleari)",
+    "Date": 1903,
+    "Continent": "Asie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Rat bouledogue (Rattus nativitatis)",
+    "Date": 1903,
+    "Continent": "Asie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Mulot endémique corse (Rhagamys orthodon)",
+    "Date": "inconnue",
+    "Continent": "Europe"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Rat à queue nue des îles Florida (Solomys salamonis)",
+    "Date": "xixe ou xxe siècle (incertain, classé \"données insuffisantes par l'UICN)",
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Rat à queue nue de Buka (Solomys spriggsarum)",
+    "Date": "inconnue",
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Rat des cavernes de Florès (Spelaeomys florensis)",
+    "Date": "inconnue",
+    "Continent": "Asie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Rat géant d'Emma (Uromys emmae)",
+    "Date": 1990,
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Rat impérial (Uromys imperator)",
+    "Date": "inconnue (incertain, classé \"en danger critique d'extinction par l'UICN)",
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Rongeur",
+    "Espece": "Rat de Guadalcanal (Uromys porculus)",
+    "Date": 1888,
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Xénarthres",
+    "Espece": "Paresseux géants des Antilles (genres Acratocnus, Megalocnus, Neocnus)",
+    "Date": "inconnue",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Proboscidiens",
+    "Espece": "Eléphant nain de Sicile (Elephas falconeri)",
+    "Date": "vers 500 av. J.-C.",
+    "Continent": "Europe"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Proboscidiens",
+    "Espece": "Mammouth laineux (Mammuthus primigenius)",
+    "Date": "vers 1800 av. J.-C.",
+    "Continent": "Europe, Asie, Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Artiodactyles",
+    "Espece": "Aurochs (Bos primigenius)",
+    "Date": 1627,
+    "Continent": "Europe, Asie, Afrique"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Artiodactyles",
+    "Espece": "Kouprey (Bos sauveli)",
+    "Date": 1970,
+    "Continent": "Asie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Artiodactyles",
+    "Espece": "Buffle géant (Pelorovis antiquus)",
+    "Date": "vers 3000 av. J.-C.",
+    "Continent": "Afrique"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Artiodactyles",
+    "Espece": "Chèvre des cavernes des îles Baléares (Myotragus balearicus)",
+    "Date": "vers 3000 av. J.-C.",
+    "Continent": ""
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Artiodactyles",
+    "Espece": "Hippotrague bleu (Hippotragus leucophaeus)",
+    "Date": 1799,
+    "Continent": "Afrique"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Artiodactyles",
+    "Espece": "Gazelle rouge (Eudorcas rufina)",
+    "Date": "xixe siècle (validité du taxon incertaine, classée \"données insuffisantes\" par l'UICN)",
+    "Continent": "Afrique"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Artiodactyles",
+    "Espece": "Gazelle de la Reine de Saba (Gazella bilkis)",
+    "Date": 1951,
+    "Continent": "Asie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Artiodactyles",
+    "Espece": "Gazelle saoudienne (Gazella saudiya)",
+    "Date": 2008,
+    "Continent": "Asie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Artiodactyles",
+    "Espece": "Cerf de Schomburgk (Cervusschomburgki)",
+    "Date": 1938,
+    "Continent": "Asie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Artiodactyles",
+    "Espece": "Hippopotame nain de Madagascar (Hippopotamus lemerlei)",
+    "Date": 500,
+    "Continent": "Afrique"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Artiodactyles",
+    "Espece": "Hippopotame de Madagascar (Hippopotamus madgascariensis)",
+    "Date": 1500,
+    "Continent": "Afrique"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Artiodactyles",
+    "Espece": "Grand hippopotame de Madagascar (Hippopotamus laloumena)",
+    "Date": "inconnue",
+    "Continent": "Afrique"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Artiodactyles",
+    "Espece": "Cochon de Heude (Sus bucculentus)",
+    "Date": 1995,
+    "Continent": "Asie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Siréniens",
+    "Espece": "Rhytine de Steller (Hydrodamalis gigas)",
+    "Date": 1768,
+    "Continent": "Pacifique"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Carnivore",
+    "Espece": "Loup des Malouines (Dusicyon australis)",
+    "Date": 1876,
+    "Continent": "Amérique du Sud"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Carnivore",
+    "Espece": "Loup de Patagonie (Dusicyon avus)",
+    "Date": "entre 1454 et 1626",
+    "Continent": "Amérique du Sud"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Carnivore",
+    "Espece": "Vison de mer (Neovison macrodon)",
+    "Date": 1894,
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Carnivore",
+    "Espece": "Otarie du Japon (Zalophus japonicus)",
+    "Date": 1974,
+    "Continent": "Asie"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Carnivore",
+    "Espece": "Phoque moine des Caraïbes (Monachus tropicalis)",
+    "Date": 1952,
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Carnivore",
+    "Espece": "Fossa géant (Cryptoprocta spelea)",
+    "Date": "avant 1400",
+    "Continent": "Afrique"
+  },
+  {
+    "Ordre": "Mammifères",
+    "Famille": "Carnivore",
+    "Espece": "Civette à grandes tâches (Viverra civettina)",
+    "Date": 1990,
+    "Continent": "Asie"
+  },
+  {
+    "Ordre": "Reptils",
+    "Famille": "Crocodiliens",
+    "Espece": "Crocodile terrestre de Nouvelle-Calédonie (Mekosuchus inexpectatus)",
+    "Date": "inconnue",
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Reptils",
+    "Famille": "Crocodiliens",
+    "Espece": "Crocodile terrestre du Vanuatu (Mekosuchus kalpokasi)",
+    "Date": "vers 1000 av. J.-C.",
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Reptils",
+    "Famille": "Tortues",
+    "Espece": "Tortue géante de La Réunion (Cylindraspis indica)",
+    "Date": 1840,
+    "Continent": "Afrique"
+  },
+  {
+    "Ordre": "Reptils",
+    "Famille": "Tortues",
+    "Espece": "Tortue géante à selle de Maurice (Cylindraspis inepta)",
+    "Date": "entre 1735 et 1845",
+    "Continent": "Afrique"
+  },
+  {
+    "Ordre": "Reptils",
+    "Famille": "Tortues",
+    "Espece": "Tortue géante à dôme de Rodrigues (Cylindraspis peltastes)",
+    "Date": "entre 1790 et 1802",
+    "Continent": "Afrique"
+  },
+  {
+    "Ordre": "Reptils",
+    "Famille": "Tortues",
+    "Espece": "Tortue géante à dôme de Maurice (Cylindraspis triserrata)",
+    "Date": "entre 1735 et 1845",
+    "Continent": "Afrique"
+  },
+  {
+    "Ordre": "Reptils",
+    "Famille": "Tortues",
+    "Espece": "Tortue géante à selle de Rodrigues (Cylindraspis vosmaeri)",
+    "Date": "entre 1790 et 1802",
+    "Continent": "Afrique"
+  },
+  {
+    "Ordre": "Reptils",
+    "Famille": "Tortues",
+    "Espece": "Tortue géante de l'île Pinta (Chelonoidis abingdonii)",
+    "Date": "2012 ( Réapparation de l'espèce fin 2012, puis janvier 2020 : à confirmer par l'UICN )",
+    "Continent": "Amérique du Sud"
+  },
+  {
+    "Ordre": "Reptils",
+    "Famille": "Tortues",
+    "Espece": "Meiolania de Nouvelle-Calédonie (Meiolania mackayi)",
+    "Date": "vers 450",
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Reptils",
+    "Famille": "Lézards",
+    "Espece": "Caméléon nain de Chapman (Rhampholeon chapmanorum)",
+    "Date": 1998,
+    "Continent": "Afrique"
+  },
+  {
+    "Ordre": "Reptils",
+    "Famille": "Lézards",
+    "Espece": "Lézard géant de La Palma (Gallotia auaritae)",
+    "Date": 2007,
+    "Continent": "Afrique"
+  },
+  {
+    "Ordre": "Reptils",
+    "Famille": "Lézards",
+    "Espece": "Gecko diurne géant de Rodrigues (Phelsuma gigas)",
+    "Date": 1842,
+    "Continent": "Afrique"
+  },
+  {
+    "Ordre": "Reptils",
+    "Famille": "Lézards",
+    "Espece": "Gecko diurne de Rodrigues (Phelsuma edwardnewtoni)",
+    "Date": 1917,
+    "Continent": "Afrique"
+  },
+  {
+    "Ordre": "Reptils",
+    "Famille": "Lézards",
+    "Espece": "Gecko de Delcourt (Hoplodactylus delcourti)",
+    "Date": 1870,
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Reptils",
+    "Famille": "Lézards",
+    "Espece": "Lézard à queue bouclée de la Navasse (Leiocephalus eremitus)",
+    "Date": "xixe siècle",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Reptils",
+    "Famille": "Lézards",
+    "Espece": "Holotropide de L'Herminier (Leiocephalus herminieri)",
+    "Date": 1830,
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Reptils",
+    "Famille": "Lézards",
+    "Espece": "Améive de la Guadeloupe (Pholidoscelis cineraceus)",
+    "Date": 1928,
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Reptils",
+    "Famille": "Lézards",
+    "Espece": "Grand améive (Pholidoscelis major)",
+    "Date": "inconnue",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Reptils",
+    "Famille": "Lézards",
+    "Espece": "Lézard géant de la Jamaïque (Celestus occiduus)",
+    "Date": 1940,
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Reptils",
+    "Famille": "Lézards",
+    "Espece": "Grand scinque de Sainte-Croix (Spondylurus magnacruzae)",
+    "Date": "inconnue (incertain, classé \"en danger critique d'extinction\" par l'UICN)",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Reptils",
+    "Famille": "Lézards",
+    "Espece": "Scinque de Monito (Spondylurus monitae)",
+    "Date": "inconnue (incertain, classé \"en danger critique d'extinction\" par l'UICN)",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Reptils",
+    "Famille": "Lézards",
+    "Espece": "Grand scinque des Iles Vierges (Spondylurus spilonotus)",
+    "Date": "inconnue (incertain, classé \"en danger critique d'extinction\" par l'UICN)",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Reptils",
+    "Famille": "Lézards",
+    "Espece": "Petit scinque de Sainte-Croix (Capitellum parvicruzae)",
+    "Date": "inconnue (incertain, classé \"en danger critique d'extinction\" par l'UICN)",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Reptils",
+    "Famille": "Lézards",
+    "Espece": "Grand scinque (Leiolopisma ceciliae)",
+    "Date": "inconnue",
+    "Continent": "Afrique"
+  },
+  {
+    "Ordre": "Reptils",
+    "Famille": "Lézards",
+    "Espece": "Scinque géant de Maurice (Leiolopisma mauritiana)",
+    "Date": "entre 1600 et 1650",
+    "Continent": "Afrique"
+  },
+  {
+    "Ordre": "Reptils",
+    "Famille": "Lézards",
+    "Espece": "Scinque géant du Cap-Vert (Chioninia coctei)",
+    "Date": 1940,
+    "Continent": "Afrique"
+  },
+  {
+    "Ordre": "Reptils",
+    "Famille": "Lézards",
+    "Espece": "Scinque terrestre des Tonga (Tachygyia microlepis)",
+    "Date": "inconnue",
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Reptils",
+    "Famille": "Lézards",
+    "Espece": "Scinque du Northland (Oligosoma northlandi)",
+    "Date": "inconnue",
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Reptils",
+    "Famille": "Lézards",
+    "Espece": "Seps à longue queue d'Eastwood (Tetradactylus eastwoodae)",
+    "Date": 1911,
+    "Continent": "Afrique"
+  },
+  {
+    "Ordre": "Reptils",
+    "Famille": "Lézards",
+    "Espece": "Anole géante de Roosevelt (Anolis roosevelti)",
+    "Date": "entre 1932 et 1980 (incertain, classé \"en danger critique d'extinction par l'UICN)",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Reptils",
+    "Famille": "Lézards",
+    "Espece": "Scinque de Whiptail de l'île Chrismas (Emoia nativitatis)",
+    "Date": 2019,
+    "Continent": "Asie"
+  },
+  {
+    "Ordre": "Reptils",
+    "Famille": "Lézards",
+    "Espece": "Léiocéphale roquet (Leiocephalus roquetus)",
+    "Date": 1900,
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Reptils",
+    "Famille": "Serpents",
+    "Espece": "Boa fouisseur de l'île Ronde (Bolyeria multocarinata)",
+    "Date": 1974,
+    "Continent": "Afrique"
+  },
+  {
+    "Ordre": "Reptils",
+    "Famille": "Serpents",
+    "Espece": "Typhlops de Maurice (Madatyphlops cariei)",
+    "Date": "xviie siècle",
+    "Continent": "Afrique"
+  },
+  {
+    "Ordre": "Reptils",
+    "Famille": "Serpents",
+    "Espece": "Couleuvre de la Jamaïque (Hypsirhynchus ater)",
+    "Date": "années 1970 (incertain, classée \"en danger critique d'extinction\" par l'UICN)",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Reptils",
+    "Famille": "Serpents",
+    "Espece": "Couleuvre de Sainte-Croix (Borikenophis sanctaecrucis)",
+    "Date": 1898,
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Reptils",
+    "Famille": "Serpents",
+    "Espece": "Couresse de la Barbade (Erythrolamprus perfuscus)",
+    "Date": 1961,
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Reptils",
+    "Famille": "Serpents",
+    "Espece": "Couleuvre de la Sierra de Agalta (Omoadiphas cannula)",
+    "Date": "inconnue (incertain, classée \"en danger critique d'extinction\" par l'UICN)",
+    "Continent": "Amérique centrale"
+  },
+  {
+    "Ordre": "Amphibiens",
+    "Famille": "",
+    "Espece": "Grenouille feuille du genou épineux (Phrynomedusa fimbriata)",
+    "Date": 1920,
+    "Continent": "Amérique du Sud"
+  },
+  {
+    "Ordre": "Amphibiens",
+    "Famille": "",
+    "Espece": "Grenouille léopard de Tlaloc (Rana tlaloci)",
+    "Date": "inconnue (incertain, classée \"en danger critique d'extinction\" par l'UICN)",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Amphibiens",
+    "Famille": "",
+    "Espece": "Grenouille plate à incubation gastrique (Rheobatrachus silus)",
+    "Date": 2001,
+    "Continent": "Australie"
+  },
+  {
+    "Ordre": "Amphibiens",
+    "Famille": "",
+    "Espece": "Grenouille à incubation gastrique (Rheobatrachus vitellinus)",
+    "Date": 2001,
+    "Continent": "Australie"
+  },
+  {
+    "Ordre": "Amphibiens",
+    "Famille": "",
+    "Espece": "Crapaud de Monteverde (Incilius periglenes)",
+    "Date": "vers 1989",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Amphibiens",
+    "Famille": "",
+    "Espece": "Grenouille arlequin Chiriqui (Atelopus chiriquiensis)",
+    "Date": "vers 1996",
+    "Continent": "Amérique centrale"
+  },
+  {
+    "Ordre": "Amphibiens",
+    "Famille": "",
+    "Espece": "Crapaud à pied rond (Atelopus senex)",
+    "Date": "vers 2010",
+    "Continent": "Amérique centrale"
+  },
+  {
+    "Ordre": "Amphibiens",
+    "Famille": "",
+    "Espece": "Aucun nom vernaculaire trouvée (Craugastor myllomyllon)",
+    "Date": "inconnue",
+    "Continent": "Amérique centrale"
+  },
+  {
+    "Ordre": "Amphibiens",
+    "Famille": "",
+    "Espece": "Aucun nom vernaculaire trouvée (Craugastor chrysozetetes)",
+    "Date": "inconnue (incertain, classée \"en danger critique d'extinction\" par l'UICN)",
+    "Continent": "Amérique centrale"
+  },
+  {
+    "Ordre": "Amphibiens",
+    "Famille": "",
+    "Espece": "Triton du lac Yunnan (Cynops wolterstorffi)",
+    "Date": 1979,
+    "Continent": "Asie"
+  },
+  {
+    "Ordre": "Amphibiens",
+    "Famille": "",
+    "Espece": "Salamandre de Bay Springs (Plethodon ainsworthi)",
+    "Date": 1964,
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Poissons",
+    "Famille": "",
+    "Espece": "Meunier de la rivière Snake (Chasmistes muriei)",
+    "Date": 1981,
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Poissons",
+    "Famille": "",
+    "Espece": "Meunier de Harelip (Lagochila lacera)",
+    "Date": 1910,
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Poissons",
+    "Famille": "",
+    "Espece": "Chabot du lac Utah (Cottus echinatus)",
+    "Date": 1928,
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Poissons",
+    "Famille": "",
+    "Espece": "Naseux mexicain (Evarra bustamantei)",
+    "Date": 1983,
+    "Continent": "Amérique centrale"
+  },
+  {
+    "Ordre": "Poissons",
+    "Famille": "",
+    "Espece": "Chevet du Plateau (Evarra eigenmanni)",
+    "Date": 1894,
+    "Continent": "Amérique centrale"
+  },
+  {
+    "Ordre": "Poissons",
+    "Famille": "",
+    "Espece": "Chevet endoréique (Evarra tlahuacensis)",
+    "Date": 1901,
+    "Continent": "Amérique centrale"
+  },
+  {
+    "Ordre": "Poissons",
+    "Famille": "",
+    "Espece": "Whiteline Topminnow (Fundulus albolineatus)",
+    "Date": 1900,
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Poissons",
+    "Famille": "",
+    "Espece": "Lac Titicaca poisson à tête plate (Orestias cuvieri)",
+    "Date": 1937,
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Poissons",
+    "Famille": "",
+    "Espece": "Killifish de Ash Meadows (Empetrichthys merriami)",
+    "Date": 1950,
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Poissons",
+    "Famille": "",
+    "Espece": "San Marcos Gambusia (Gambusia georgei)",
+    "Date": 1953,
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Poissons",
+    "Famille": "",
+    "Espece": "Ombre néo-zélandaise (Prototroctes oxyrhynchus)",
+    "Date": 1920,
+    "Continent": "Australie"
+  },
+  {
+    "Ordre": "Poissons",
+    "Famille": "",
+    "Espece": "Cisco à longues mâchoires (Coregonus alpenae)",
+    "Date": 1978,
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Poissons",
+    "Famille": "",
+    "Espece": "Cisco d'eau profonde (Coregonus johannae)",
+    "Date": 1955,
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Poissons",
+    "Famille": "",
+    "Espece": "Truite argentée (Salvelinus agassizii)",
+    "Date": 1930,
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Poissons",
+    "Famille": "",
+    "Espece": "Houting de la mer du Nord (Coregonus oxyrinchus)",
+    "Date": 2005,
+    "Continent": "Europe"
+  },
+  {
+    "Ordre": "Poissons",
+    "Famille": "",
+    "Espece": "Greasefish (Rhizosomichthys totae)",
+    "Date": "inconnue (incertain, classée \"en danger critique d'extinction\" par l'UICN)",
+    "Continent": "Amérique du Sud"
+  },
+  {
+    "Ordre": "Poissons",
+    "Famille": "",
+    "Espece": "Poisson-chat plat siamois (Platytropius siamensis)",
+    "Date": 1980,
+    "Continent": "Asie"
+  },
+  {
+    "Ordre": "Poissons",
+    "Famille": "",
+    "Espece": "Poisson à main lisse (Sympterichthys unipennis)",
+    "Date": 1950,
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Poissons",
+    "Famille": "",
+    "Espece": "Puntius amarus (barbodes amarus)",
+    "Date": 2000,
+    "Continent": "Asie"
+  },
+  {
+    "Ordre": "Poissons",
+    "Famille": "",
+    "Espece": "Puntius baolan (barbodes baoulan)",
+    "Date": 2000,
+    "Continent": "Asie"
+  },
+  {
+    "Ordre": "Poissons",
+    "Famille": "",
+    "Espece": "Puntius clemensi (barbodes clemensi)",
+    "Date": 1926,
+    "Continent": "Asie"
+  },
+  {
+    "Ordre": "Poissons",
+    "Famille": "",
+    "Espece": "Puntius disa (barbodes disa)",
+    "Date": 1932,
+    "Continent": "Asie"
+  },
+  {
+    "Ordre": "Poissons",
+    "Famille": "",
+    "Espece": "Espadon chinois (Psephurus gladius)",
+    "Date": 2005,
+    "Continent": "Asie"
+  },
+  {
+    "Ordre": "Poissons",
+    "Famille": "",
+    "Espece": "Requin perdu (Carcharrhinus obsolerus)",
+    "Date": "inconnue (incertain, classée \"en danger critique d'extinction\" par l'UICN)",
+    "Continent": "Asie"
+  },
+  {
+    "Ordre": "Poissons",
+    "Famille": "",
+    "Espece": "Bitungu (Barbodes truncatulus)",
+    "Date": 2000,
+    "Continent": "Asie"
+  },
+  {
+    "Ordre": "Poissons",
+    "Famille": "",
+    "Espece": "Requin-baliai (Carcharhinus hemiodon)",
+    "Date": "inconnue (incertain, classée \"en danger critique d'extinction\" par l'UICN)",
+    "Continent": "Asie"
+  },
+  {
+    "Ordre": "Poissons",
+    "Famille": "",
+    "Espece": "Parras Pupfish (Cyprinodon latifasciatus)",
+    "Date": 1930,
+    "Continent": "Amérique Centrale"
+  },
+  {
+    "Ordre": "Insectes",
+    "Famille": "",
+    "Espece": "Ephémère de la rivière Pecatonica (Acanthametropus pecatonica)",
+    "Date": 1990,
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Insectes",
+    "Famille": "",
+    "Espece": "Katydid à dos de bouclier des dunes d'Antioche (Neduba extincta)",
+    "Date": 1996,
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Insectes",
+    "Famille": "",
+    "Espece": "Dard de Sainte-Hélène (Sympetrum dilatatum)",
+    "Date": "inconnue (incertain, classée \"en danger critique d'extinction\" par l'UICN)",
+    "Continent": "Afrique"
+  },
+  {
+    "Ordre": "Insectes",
+    "Famille": "",
+    "Espece": "Dendroctone de l'île Stephens (Mecodema punctellum)",
+    "Date": 1931,
+    "Continent": "Océanie"
+  },
+  {
+    "Ordre": "Insectes",
+    "Famille": "",
+    "Espece": "Papillon hedyleptan du bananier de Maui (Hedylepta musicola)",
+    "Date": "inconnue (classé \"données insuffisantes\" par l'UINC)",
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Insectes",
+    "Famille": "",
+    "Espece": "Papillon Levuana (Levuana iridescens)",
+    "Date": 1920,
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Insectes",
+    "Famille": "",
+    "Espece": "Chamois de la rivière Mbashe (Deloneura immaculata)",
+    "Date": 1864,
+    "Continent": "Afrique"
+  },
+  {
+    "Ordre": "Insectes",
+    "Famille": "",
+    "Espece": "Bleu de Xerces (Glaucopsyche xerces)",
+    "Date": 1940,
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Insectes",
+    "Famille": "",
+    "Espece": "Bleu de Morant (Lepidochrysops hypopolia)",
+    "Date": 1879,
+    "Continent": "Afrique"
+  },
+  {
+    "Ordre": "Insectes",
+    "Famille": "",
+    "Espece": "Urania de Sloane (Urania sloanus)",
+    "Date": 1905,
+    "Continent": "Amérique du Nord"
+  },
+  {
+    "Ordre": "Insectes",
+    "Famille": "",
+    "Espece": "Caddysfly de Tobias (Hydropsyche tobiasi)",
+    "Date": 1920,
+    "Continent": "Europe"
+  },
+  {
+    "Ordre": "Insectes",
+    "Famille": "",
+    "Espece": "Criquet des montagnes Rocheuses (Melanoplus spretus)",
+    "Date": 1902,
+    "Continent": "Amérique du Nord"
+  }
 ]

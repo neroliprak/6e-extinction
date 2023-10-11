@@ -4,8 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dataviz</title>
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
-    
+    <!--Graphique-->
+    <svg width="90vw" height="calc(90vw * 220/420)" viewBox="-10 -110 420 220">
+        <!--FOND-->
+        <rect x="0" y="-100" width="400" height="200" fill="#ddd"></rect>
+        <!--x, y remplacent le transforme translate + on part de l'angle haut gauche pour faire le rectangle-->
+
+        <!--LIGNES-->
+        <g id="graph"></g> <!--On rempli avec les rectangles après-->
+        <line x1="0" y1="0" x2="400" y2="0" stroke="black" marker-end="url(#arrow)"></line>
+        <line x1="0" y1="100" x2="0" y2="-100" stroke="black" marker-end="url(#arrow)"></line>
+
+        <!--FLECHE (voir cours) + mettre marker-end="url(#arrow)" sur lignes-->
+        <defs>
+            <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5"
+                    markerWidth="3" markerHeight="3" orient="auto" >
+                    <path d="M 0 0 L 10 5 L 0 10 z" />
+            </marker>
+        </defs>
+    </svg>
 </body>
 </html>

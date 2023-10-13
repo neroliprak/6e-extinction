@@ -8,7 +8,7 @@ fetch("donnees_2007_2021.json")
         console.log(listeExtinction)
         listeExtinction.forEach((extinction) => {
             let data = extinction.Date;
-            console.log(date);
+            console.log(data);
         });
     });
 

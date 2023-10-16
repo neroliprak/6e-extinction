@@ -6,13 +6,23 @@ fetch("donnees.json")
     .then((listeExtinction) => {
         console.log(listeExtinction);
         let data = listeExtinction;
-        const yearToCount = {}; // Un objet pour stocker le comptage par année
+        const yearToCount = {}; // Un objet pour stocker le comptage par année        
         
         listeExtinction.forEach((item) => {
             const year = item.date;
             const statut = item.statut;
             console.log(statut);
-            let stat = "EX";
+
+           // Récupérer les valeurs des boutons radio
+            let radio = document.getElementsByName('stade');
+            let stat;
+            for (let i = 0; i < radio.length; i++) {
+                if (radio[i].checked) {
+                    stat = radio[i].value;
+                }
+            }
+            console.log("stat =", stat);
+
             if (statut==stat) {
                 if (yearToCount[year]) {
                     yearToCount[year]++;
@@ -20,11 +30,59 @@ fetch("donnees.json")
                     yearToCount[year] = 1;
                 }
             }
-            
+            //Si on coche la case "tout"
+            if (stat == "") {
+                if (yearToCount[year]) {
+                    yearToCount[year]++;
+                } else {
+                    yearToCount[year] = 1;
+                }
+            }
         });
+        
+        console.log(yearToCount)
+
+        let svgWidth = 400; // Largeur de la zone SVG
+        let svgHeight = 200; // Hauteur de la zone SVG
+        let barreWidth = svgWidth / Object.keys(yearToCount).length;
+
+        // Sélectionner l'élément SVG existant
+        let svg = d3.select("svg");
+
+//MARCHE PAS
+        // Création des barres
+        svg
+            .selectAll(".histobarre")
+            .data(Object.entries(yearToCount))
+            .enter()
+            .append("rect")
+            .attr("class", "histobarre")
+            .attr("x", (d, i) => i * barreWidth)
+            .attr("y", (d) => svgHeight - d[1] * 2) //JE COMPRENDS PAS ICI CE QUI SE PASSE
+            .attr("width", barreWidth)
+            .attr("height", (d) => d[1] * 2) //POURQUOI CA CHANGE RIEN , x,)
+            .attr("fill", "#00aeff");
+//MARCHE
+    // Au survol une seule barre se colore
+    svg.selectAll(".histobarre")
+            .on("mouseenter", function (e, d) {
+                d3.selectAll(".histobarre").style("opacity", 0.5);
+                d3.select(this).style("opacity", 1);
+
+                let ratio = 400 / (d[1] * 10);
+                d3.select("#barre_bleue").transition().attr("width", d[1] * ratio); //PAREIL POURQUOI CA CHANGE RIEN, LA ?
+            })
+            .on("mouseleave", function (e) {
+                d3.selectAll(".histobarre").style("opacity", 1);
+                d3.select("#barre_bleue").transition().attr("width", 0);
+            });
+
+
+
+        /*
+        //NOTRE VIEUX CODE => le cours
 
         console.log(yearToCount); // Affiche le nombre d'espèces par année
-
 
         let largeur_barre = 390 / yearToCount.length;
         console.log(largeur_barre);
@@ -67,6 +125,6 @@ fetch("donnees.json")
                         .transition()
                         .attr("width", 0)
                 })
-
+                */
 
     })

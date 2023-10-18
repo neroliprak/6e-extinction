@@ -4,71 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dataviz</title>
-    <script type="text/javascript" src="script.js"></script>
-    <script src="d3.js"></script>
+    <script src="d3.js" defer></script>          
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <!--Graphique-->
+    <header>
+        <h1>6e extinction de masse</h1>
+    </header>
+    <main>
+        <section>
+            <div class="bulles bulle1">
+                <p>Changer ses habitudes, c'est garatir un avenir durable</p>
+            </div>
+            <div class="bulles bulle2">
+                <p>Changer ses habitudes, c'est garatir un avenir durable</p>
+            </div>
+            <div class="bulles bulle3">
+                <p>Changer ses habitudes, c'est garatir un avenir durable</p>
+            </div>
+            <div class="bulles bulle4">
+                <p>Changer ses habitudes, c'est garatir un avenir durable</p>
+            </div>
+            <div class="bulles bulle5">
+                <p>Changer ses habitudes, c'est garatir un avenir durable</p>
+            </div>
+        </section>
+        <section>
+            <h2>Histoire</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, quas, ea pariatur sapiente laboriosam alias numquam neque reprehenderit error earum repellendus quam laborum perspiciatis odit maiores soluta quaerat dolor cupiditate.</p>
+        </section>
+        <section>
+            <h2>Graphique</h2>
+            <!--Graphique-->
 
-    <!--Options-->
-    <fieldset>
-        <legend>Choisissez un stade d'extinction : </legend>
+            <!--Options-->
+            <fieldset>
+                <legend>Choisissez un stade d'extinction : </legend>
 
-        <div>
-            <input type="radio" id="tout" name="stade" value="" />
-            <label for="tout">Tout</label>
-        </div>
-      
-        <div>
-          <input type="radio" id="eteint" name="stade" value="EX" checked />
-          <label for="eteint">Éteint</label>
-        </div>
-      
-        <div>
-          <input type="radio" id="vulnerable" name="stade" value="VU" />
-          <label for="vulnerable">Vulnérable</label>
-        </div>
+                <div>
+                    <input type="radio" id="tout" name="stade" value="" />
+                    <label for="tout">Tout</label>
+                </div>
+            
+                <div>
+                <input type="radio" id="eteint" name="stade" value="EX" checked />
+                <label for="eteint">Éteint</label>
+                </div>
+            
+                <div>
+                <input type="radio" id="vulnerable" name="stade" value="VU" />
+                <label for="vulnerable">Vulnérable</label>
+                </div>
 
-        <div>
-            <input type="radio" id="danger_critique" name="stade" value="CR"/>
-            <label for="danger_critique">En danger critique</label>
-        </div>
+                <div>
+                    <input type="radio" id="danger_critique" name="stade" value="CR"/>
+                    <label for="danger_critique">En danger critique</label>
+                </div>
 
-        <div>
-            <input type="radio" id="danger" name="stade" value="EN" />
-            <label for="danger">En danger</label>
-        </div>
+                <div>
+                    <input type="radio" id="danger" name="stade" value="EN" />
+                    <label for="danger">En danger</label>
+                </div>
 
-        <div>
-            <input type="radio" id="quasi_menace" name="stade" value="NT" />
-            <label for="quasi_menace">Quasi menacé</label>
-        </div>
+                <div>
+                    <input type="radio" id="quasi_menace" name="stade" value="NT" />
+                    <label for="quasi_menace">Quasi menacé</label>
+                </div>
+            </fieldset>
 
-        <div>
-            <input type="radio" id="preoccup_mineure" name="stade" value="LC" />
-            <label for="preoccup_mineure">Préoccupation mineure</label>
-        </div>
-    </fieldset>
+            <!--Schéma-->
+            <svg width="90vw" height="calc(90vw * 220/420)" viewBox="-10 -110 420 220">
+                <!--FOND-->
+                <rect x="0" y="-100" width="400" height="100" fill="#ddd"></rect>
+                <!--x, y remplacent le transforme translate + on part de l'angle haut gauche pour faire le rectangle-->
 
-    <!--Schéma-->
-    <svg width="90vw" height="calc(90vw * 220/420)" viewBox="-10 -110 420 220">
-        <!--FOND-->
-        <rect x="0" y="-100" width="400" height="200" fill="#ddd"></rect>
-        <!--x, y remplacent le transforme translate + on part de l'angle haut gauche pour faire le rectangle-->
+                <!--LIGNES-->
+                <g id="graph"></g> <!--On rempli avec les rectangles après-->
+                <line x1="0" y1="0" x2="400" y2="0" stroke="black" marker-end="url(#arrow)"></line>
+                <line x1="0" y1="0" x2="0" y2="-100" stroke="black" marker-end="url(#arrow)"></line>
 
-        <!--LIGNES-->
-        <g id="graph"></g> <!--On rempli avec les rectangles après-->
-        <line x1="0" y1="0" x2="400" y2="0" stroke="black" marker-end="url(#arrow)"></line>
-        <line x1="0" y1="100" x2="0" y2="-100" stroke="black" marker-end="url(#arrow)"></line>
-
-        <!--FLECHE (voir cours) + mettre marker-end="url(#arrow)" sur lignes-->
-        <defs>
-            <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5"
-                    markerWidth="3" markerHeight="3" orient="auto" >
-                    <path d="M 0 0 L 10 5 L 0 10 z" />
-            </marker>
-        </defs>
-    </svg>
+                <!--FLECHE (voir cours) + mettre marker-end="url(#arrow)" sur lignes-->
+                <defs>
+                    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5"
+                            markerWidth="3" markerHeight="3" orient="auto" >
+                            <path d="M 0 0 L 10 5 L 0 10 z" />
+                    </marker>
+                </defs>
+            </svg>
+        </section>
+    </main>
+    
 
 </body>
 </html>

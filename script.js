@@ -6,8 +6,6 @@ fetch("donnees.json")
     .then((listeExtinction) => {
         console.log(listeExtinction);
         const espece_par_annee = {}; // Un objet pour stocker le nombre d'espèce par année  
-        
-        const especes_select = {}; // Un objet pour stocker le nombre d'espèces qu'une famille, pour le graphique 2
 
         listeExtinction.forEach((item) => {
             let year = item.date;
@@ -103,11 +101,15 @@ fetch("donnees.json")
                     d3.select("#barre_bleue")
                         .transition()
                         .attr("width", 0)
+
                 })
                 //Apparition du deuxieme graphique
-                .on("mouseleave", function(e){ //quand on ne survol plus par la souris
+                .on("mouseenter", function(e){ //quand on ne survol plus par la souris
+                    
+                    const especes_select = {}; // Un objet pour stocker le nombre d'espèces qu'une famille, pour le graphique 2
                     
                     listeExtinction.forEach((item) => {
+                       
                         let year = item.date;
                         let statut = item.statut;
                         let famille = item.groupe;
@@ -126,7 +128,7 @@ fetch("donnees.json")
 
                         //barre select prend l'annee et le nombre d'espèces qui correspondent à la barre sur laquelle on clic
                         let barre_select = this.__data__;
-
+                        console.log(barre_select);
                         let annee_select = barre_select.annee;
 
                             if (statut==stat && year == annee_select) {
@@ -152,57 +154,95 @@ fetch("donnees.json")
                                     especes_select[famille] = 1;
                                 }
                             }
-                            console.log(especes_select);
-                        
                             
-                        
+
                     })
                     
+                    console.log(especes_select);
 
                     //Adaptation du code du site officiel de d3 :
-                    // Dimensions du graphique
+                    // Dimensions du graphique camambert
                     const width = 450,
-                    height = 450,
-                    margin = 40;
+                        height = 450,
+                        margin = 40;
 
                     const radius = Math.min(width, height) / 2 - margin
 
-                    // Le graphe est placé dans la div
+                    // Création dans la div camambert
                     const svg = d3.select("#camambert")
                     .append("svg")
-                    .attr("width", width)
-                    .attr("height", height)
+                        .attr("width", width)
+                        .attr("height", height)
                     .append("g")
-                    .attr("transform", `translate(${width / 2},${height / 2})`);
+                        .attr("transform", `translate(${width/2},${height/2})`);
 
-                    // // FAUSSES VALEURS POUR TESTER
-                    // const data = {a: 9, b: 20, c:30, d:8, e:12}
 
-                    // Choix des couleurs
+
+                    // ???
                     const color = d3.scaleOrdinal()
-                    .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56"])
+                    .domain(["a", "b", "c", "d", "e", "f", "g", "h"])
+                    .range(d3.schemeDark2);
 
-                    // Définition des différentes parts du graphique
+                    // Compute the position of each group on the pie:
                     const pie = d3.pie()
-                    .value(d=>d[1])
+                    .sort(null) // Do not sort group by size
+                    .value(d => d[1])
+                    const data_ready = pie(Object.entries(especes_select))
 
-                    const data_ready = pie(Object.entries(barre_select))
+                    // The arc generator
+                    const arc = d3.arc()
+                    .innerRadius(radius * 0.5)         // This is the size of the donut hole
+                    .outerRadius(radius * 0.8)
 
-                    // Construction du graphique par part (1 part = 1 path)
+                    // Another arc that won't be drawn. Just for labels positioning
+                    const outerArc = d3.arc()
+                    .innerRadius(radius * 0.9)
+                    .outerRadius(radius * 0.9)
+
+                    // Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
                     svg
-                    .selectAll('whatever')
+                    .selectAll('allSlices')
                     .data(data_ready)
                     .join('path')
-                    .attr('d', d3.arc()
-                    //Taille totale
-                    .innerRadius(100)
-                    .outerRadius(radius)
-                    )
-                    .attr('fill', d => color(d.barre_select[0]))
-                    .attr("stroke", "black")
+                    .attr('d', arc)
+                    .attr('fill', d => color(d.data[1]))
+                    .attr("stroke", "white")
                     .style("stroke-width", "2px")
                     .style("opacity", 0.7)
-                    
+
+                    // Add the polylines between chart and labels:
+                    svg
+                    .selectAll('allPolylines')
+                    .data(data_ready)
+                    .join('polyline')
+                        .attr("stroke", "black")
+                        .style("fill", "none")
+                        .attr("stroke-width", 1)
+                        .attr('points', function(d) {
+                        const posA = arc.centroid(d) // line insertion in the slice
+                        const posB = outerArc.centroid(d) // line break: we use the other arc generator that has been built only for that
+                        const posC = outerArc.centroid(d); // Label position = almost the same as posB
+                        const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2 // we need the angle to see if the X position will be at the extreme right or extreme left
+                        posC[0] = radius * 0.95 * (midangle < Math.PI ? 1 : -1); // multiply by 1 or -1 to put it on the right or on the left
+                        return [posA, posB, posC]
+                        })
+
+                    // Add the polylines between chart and labels:
+                    svg
+                    .selectAll('allLabels')
+                    .data(data_ready)
+                    .join('text')
+                        .text(d => d.data[0])
+                        .attr('transform', function(d) {
+                            const pos = outerArc.centroid(d);
+                            const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2
+                            pos[0] = radius * 0.99 * (midangle < Math.PI ? 1 : -1);
+                            return `translate(${pos})`;
+                        })
+                        .style('text-anchor', function(d) {
+                            const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2
+                            return (midangle < Math.PI ? 'start' : 'end')
+                        })
                 });
                 
         };

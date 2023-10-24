@@ -1,0 +1,5 @@
+Problèmes à résourde : 
+
+JS
+- Graphique 2 => pourquoi il reste noir ?
+- Graphique 2 => suppression du graphique quand on ne survol plus (sinon, plusieurs graphiques se créé a chaque fois qu'on survol un nouveau truc)

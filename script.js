@@ -110,7 +110,7 @@ fetch("donnees.json")
                     listeExtinction.forEach((item) => {
                         let year = item.date;
                         let statut = item.statut;
-                        let espece = item.groupe;
+                        let famille = item.groupe;
 
                         // Récupérer les valeurs des boutons radio
                         let radio = document.getElementsByName('stade');
@@ -126,41 +126,38 @@ fetch("donnees.json")
 
                         //barre select prend l'annee et le nombre d'espèces qui correspondent à la barre sur laquelle on clic
                         let barre_select = this.__data__;
-                        console.log(barre_select);
 
-                            let annee_select = barre_select.annee;
-                            console.log(annee_select);
+                        let annee_select = barre_select.annee;
 
-                            if( especes_select[year] == annee_select){
-                                console.log("je suis dedans");
-                                //Recréer un tableau sur cette annee
-                                if (statut==sta) {
-                                    //Si il y a une espèce VU dans l'année year...
-                                    if (especes_select[espece]) {
-                                        //...alors on augmente de 1 le nombre d'espèce de cette année
-                                        especes_select[espece]++;
-                                    }
-                                    else {
-                                        especes_select[espece] = 1;
-                                    }
+                            if (statut==stat && year == annee_select) {
+                                //Si il y a une espèce VU dans la famille espece...
+                                if (especes_select[famille]) {
+                                    //...alors on augmente de 1 le nombre d'espèce de cette famille, cette annee²
+                                    especes_select[famille]++;
                                 }
-                                //Si on coche la case "tout" (la valeur est vide)
-                                if (stat == "") {
-                                    //on prend toutes les espèce de toutes les années (pas seulement VU par exemple)
-                                    if (especes_select[espece]) {
-                                        especes_select[espece]++;
-                                    } 
-                                    else {
-                                        //Initialisation => égal à 1 parce qu'il y a forcément une espèce dans l'annee (sinon il n'y aurait pas l'année)
-                                        especes_select[espece] = 1;
-                                    }
+                                else {
+                                    especes_select[famille] = 1;
+                                }
+                                
+                                
+                            }
+                            //Si on coche la case "tout" (la valeur est vide)
+                            if (stat == "" && year == annee_select) {
+                                //on prend toutes les espèce de toutes les années (pas seulement VU par exemple)
+                                if (especes_select[famille]) {
+                                    especes_select[famille]++;
+                                } 
+                                else {
+                                    //Initialisation => égal à 1 parce qu'il y a forcément une espèce dans l'annee (sinon il n'y aurait pas l'année)
+                                    especes_select[famille] = 1;
                                 }
                             }
-                            
+                            console.log(especes_select);
+                        
                             
                         
                     })
-                    console.log(especes_select);
+                    
 
                     //Adaptation du code du site officiel de d3 :
                     // Dimensions du graphique

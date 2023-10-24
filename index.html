@@ -6,13 +6,25 @@
     <title>Dataviz</title>
     <script src="d3.js" defer></script>          
     <script src="script.js" defer></script>
+    <script src="https://d3js.org/d3.v6.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">   
+    
 </head>
 <body>
+   
     <header>
-        <h1>6e extinction de masse</h1>
-    </header>
-    <main>
-        <section>
+        <div class="titreHeader">
+            <img class="numero6" src="./images/numero6.svg" alt="">
+            <h1>Extinction <br>de masse</h1>
+        </div>
+        <img class="planete" src="./images/planete.svg" alt="">
+        <section class="bulle">
             <div class="bulles bulle1">
                 <p>Changer ses habitudes, c'est garatir un avenir durable</p>
             </div>
@@ -29,11 +41,10 @@
                 <p>Changer ses habitudes, c'est garatir un avenir durable</p>
             </div>
         </section>
-        <section>
-            <h2>Histoire</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, quas, ea pariatur sapiente laboriosam alias numquam neque reprehenderit error earum repellendus quam laborum perspiciatis odit maiores soluta quaerat dolor cupiditate.</p>
-        </section>
-        <section>
+    </header>
+   
+
+        <section classe="graphique">
             <h2>Graphique</h2>
             <!--Graphique-->
 
@@ -91,6 +102,8 @@
                     </marker>
                 </defs>
             </svg>
+
+            <div id="my_dataviz"></div>
         </section>
     </main>
     

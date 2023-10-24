@@ -44,6 +44,7 @@ fetch("donnees.json")
                     espece_par_annee[year] = 1;
                 }
             }
+        
         });
         
         console.log(espece_par_annee); // Affiche le nombre d'espèces par année
@@ -102,6 +103,55 @@ fetch("donnees.json")
                         .transition()
                         .attr("width", 0)
                 })
+                
         };
 
+        //Adaptation du code du site officiel de d3 :
+// Dimensions du graphique
+const width = 450,
+height = 450,
+margin = 40;
+
+const radius = Math.min(width, height) / 2 - margin
+
+// Le graphe est placé dans la div
+const svg = d3.select("#my_dataviz")
+.append("svg")
+.attr("width", width)
+.attr("height", height)
+.append("g")
+.attr("transform", `translate(${width / 2},${height / 2})`);
+
+// // FAUSSES VALEURS POUR TESTER
+// const data = {a: 9, b: 20, c:30, d:8, e:12}
+
+// Choix des couleurs
+const color = d3.scaleOrdinal()
+.range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56"])
+
+// Définition des différentes parts du graphique
+const pie = d3.pie()
+.value(d=>d[1])
+
+const data_ready = pie(Object.entries(data))
+
+// Construction du graphique par part (1 part = 1 path)
+svg
+.selectAll('whatever')
+.data(data_ready)
+.join('path')
+.attr('d', d3.arc()
+//Taille totale
+.innerRadius(100)
+.outerRadius(radius)
+)
+.attr('fill', d => color(d.data[0]))
+.attr("stroke", "black")
+.style("stroke-width", "2px")
+.style("opacity", 0.7)
+
+        
+
     })
+
+    

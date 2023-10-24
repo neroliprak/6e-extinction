@@ -1,0 +1,60 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    
+}
+header{
+    background-image: url(./images/haut-accueil-test6.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #20252C;
+    position: relative;
+}
+h1, h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0;
+}
+h1 {
+    color: #20252C;
+    width: fit-content;
+    font-size: 8em; 
+    padding-top: 180px;
+    margin-bottom: 20px;
+    z-index: 2;
+    text-align: center;
+    line-height: 110%;
+}
+.planete{
+    display: flex;
+    margin: auto;
+    margin-top: -600px;
+  
+    max-width: 100%; 
+    width: 110%;
+    height: auto; 
+
+}
+.numero6{
+
+    top: 100px;
+    margin-left:150px;
+    width: 10%;
+    max-width: 100%; 
+    height: auto;
+}
+.titreHeader{
+    display: flex;
+}
+
+.bulles{
+    width: fit-content;
+    background-color: white;
+    border: solid 1px;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-left:20px;
+    padding-bottom:10px ;
+    padding-right: 20px;
+}
+

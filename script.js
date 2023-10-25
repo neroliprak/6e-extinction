@@ -97,11 +97,6 @@ fetch("donnees.json")
                     d3.selectAll(".histobarre")
                         .style("opacity", 1) //toutes les barres redeviennent opaquent
 
-                    //faire disparaitre les barres quand on survol rien
-                    d3.select("#barre_bleue")
-                        .transition()
-                        .attr("width", 0)
-
                 })
                 //Apparition du deuxieme graphique
                 .on("mouseenter", function(e){ //quand on ne survol plus par la souris
@@ -162,13 +157,13 @@ fetch("donnees.json")
 
                     //Adaptation du code du site officiel de d3 :
                     // Dimensions du graphique camambert
-                    const width = 450,
+                    const width = 800, //Attention à la taille : si trop petit, les titres n'apparaissent pas
                         height = 450,
                         margin = 40;
 
                     const radius = Math.min(width, height) / 2 - margin
 
-                    // Création dans la div camambert
+                    // Création d'un svg dans la div camambert
                     const svg = d3.select("#camambert")
                     .append("svg")
                         .attr("width", width)
@@ -178,71 +173,78 @@ fetch("donnees.json")
 
 
 
-                    // ???
+                    // Création d'une échelle de couleurs du graphique
                     const color = d3.scaleOrdinal()
                     .domain(["a", "b", "c", "d", "e", "f", "g", "h"])
-                    .range(d3.schemeDark2);
+                    .range(d3.schemeDark2); //Couleurs à utiliser
 
-                    // Compute the position of each group on the pie:
+                    // Calcul des positions des familles
                     const pie = d3.pie()
-                    .sort(null) // Do not sort group by size
-                    .value(d => d[1])
-                    const data_ready = pie(Object.entries(especes_select))
+                    .sort(null) // on ne les trie pas
+                    .value(d => d[1]) // Valeur à utiliser pour le calcul de l'angle
+                    const data_ready = pie(Object.entries(especes_select)) // Transforme les données especes_select pour qu'elles soient utilisablent dans le graphique
 
-                    // The arc generator
+                    //Création de la forme générale du graphique
                     const arc = d3.arc()
-                    .innerRadius(radius * 0.5)         // This is the size of the donut hole
+                    .innerRadius(radius * 0.5)// Taille du trou au centre du cercle
                     .outerRadius(radius * 0.8)
 
-                    // Another arc that won't be drawn. Just for labels positioning
+                    // Création d'un espace pour les légendes
                     const outerArc = d3.arc()
                     .innerRadius(radius * 0.9)
                     .outerRadius(radius * 0.9)
 
-                    // Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
+                    // Création des différentes parties du cercle : chaque famille d'espèce est un "path"
                     svg
                     .selectAll('allSlices')
-                    .data(data_ready)
-                    .join('path')
-                    .attr('d', arc)
-                    .attr('fill', d => color(d.data[1]))
+                    .data(data_ready) 
+                    .join('path') // Créé une partie par famille
+                    .attr('d', arc) // Défini la forme de chaque partie 
+                    .attr('fill', d => color(d.data[1])) //Rempli les formes avec une couleur
                     .attr("stroke", "white")
                     .style("stroke-width", "2px")
                     .style("opacity", 0.7)
 
-                    // Add the polylines between chart and labels:
+                    // Création des lignes qui relient les parties du cercle et leur légende
                     svg
                     .selectAll('allPolylines')
                     .data(data_ready)
-                    .join('polyline')
-                        .attr("stroke", "black")
-                        .style("fill", "none")
+                    .join('polyline') //Créé un élément "plusieurs lignes" par partie
+                        .attr("stroke", "black") 
+                        .style("fill", "none") // aucune couleur interieure (sans cette ligne, polyline forme un triangle et non des lignes)
                         .attr("stroke-width", 1)
-                        .attr('points', function(d) {
-                        const posA = arc.centroid(d) // line insertion in the slice
-                        const posB = outerArc.centroid(d) // line break: we use the other arc generator that has been built only for that
-                        const posC = outerArc.centroid(d); // Label position = almost the same as posB
-                        const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2 // we need the angle to see if the X position will be at the extreme right or extreme left
-                        posC[0] = radius * 0.95 * (midangle < Math.PI ? 1 : -1); // multiply by 1 or -1 to put it on the right or on the left
-                        return [posA, posB, posC]
+                        .attr('points', function(d) { //Définition du début et de la fin de la ligne
+                            const posA = arc.centroid(d) //Début de la ligne
+                            const posB = outerArc.centroid(d) //Fin de la ligne
+                            const posC = outerArc.centroid(d); //Coude de la ligne
+                            const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2 //Calcul d'angle pour savoir où la ligne horizontale doit être positionnée
+                            posC[0] = radius * 0.95 * (midangle < Math.PI ? 1 : -1); // Positionnement sur la gauche (-1) ou sur la droite (1)
+                            return [posA, posB, posC]
                         })
 
-                    // Add the polylines between chart and labels:
+                    // Ajout les légendes à coté des lignes
                     svg
                     .selectAll('allLabels')
                     .data(data_ready)
                     .join('text')
-                        .text(d => d.data[0])
-                        .attr('transform', function(d) {
+                        .text(d => d.data[0]) // Créé un élément texte par famille
+                        .attr("class", "legende_cercle") //Ajout d'une classe pour modifier leur CSS
+                        .attr('transform', function(d) { //Positionnement des légendes
                             const pos = outerArc.centroid(d);
                             const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2
                             pos[0] = radius * 0.99 * (midangle < Math.PI ? 1 : -1);
                             return `translate(${pos})`;
                         })
-                        .style('text-anchor', function(d) {
+                        .style('text-anchor', function(d) { // Alignement des légendes par rapport aux lignes
                             const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2
                             return (midangle < Math.PI ? 'start' : 'end')
                         })
+                })
+                .on("mouseleave", function(e){ //ATTENTION MARCHE PAS
+                    //Fais disparaitre le graphe circulaire quand on survol rien
+                    d3.select("#camabert")
+                        .transition()
+                        .attr("width", 0)
                 });
                 
         };

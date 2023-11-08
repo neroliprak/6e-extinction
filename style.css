@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+header {
+  width: 100%;
+  background: url(./images/etoile.svg) top left no-repeat,
+    url(./images/accueil-vert.svg) top left no-repeat;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #20252c;
+}
+
+.titre-header {
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  padding-left: 100px;
+}
+
+.mot-eme {
+  margin-bottom: 150px;
+}
+h1 {
+  max-width: 1000px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+  color: #20252c;
+  font-size: 7em;
+  z-index: 2;
+  text-align: center;
+  margin-top: 200px;
+  margin-left: -100px;
+  line-height:100px;
+}
+
+.planete {
+  width: 100%;
+  max-width: 1000px;
+  display: block;
+  padding-top: 20vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rocket {
+  position: absolute;
+  top: 70%;
+  left: 30%;
+}
+
+.bulle {
+    font-size: 2em;
+    font-weight: 600;
+  border-radius: 28px;
+  background: white;
+  color: #20252c;
+  padding-left:30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+    width: fit-content;
+    border: solid #20252c 3px;
+}
+
+.bulle1{
+    position: absolute;
+    top: 800px;
+    left: -800px;
+}
+
+.bulle2{
+    position: absolute;
+    top: 950px;
+    right: -800px;
+}
+
+.bulle1{
+    position: absolute;
+    top: 800px;
+    left: -800px;
+}
+.histoire{
+    background-color: white;
+    margin-bottom: 150px;
+}
+
+.fin-header, .herbe{
+    margin: 0;
+    width: 100%;
+    height: fit-content;
+}
+.contain{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text{
+    width: 800px;
+    margin: auto;
+    justify-content: center;
+    font-size: 30px;
+    margin-left: 100px;
+}
+.text-histoire{
+    margin-top: 50px;
+}
+
+.dino{
+    width: fit-content;
+    margin-right: 100px;
+}
+.h2-histoire{
+    font-size: 100px;
+}
+.graphique{
+    background-color: #92E3A9;
+    height: 100vh;
+}
+.herbe{
+    margin-top: -500px;
+}

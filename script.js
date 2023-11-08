@@ -63,9 +63,10 @@ fetch("donnees.json")
             console.log(largeur_barre);
 
             d3.select("#graph")
-                .selectAll("g")
+                .selectAll("a")
                 .data(tab)
-                .join("g")
+                .join("a")
+                .attr("href", "#camambert")
                 .attr("class", "histobarre")
                 .attr("transform", (d, i) => `translate(${largeur_barre * i + 10} ,0)`) //l'emplacement horizontalement dépend de la largeur des barres et de l'emplacement dans le tableau (donc i)
 
@@ -73,12 +74,20 @@ fetch("donnees.json")
 
             d3.selectAll(".histobarre")
                 .append("rect")
-                .attr("fill", "#00aeff")
+                .attr("fill", "#20252c")
                 .attr("width", largeur_barre-10)
                 .attr("height", (d,i) => d.valeur) //objet = d / numéro positionnnement = i
                 .attr("transform", `scale(1, -1)`) //met les barres au dessus de la ligne des abscisses 
-                
-               
+            
+            // Ajoute du texte pour afficher les années sous chaque barre
+            d3.selectAll(".histobarre")
+            .append("text")
+            .text((d) => d.annee) // Affiche l'année
+            .attr("y", 15)
+            .attr("text-anchor", "middle") // Centre le texte horizontalement
+            .attr("x", largeur_barre / 4.5) // Centre le texte par rapport à la barre
+            .style("font", "0.4rem poppins");
+                    
 
             d3.selectAll(".histobarre") //sur toutes les barres
                 .on("mouseenter", function(e, d){ //au survol de la souris + mettre d en paramètre pour les barres verticales, d = données associaées à this
@@ -99,7 +108,7 @@ fetch("donnees.json")
 
                 })
                 //Apparition du deuxieme graphique
-                .on("mouseenter", function(e){ //quand on ne survol plus par la souris
+                .on("click", function(e){ //quand on click sur une barre
                     
                     const especes_select = {}; // Un objet pour stocker le nombre d'espèces qu'une famille, pour le graphique 2
                     
@@ -157,11 +166,11 @@ fetch("donnees.json")
 
                     //Adaptation du code du site officiel de d3 :
                     // Dimensions du graphique camambert
-                    const width = 800, //Attention à la taille : si trop petit, les titres n'apparaissent pas
-                        height = 450,
-                        margin = 40;
+                    const width = 1500, //Attention à la taille : si trop petit, les titres n'apparaissent pas
+                        height = 600,
+                        margin = 0;
 
-                    const radius = Math.min(width, height) / 2 - margin
+                    const radius = Math.min(width, height) /2 - margin //taille du rond
 
                     // Création d'un svg dans la div camambert
                     const svg = d3.select("#camambert")
@@ -172,11 +181,8 @@ fetch("donnees.json")
                         .attr("transform", `translate(${width/2},${height/2})`);
 
 
-
                     // Création d'une échelle de couleurs du graphique
-                    const color = d3.scaleOrdinal()
-                    .domain(["a", "b", "c", "d", "e", "f", "g", "h"])
-                    .range(d3.schemeDark2); //Couleurs à utiliser
+                    const color = d3.scaleOrdinal(['#E4D56C', '#AEDF95', '#907B42', '#34393F', '#FFD057', '#C9DA80', '#585037']); //Couleurs à utiliser
 
                     // Calcul des positions des familles
                     const pie = d3.pie()
@@ -201,7 +207,7 @@ fetch("donnees.json")
                     .join('path') // Créé une partie par famille
                     .attr('d', arc) // Défini la forme de chaque partie 
                     .attr('fill', d => color(d.data[1])) //Rempli les formes avec une couleur
-                    .attr("stroke", "white")
+                    .attr("stroke", "black")
                     .style("stroke-width", "2px")
                     .style("opacity", 0.7)
 
@@ -238,13 +244,7 @@ fetch("donnees.json")
                         .style('text-anchor', function(d) { // Alignement des légendes par rapport aux lignes
                             const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2
                             return (midangle < Math.PI ? 'start' : 'end')
-                        })
-                })
-                .on("mouseleave", function(e){ //ATTENTION MARCHE PAS
-                    //Fais disparaitre le graphe circulaire quand on survol rien
-                    d3.select("#camabert")
-                        .transition()
-                        .attr("width", 0)
+                        })  
                 });
                 
         };

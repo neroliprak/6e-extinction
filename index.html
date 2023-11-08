@@ -37,22 +37,45 @@
         <svg class="fin-header" xmlns="http://www.w3.org/2000/svg" width="1512" height="487" viewBox="0 0 1512 487" fill="none">
             <path d="M-91 0H1549V413.025C1139.54 -47.0047 767.505 354.462 -91 487V0Z" fill="#20252C"/>
           </svg>
-          <div class="contain">
+          <div class="contain-histoire">
             <div class="text">
-                <h2 class="h2-histoire">
+                <h2>
                     Histoire
                 </h2>
-                <p class="text-histoire">Lorsque l’on parle d’extinction de masse, nous pensons le plus souvent aux dinosaures. Mais ils ne sont pas les seuls à avoir disparus.
-                    Nous vivons actuellement la 6e extinction de masse du monde. </p>
+                <p class="text-histoire">
+                    Lorsque l’on parle d’extinction de masse, nous pensons le plus souvent aux dinosaures. Mais ils ne sont pas les seuls à avoir disparus. Nous vivons actuellement la 6e extinction de masse du monde. <br> <br>
+                    Grâce aux graphiques ci-dessous, rendez-vous mieux compte du nombre d'espèces qui disparaissent chaque année dans le monde. 
+            </p>
             </div>
             <img class="dino" src="./images/Dinosaur.svg" alt="">
           </div>
     </div>
     <div class="graphique">
         <img class="herbe" src="./images/herbe.svg" alt="">
-        <section classe="graphique">
-            <h2>Graphique</h2>
+        <h2>Graphique</h2>
+        <section class="graphique_main">
             <!--Graphique-->
+
+            
+            <!--Schéma-->
+            <svg width="90vw" height="calc(90vw * 220/420)" viewBox="-10 -110 420 220">
+                <!--FOND-->
+                <rect x="0" y="-100" width="400" height="100" fill="#92E3A9"></rect>
+                <!--x, y remplacent le transforme translate + on part de l'angle haut gauche pour faire le rectangle-->
+
+                <!--LIGNES-->
+                <g id="graph"></g> <!--On rempli avec les rectangles après-->
+                <line x1="0" y1="0" x2="400" y2="0" stroke="black" marker-end="url(#arrow)"></line>
+                <line x1="0" y1="0" x2="0" y2="-100" stroke="black" marker-end="url(#arrow)"></line>
+
+                <!--FLECHE (voir cours) + mettre marker-end="url(#arrow)" sur lignes-->
+                <defs>
+                    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5"
+                            markerWidth="3" markerHeight="3" orient="auto" >
+                            <path d="M 0 0 L 10 5 L 0 10 z" />
+                    </marker>
+                </defs>
+            </svg>
 
             <!--Options-->
             <fieldset>
@@ -89,29 +112,10 @@
                 </div>
             </fieldset>
 
-            <!--Schéma-->
-            <svg width="90vw" height="calc(90vw * 220/420)" viewBox="-10 -110 420 220">
-                <!--FOND-->
-                <rect x="0" y="-100" width="400" height="100" fill="#ddd"></rect>
-                <!--x, y remplacent le transforme translate + on part de l'angle haut gauche pour faire le rectangle-->
-
-                <!--LIGNES-->
-                <g id="graph"></g> <!--On rempli avec les rectangles après-->
-                <line x1="0" y1="0" x2="400" y2="0" stroke="black" marker-end="url(#arrow)"></line>
-                <line x1="0" y1="0" x2="0" y2="-100" stroke="black" marker-end="url(#arrow)"></line>
-
-                <!--FLECHE (voir cours) + mettre marker-end="url(#arrow)" sur lignes-->
-                <defs>
-                    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5"
-                            markerWidth="3" markerHeight="3" orient="auto" >
-                            <path d="M 0 0 L 10 5 L 0 10 z" />
-                    </marker>
-                </defs>
-            </svg>
-
-            <div id="camambert"></div>
         </section>
-    </div>
+            <div id="camambert"></div>
+        
+    </div>   
     </main>
     
 
@@ -121,5 +125,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
     <script src="script-gsap.js"></script>
+
 </body>
 </html>

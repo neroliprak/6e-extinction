@@ -1,10 +1,12 @@
+let listeExtinction;
+
 // Pour charger un fichier JSON
 fetch("donnees.json")
     .then((response) => {
         return response.json(); // renvoie les données JSON ()
     })
-    .then((listeExtinction) => {
-
+    .then((data) => {
+        listeExtinction = data;
         analyseRadio(listeExtinction);
 
         document.querySelectorAll('[name=stade]').forEach(el => {
@@ -21,9 +23,9 @@ fetch("texte_stade.json")
 
         textStade(text);
 
-        document.querySelectorAll('[name=stade]').forEach(el => {
+        /*document.querySelectorAll('[name=stade]').forEach(el => {
             el.onclick = () => textStade(text);
-        }) //Marche pas : quand on clic sur un autre bouton radio, mets pas à jour 
+        }); //Marche pas + fait tout buguer*/
 
     });
 
@@ -36,7 +38,7 @@ function textStade(text) {
         let text_stat = item.stade;
         if (text_stat == stat){
             let text_bon = item.explication;
-            document.getElementById("text_stade").innerHTML += text_bon;
+            document.getElementById("text_stade").innerHTML = text_bon;
         }
     });
 } 
@@ -77,13 +79,14 @@ function analyseRadio(listeExtinction) {
 
 //fonction de création des barres
 function barres(tab) {
-    let largeur_barre = 390 / tab.length;
+    let largeur_barre = 390 / tab.length; //Largeur des barres dépend du nombre d'années qui doivent être représentées
 
     //Suppression des barres déjà créées
     d3.select("#graph")
         .selectAll('*')
         .remove()
 
+    //Création barres
     d3.select("#graph")
         .selectAll("a")
         .data(tab)
@@ -91,8 +94,6 @@ function barres(tab) {
         .attr("href", "#camambert")
         .attr("class", "histobarre")
         .attr("transform", (d, i) => `translate(${largeur_barre * i + 10} ,0)`) //l'emplacement horizontalement dépend de la largeur des barres et de l'emplacement dans le tableau (donc i)
-
-    //on créé un groupe avant les rectangles, parce que dans un groupe il y aura deux barres
 
     d3.selectAll(".histobarre")
         .append("rect")
@@ -112,17 +113,14 @@ function barres(tab) {
 
 
     d3.selectAll(".histobarre") //sur toutes les barres
-        .on("mouseenter", function (e, d) { //au survol de la souris + mettre d en paramètre pour les barres verticales, d = données associaées à this
+        .on("mouseenter", function (e,d) { //au survol de la souris + mettre d en paramètre pour les barres verticales, d = données associaées à this
             d3.selectAll(".histobarre")
-                .style("opacity", 0.5) //toutes les barres deviennent transparentent
+                .style("opacity", 0.5) //toutes les barres deviennent transparentes
             d3.select(this) //l'élément concerné par l'élément
                 .style("opacity", 1) //devient opaque
 
 
-            let ratio = 400 / (d.annee + d.valeur) //produit en croix pour que les deux barres se touchent
-            d3.select("#barre_bleue")
-                .transition() // mettre avant les attributs
-                .attr("width", d.annee * ratio)
+                
         })
         .on("mouseleave", function (e) { //quand on ne survol plus par la souris
             d3.selectAll(".histobarre")
@@ -130,7 +128,7 @@ function barres(tab) {
 
         })
         //Apparition du deuxieme graphique
-        .on("click", function (e) { //quand on click sur une barre
+        .on("click", function(e) { //quand on click sur une barre
 
             const especes_select = {}; // Un objet pour stocker le nombre d'espèces qu'une famille, pour le graphique 2
 
@@ -180,18 +178,7 @@ function barres(tab) {
                         especes_select[famille] = 1;
                     }
                 }
-
-
-            })
-
-            console.log(especes_select);
-
-           
-        });
-
-};
-
-//fonction de création des camambert
+                //fonction de création des camambert
 function camambert(){
 
     //Suppression des graphiques camamberts déjà créés
@@ -282,4 +269,15 @@ function camambert(){
                     return (midangle < Math.PI ? 'start' : 'end')
                 })
 }
+                camambert(especes_select)
+            })
+
+            console.log(especes_select);
+
+           
+        });
+
+};
+
+
  

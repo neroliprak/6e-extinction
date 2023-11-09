@@ -2,6 +2,6 @@ Problèmes à demander :
 
 * Comment espacer les légendes du graphique spiral ?
 
-* Comment faire disparaitre les graphiques spiral quand on n'est plus sur les barres ?
-
 * Comment adapter les hauteurs des barres bleues du graphique barre ?
+
+* Pourquoi l'affichage du texte ne marche pas sur FireFox (mais sur les autres navigateurs, si) ?

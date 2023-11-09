@@ -8,7 +8,7 @@ fetch("donnees.json")
         genererBarreEnFonctionDuRadio(listeExtinction);
 
         document.querySelectorAll('[name=stade]').forEach(el => {
-            el.onclick = () => genererBarreEnFonctionDuRadio(listeExtinction)
+            el.onclick = () => genererBarreEnFonctionDuRadio(listeExtinction);  
         });
 
     });

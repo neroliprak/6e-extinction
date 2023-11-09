@@ -1,9 +1,5 @@
 Problèmes à demander : 
 
-* Comment faire pour que quand on sélectionne un bouton radio, ça s'affiche (actuellement si on refresh la page ça marche, mais que sur FireFox) ?
-
-* Pourquoi pour Néroli ça marche jamais ?
-
 * Comment espacer les légendes du graphique spiral ?
 
 * Comment faire disparaitre les graphiques spiral quand on n'est plus sur les barres ?

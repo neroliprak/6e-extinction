@@ -164,7 +164,7 @@ fetch("donnees.json")
                     
                     console.log(especes_select);
 
-                    //Adaptation du code du site officiel de d3 :
+                   //Adaptation du code déposé publiquement sur GitHub de Laxmikanta Nayak :
                     // Dimensions du graphique camambert
                     const width = 1500, //Attention à la taille : si trop petit, les titres n'apparaissent pas
                         height = 600,

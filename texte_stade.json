@@ -1,0 +1,12 @@
+[
+    {"stade" : "EX",
+    "explication" : "Une espèce est considérée éteinte lorsque les études complètes la concernant prouvent qu'il n'existe plus aucun individu de cette espèce." }, 
+    {"stade" : "CR",
+    "explication" : "Une espèce est considérée en danger critique "}, 
+    {"stade" : "EN",
+    "explication" : "Une espèce est considérée en danger "}, 
+    {"stade" : "VU",
+    "explication" : "Une espèce est considérée vulnérable "}, 
+    {"stade" : "NT",
+    "explication" : "Une espèce est considérée quasi menacée "}
+]

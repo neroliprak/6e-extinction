@@ -5,16 +5,19 @@ fetch("donnees.json")
     })
     .then((listeExtinction) => {
 
-        genererBarreEnFonctionDuRadio(listeExtinction);
+        analyseRadio(listeExtinction);
 
         document.querySelectorAll('[name=stade]').forEach(el => {
-            el.onclick = () => genererBarreEnFonctionDuRadio(listeExtinction);  
+            el.onclick = () => analyseRadio(listeExtinction);  
         });
+
+
+        // test
 
     });
 
 
-function genererBarreEnFonctionDuRadio(listeExtinction) {
+function analyseRadio(listeExtinction) {
     const espece_par_annee = {}; // Un objet pour stocker le nombre d'espèce par année  
 
     listeExtinction.forEach((item) => {
@@ -159,7 +162,13 @@ function barres(tab) {
 
             console.log(especes_select);
 
-            //Adaptation du code déposé publiquement sur GitHub de Laxmikanta Nayak :
+           
+        });
+
+};
+
+function camambert(){
+    //Adaptation du code déposé publiquement sur GitHub de Laxmikanta Nayak :
             // Dimensions du graphique camambert
             const width = 1500, //Attention à la taille : si trop petit, les titres n'apparaissent pas
                 height = 600,
@@ -240,6 +249,5 @@ function barres(tab) {
                     const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2
                     return (midangle < Math.PI ? 'start' : 'end')
                 })
-        });
-
-};
+}
+ 

@@ -8,15 +8,40 @@ fetch("donnees.json")
         analyseRadio(listeExtinction);
 
         document.querySelectorAll('[name=stade]').forEach(el => {
-            el.onclick = () => analyseRadio(listeExtinction);  
+            el.onclick = () => analyseRadio(listeExtinction);   //A chaque fois qu'on clic sur un nouveau bouton radio, ça recharge analyseRadio
         });
 
+});
 
-        // test
+fetch("texte_stade.json")
+    .then((response) => {
+        return response.json(); // renvoie les données JSON ()
+    })
+    .then((text) => { 
+
+        textStade(text);
+
+        document.querySelectorAll('[name=stade]').forEach(el => {
+            el.onclick = () => textStade(text);
+        }) //Marche pas : quand on clic sur un autre bouton radio, mets pas à jour 
 
     });
 
+//fonction d'affichage du texte selon le radio coché
+function textStade(text) {
+    
+    let stat = Array.from(document.querySelectorAll('input[type=radio]')).filter(item => item.checked)[0].value;
 
+    text.forEach((item) => {
+        let text_stat = item.stade;
+        if (text_stat == stat){
+            let text_bon = item.explication;
+            document.getElementById("text_stade").innerHTML += text_bon;
+        }
+    });
+} 
+
+//fonction d'anayse du bouton radio coché (et création de la liste des espèces par années en fonction)
 function analyseRadio(listeExtinction) {
     const espece_par_annee = {}; // Un objet pour stocker le nombre d'espèce par année  
 
@@ -50,12 +75,11 @@ function analyseRadio(listeExtinction) {
 }
 
 
-
 //fonction de création des barres
 function barres(tab) {
     let largeur_barre = 390 / tab.length;
-    console.log(largeur_barre);
 
+    //Suppression des barres déjà créées
     d3.select("#graph")
         .selectAll('*')
         .remove()
@@ -167,8 +191,16 @@ function barres(tab) {
 
 };
 
+//fonction de création des camambert
 function camambert(){
-    //Adaptation du code déposé publiquement sur GitHub de Laxmikanta Nayak :
+
+    //Suppression des graphiques camamberts déjà créés
+    d3.select("#camambert")
+        .selectAll('*')
+        .remove()
+
+
+    //Adaptation du code déposé publiquement sur GitHub de Laxmikanta Nayak (https://gist.github.com/laxmikanta415/dc33fe11344bf5568918ba690743e06f):
             // Dimensions du graphique camambert
             const width = 1500, //Attention à la taille : si trop petit, les titres n'apparaissent pas
                 height = 600,

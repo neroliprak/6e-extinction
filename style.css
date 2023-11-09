@@ -133,12 +133,18 @@ h2{
 }
 
 fieldset {
+  margin-top: 30px;
   border: none;
   font-size: 1.2rem;
 }
 
+#text_stade {
+  width: 35vw;
+  margin: 0 20px;
+  font-size: 1.2rem;
+}
+
 svg {
-  margin-top: 50px;
   margin-left: 5%;
   width: 70vw;
 }

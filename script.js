@@ -1,33 +1,30 @@
 let listeExtinction;
+let tab_espece_annee;
+const espece_par_annee = {};
 
 // Pour charger un fichier JSON
+// Pour charger un fichier JSON
 fetch("donnees.json")
-    .then((response) => {
-        return response.json(); // renvoie les données JSON ()
-    })
-    .then((data) => {
-        listeExtinction = data;
-        analyseRadio(listeExtinction);
+  .then((response) => {
+    return response.json(); // renvoie les données JSON ()
+  })
+  .then((data) => {
+    listeExtinction = data;
+    analyseRadio(listeExtinction); //A chaque fois qu'on clic sur un nouveau bouton radio, ça recharge analyseRadio
 
-        document.querySelectorAll('[name=stade]').forEach(el => {
-            el.onclick = () => analyseRadio(listeExtinction);   //A chaque fois qu'on clic sur un nouveau bouton radio, ça recharge analyseRadio
-        });
-
-});
-
-fetch("texte_stade.json")
-    .then((response) => {
-        return response.json(); // renvoie les données JSON ()
-    })
-    .then((text) => { 
-
-        textStade(text);
-
-        /*document.querySelectorAll('[name=stade]').forEach(el => {
-            el.onclick = () => textStade(text);
-        }); //Marche pas + fait tout buguer*/
-
+    document.querySelectorAll("[name=stade]").forEach((el) => {
+      el.onclick = () => { //
+        analyseRadio(listeExtinction); //A chaque fois qu'on clic sur un nouveau bouton radio, ça recharge analyseRadio
+        fetch("texte_stade.json")
+          .then((response) => {
+            return response.json(); // renvoie les données JSON ()
+          })
+          .then((text) => {
+            textStade(text); //A chaque fois qu'on clic sur un nouveau bouton radio, ça recharge textSade
+          });
+      };
     });
+  });
 
 //fonction d'affichage du texte selon le radio coché
 function textStade(text) {
@@ -45,7 +42,7 @@ function textStade(text) {
 
 //fonction d'anayse du bouton radio coché (et création de la liste des espèces par années en fonction)
 function analyseRadio(listeExtinction) {
-    const espece_par_annee = {}; // Un objet pour stocker le nombre d'espèce par année  
+    // Un objet pour stocker le nombre d'espèce par année  
 
     listeExtinction.forEach((item) => {
         let year = item.date;
@@ -70,7 +67,7 @@ function analyseRadio(listeExtinction) {
     });
 
     //Converti espece_par_annee (objet) en tableau     
-    let tab_espece_annee = Object.keys(espece_par_annee).sort().map(annee => ({ annee, valeur: espece_par_annee[annee] }))
+    tab_espece_annee = Object.keys(espece_par_annee).sort().map(annee => ({ annee, valeur: espece_par_annee[annee] }));
 
     //Créé les barres avec notre tableau d'espèces
     barres(tab_espece_annee);
@@ -91,9 +88,15 @@ function barres(tab) {
         .selectAll("a")
         .data(tab)
         .join("a")
-        .attr("href", "#camambert")
+        .attr("href", "#camambert") //Quand on clic sur une barre, on va directement au 2e graph
         .attr("class", "histobarre")
         .attr("transform", (d, i) => `translate(${largeur_barre * i + 10} ,0)`) //l'emplacement horizontalement dépend de la largeur des barres et de l'emplacement dans le tableau (donc i)
+
+        
+    console.log(tab_espece_annee);
+    console.log(espece_par_annee);
+    let nb_espece_max = Math.max(espece_par_annee); //calcul du max pour savoir quelle hauteur doivent faire les barres
+    console.log(nb_espece_max);
 
     d3.selectAll(".histobarre")
         .append("rect")
@@ -111,6 +114,14 @@ function barres(tab) {
         .attr("x", largeur_barre / 4.5) // Centre le texte par rapport à la barre
         .style("font", "0.4rem poppins");
 
+    // Création du texte de l'axe y
+    d3.selectAll(".histobarre")
+        .append("text")
+        .text("DESTRUCS")
+        .attr("y", 60)
+        .attr("x", 0)
+        .attr("text-anchor", "end")
+        .style("font", "0.4rem poppins");
 
     d3.selectAll(".histobarre") //sur toutes les barres
         .on("mouseenter", function (e,d) { //au survol de la souris + mettre d en paramètre pour les barres verticales, d = données associaées à this
@@ -127,6 +138,7 @@ function barres(tab) {
                 .style("opacity", 1) //toutes les barres redeviennent opaquent
 
         })
+
         //Apparition du deuxieme graphique
         .on("click", function(e) { //quand on click sur une barre
 
@@ -179,105 +191,102 @@ function barres(tab) {
                     }
                 }
                 //fonction de création des camambert
-function camambert(){
+    function camambert(){
 
-    //Suppression des graphiques camamberts déjà créés
-    d3.select("#camambert")
-        .selectAll('*')
-        .remove()
-
-
-    //Adaptation du code déposé publiquement sur GitHub de Laxmikanta Nayak (https://gist.github.com/laxmikanta415/dc33fe11344bf5568918ba690743e06f):
-            // Dimensions du graphique camambert
-            const width = 1500, //Attention à la taille : si trop petit, les titres n'apparaissent pas
-                height = 600,
-                margin = 0;
-
-            const radius = Math.min(width, height) / 2 - margin //taille du rond
-
-            // Création d'un svg dans la div camambert
-            const svg = d3.select("#camambert")
-                .append("svg")
-                .attr("width", width)
-                .attr("height", height)
-                .append("g")
-                .attr("transform", `translate(${width / 2},${height / 2})`);
+        //Suppression des graphiques camamberts déjà créés
+        d3.select("#camambert")
+            .selectAll('*')
+            .remove()
 
 
-            // Création d'une échelle de couleurs du graphique
-            const color = d3.scaleOrdinal(['#E4D56C', '#AEDF95', '#907B42', '#34393F', '#FFD057', '#C9DA80', '#585037']); //Couleurs à utiliser
+        //Adaptation du code déposé publiquement sur GitHub de Laxmikanta Nayak (https://gist.github.com/laxmikanta415/dc33fe11344bf5568918ba690743e06f):
+                // Dimensions du graphique camambert
+                const width = 1500, //Attention à la taille : si trop petit, les titres n'apparaissent pas
+                    height = 600,
+                    margin = 0;
 
-            // Calcul des positions des familles
-            const pie = d3.pie()
-                .sort(null) // on ne les trie pas
-                .value(d => d[1]) // Valeur à utiliser pour le calcul de l'angle
-            const data_ready = pie(Object.entries(especes_select)) // Transforme les données especes_select pour qu'elles soient utilisablent dans le graphique
+                const radius = Math.min(width, height) / 2 - margin //taille du rond
 
-            //Création de la forme générale du graphique
-            const arc = d3.arc()
-                .innerRadius(radius * 0.5)// Taille du trou au centre du cercle
-                .outerRadius(radius * 0.8)
+                // Création d'un svg dans la div camambert
+                const svg = d3.select("#camambert")
+                    .append("svg")
+                    .attr("width", width)
+                    .attr("height", height)
+                    .append("g")
+                    .attr("transform", `translate(${width / 2},${height / 2})`);
 
-            // Création d'un espace pour les légendes
-            const outerArc = d3.arc()
-                .innerRadius(radius * 0.9)
-                .outerRadius(radius * 0.9)
 
-            // Création des différentes parties du cercle : chaque famille d'espèce est un "path"
-            svg
-                .selectAll('allSlices')
-                .data(data_ready)
-                .join('path') // Créé une partie par famille
-                .attr('d', arc) // Défini la forme de chaque partie 
-                .attr('fill', d => color(d.data[1])) //Rempli les formes avec une couleur
-                .attr("stroke", "black")
-                .style("stroke-width", "2px")
-                .style("opacity", 0.7)
+                // Création d'une échelle de couleurs du graphique
+                const color = d3.scaleOrdinal(['#E4D56C', '#AEDF95', '#907B42', '#34393F', '#FFD057', '#C9DA80', '#585037']); //Couleurs à utiliser
 
-            // Création des lignes qui relient les parties du cercle et leur légende
-            svg
-                .selectAll('allPolylines')
-                .data(data_ready)
-                .join('polyline') //Créé un élément "plusieurs lignes" par partie
-                .attr("stroke", "black")
-                .style("fill", "none") // aucune couleur interieure (sans cette ligne, polyline forme un triangle et non des lignes)
-                .attr("stroke-width", 1)
-                .attr('points', function (d) { //Définition du début et de la fin de la ligne
-                    const posA = arc.centroid(d) //Début de la ligne
-                    const posB = outerArc.centroid(d) //Fin de la ligne
-                    const posC = outerArc.centroid(d); //Coude de la ligne
-                    const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2 //Calcul d'angle pour savoir où la ligne horizontale doit être positionnée
-                    posC[0] = radius * 0.95 * (midangle < Math.PI ? 1 : -1); // Positionnement sur la gauche (-1) ou sur la droite (1)
-                    return [posA, posB, posC]
+                // Calcul des positions des familles
+                const pie = d3.pie()
+                    .sort(null) // on ne les trie pas
+                    .value(d => d[1]) // Valeur à utiliser pour le calcul de l'angle
+                const data_ready = pie(Object.entries(especes_select)) // Transforme les données especes_select pour qu'elles soient utilisablent dans le graphique
+
+                //Création de la forme générale du graphique
+                const arc = d3.arc()
+                    .innerRadius(radius * 0.5)// Taille du trou au centre du cercle
+                    .outerRadius(radius * 0.8)
+
+                // Création d'un espace pour les légendes
+                const outerArc = d3.arc()
+                    .innerRadius(radius * 0.9)
+                    .outerRadius(radius * 0.9)
+
+                // Création des différentes parties du cercle : chaque famille d'espèce est un "path"
+                svg
+                    .selectAll('allSlices')
+                    .data(data_ready)
+                    .join('path') // Créé une partie par famille
+                    .attr('d', arc) // Défini la forme de chaque partie 
+                    .attr('fill', d => color(d.data[1])) //Rempli les formes avec une couleur
+                    .attr("stroke", "black")
+                    .style("stroke-width", "2px")
+                    .style("opacity", 0.7)
+
+                // Création des lignes qui relient les parties du cercle et leur légende
+                svg
+                    .selectAll('allPolylines')
+                    .data(data_ready)
+                    .join('polyline') //Créé un élément "plusieurs lignes" par partie
+                    .attr("stroke", "black")
+                    .style("fill", "none") // aucune couleur interieure (sans cette ligne, polyline forme un triangle et non des lignes)
+                    .attr("stroke-width", 1)
+                    .attr('points', function (d) { //Définition du début et de la fin de la ligne
+                        const posA = arc.centroid(d) //Début de la ligne
+                        const posB = outerArc.centroid(d) //Fin de la ligne
+                        const posC = outerArc.centroid(d); //Coude de la ligne
+                        const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2 //Calcul d'angle pour savoir où la ligne horizontale doit être positionnée
+                        posC[0] = radius * 0.95 * (midangle < Math.PI ? 1 : -1); // Positionnement sur la gauche (-1) ou sur la droite (1)
+                        return [posA, posB, posC]
+                    })
+
+                // Ajout les légendes à coté des lignes
+                svg
+                    .selectAll('allLabels')
+                    .data(data_ready)
+                    .join('text')
+                    .text(d => d.data[0]) // Créé un élément texte par famille
+                    .attr("class", "legende_cercle") //Ajout d'une classe pour modifier leur CSS
+                    .attr('transform', function (d) { //Positionnement des légendes
+                        const pos = outerArc.centroid(d);
+                        const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2
+                        pos[0] = radius * 0.99 * (midangle < Math.PI ? 1 : -1);
+                        return `translate(${pos})`;
+                    })
+                    .style('text-anchor', function (d) { // Alignement des légendes par rapport aux lignes
+                        const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2
+                        return (midangle < Math.PI ? 'start' : 'end')
+                    })
+    }
+                    camambert(especes_select)
                 })
 
-            // Ajout les légendes à coté des lignes
-            svg
-                .selectAll('allLabels')
-                .data(data_ready)
-                .join('text')
-                .text(d => d.data[0]) // Créé un élément texte par famille
-                .attr("class", "legende_cercle") //Ajout d'une classe pour modifier leur CSS
-                .attr('transform', function (d) { //Positionnement des légendes
-                    const pos = outerArc.centroid(d);
-                    const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2
-                    pos[0] = radius * 0.99 * (midangle < Math.PI ? 1 : -1);
-                    return `translate(${pos})`;
-                })
-                .style('text-anchor', function (d) { // Alignement des légendes par rapport aux lignes
-                    const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2
-                    return (midangle < Math.PI ? 'start' : 'end')
-                })
-}
-                camambert(especes_select)
-            })
+                console.log(especes_select);
 
-            console.log(especes_select);
-
-           
+            
         });
 
 };
-
-
- 

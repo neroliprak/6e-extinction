@@ -5,13 +5,13 @@ fetch("donnees.json")
     })
     .then((listeExtinction) => {
 
-        genererBarreEnFonctionDuRadio(listeExtinction)
+        genererBarreEnFonctionDuRadio(listeExtinction);
 
         document.querySelectorAll('[name=stade]').forEach(el => {
             el.onclick = () => genererBarreEnFonctionDuRadio(listeExtinction)
-        })
+        });
 
-    })
+    });
 
 
 function genererBarreEnFonctionDuRadio(listeExtinction) {

@@ -3,7 +3,6 @@ let tab_espece_annee;
 const espece_par_annee = {};
 
 // Pour charger un fichier JSON
-// Pour charger un fichier JSON
 fetch("donnees.json")
   .then((response) => {
     return response.json(); // renvoie les données JSON ()
@@ -67,7 +66,7 @@ function analyseRadio(listeExtinction) {
   });
 
   //Converti espece_par_annee (objet) en tableau
-  let tab_espece_annee = Object.keys(espece_par_annee)
+  tab_espece_annee = Object.keys(espece_par_annee)
     .sort()
     .map((annee) => ({ annee, valeur: espece_par_annee[annee] }));
 
@@ -78,6 +77,15 @@ function analyseRadio(listeExtinction) {
 //fonction de création des barres
 function barres(tab) {
   let largeur_barre = 390 / tab.length; //Largeur des barres dépend du nombre d'années qui doivent être représentées
+
+/* 
+  //Calcul max des valeurs de tab_espece_annee pour calculer ensuite la hauteur des barres
+    const valeurs = tab_espece_annee.map(d => d.valeur); //créé un nouveau tableau avec juste les valeurs
+    const nb_espece_max_tab = Math.max(...valeurs); // "..." signifie qu'on regarde toutes les valeurs du tableau (voir syntaxe de décomposition)
+    const nb_espece_max_obj = Math.max(...Object.values(espece_par_annee)); 
+    let nb_espece_max = Math.max(nb_espece_max_tab, nb_espece_max_obj); //compare les valeurs max et prend la plus grande
+    console.log(nb_espece_max);
+*/    
 
   //Suppression des barres déjà créées
   d3.select("#graph").selectAll("*").remove();
@@ -95,7 +103,7 @@ function barres(tab) {
     .append("rect")
     .attr("fill", "#20252c")
     .attr("width", largeur_barre - 10)
-    .attr("height", (d, i) => d.valeur) //objet = d / numéro positionnnement = i
+    .attr("height", (d, i) => d.valeur) //objet = d / numéro positionnnement = i 
     .attr("transform", `scale(1, -1)`); //met les barres au dessus de la ligne des abscisses
 
   // Ajoute du texte pour afficher les années sous chaque barre
@@ -107,16 +115,34 @@ function barres(tab) {
     .attr("x", largeur_barre / 4.5) // Centre le texte par rapport à la barre
     .style("font", "0.4rem poppins");
 
+    
+
   d3.selectAll(".histobarre") //sur toutes les barres
     .on("mouseenter", function (e, d) {
       //au survol de la souris + mettre d en paramètre pour les barres verticales, d = données associaées à this
-      d3.selectAll(".histobarre").style("opacity", 0.5); //toutes les barres deviennent transparentes
+      d3.selectAll(".histobarre")
+      .style("opacity", 0.5); //toutes les barres deviennent transparentes
+
       d3.select(this) //l'élément concerné par l'élément
         .style("opacity", 1); //devient opaque
+
+        // Création du texte du nombre d'espèce des barres
+        d3.selectAll(".histobarre")
+        .append("text")
+        .text((d, i) => d.valeur)
+        .attr("y", 60)
+        .attr("class", "text_nb_espece")
+        .attr("x", 0)
+        .attr("text-anchor", "end")
+        .style("font", "0.4rem poppins");
     })
     .on("mouseleave", function (e) {
-      //quand on ne survol plus par la souris
-      d3.selectAll(".histobarre").style("opacity", 1); //toutes les barres redeviennent opaquent
+        //quand on ne survol plus par la souris
+        d3.selectAll(".histobarre").style("opacity", 1); //toutes les barres redeviennent opaquent
+
+        //Suppression des textes du nombre d'espèces
+        d3.selectAll(".text_nb_espece")
+        .remove();
     })
     //Apparition du deuxieme graphique
     .on("click", function (e) {

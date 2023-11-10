@@ -1,5 +1,8 @@
 let listeExtinction;
+let tab_espece_annee;
+const espece_par_annee = {};
 
+// Pour charger un fichier JSON
 // Pour charger un fichier JSON
 fetch("donnees.json")
   .then((response) => {

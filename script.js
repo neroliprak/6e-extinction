@@ -198,7 +198,7 @@ function barres(tab) {
 
           //Adaptation du code déposé publiquement sur GitHub de Laxmikanta Nayak (https://gist.github.com/laxmikanta415/dc33fe11344bf5568918ba690743e06f):
           // Dimensions du graphique camambert
-          const width = 1500, //Attention à la taille : si trop petit, les titres n'apparaissent pas
+          const width = 1500,
             height = 600,
             margin = 0;
 
@@ -208,6 +208,7 @@ function barres(tab) {
           const svg = d3
             .select("#camambert")
             .append("svg")
+            .attr("class", "camambert_svg")
             .attr("width", width)
             .attr("height", height)
             .append("g")
@@ -215,13 +216,14 @@ function barres(tab) {
 
           // Création d'une échelle de couleurs du graphique
           const color = d3.scaleOrdinal([
-            "#E4D56C",
-            "#AEDF95",
-            "#907B42",
-            "#34393F",
             "#FFD057",
-            "#C9DA80",
-            "#585037",
+            "#FF9457",
+            "#FF5757",
+            "#FF57B2",
+            "#BF57FF",
+            "#5A57FF",
+            "#32CEFF",
+            "#FFEE57"
           ]); //Couleurs à utiliser
 
           // Calcul des positions des familles

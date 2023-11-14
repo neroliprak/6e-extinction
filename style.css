@@ -5,6 +5,7 @@ html {
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 header {
   width: 100%;
@@ -52,6 +53,7 @@ h1 {
   position: absolute;
   top: 70%;
   left: 30%;
+  z-index: 2;
 }
 
 .bulle {
@@ -76,15 +78,22 @@ h1 {
 
 .bulle2{
     position: absolute;
-    top: 950px;
+    top: 1000px;
     right: -800px;
 }
 
-.bulle1{
+.bulle3{
     position: absolute;
-    top: 800px;
-    left: -800px;
+    top: 1200px;
+    left: -900px;
 }
+
+.bulle4{
+  position: absolute;
+  top: 1400px;
+  left: -1050px;
+}
+
 .histoire{
     background-color: white;
     margin-bottom: 150px;
@@ -156,4 +165,20 @@ svg {
 .camambert{
   width: 200%;
   height: 200%;
+}
+
+.text_savoirplus{
+  padding-bottom: 50px;
+  margin-left: 25px;
+  margin-bottom: 0;
+  font-size: 1.2rem;
+}
+.text_savoirplus a{
+  text-decoration: none;
+  color: black;
+  font-weight:bold;
+  transition: all 0.2s;
+}
+.text_savoirplus a:hover{
+  color: #20252c;
 }

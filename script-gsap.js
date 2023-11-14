@@ -49,3 +49,33 @@ let tlbulle2 = gsap.timeline({
   tlbulle2.to(".bulle2", {
     x:-1100,
   });
+
+
+  let tlbulle3 = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".bulle3",
+      start: "-150px center",
+      end: "bottom center",
+      scrub: true,
+      markers: true,
+    },
+  });
+  
+  tlbulle3.to(".bulle3", {
+    x:1000,
+  });
+
+  let tlbulle4 = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".bulle4",
+      start: "-120px center",
+      end: "bottom center",
+      scrub: true,
+      markers: true,
+    },
+  });
+  
+  tlbulle4.to(".bulle4", {
+    x:1300,
+  });
+  

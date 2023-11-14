@@ -58,7 +58,7 @@
 
             
             <!--Schéma-->
-            <svg width="90vw" height="calc(90vw * 220/420)" viewBox="-10 -110 420 220">
+            <svg width="90vw" height="calc(90vw * 220/420)" viewBox="-20 -160 450 220">
                 <!--FOND-->
                 <rect x="0" y="-100" width="400" height="100" fill="#92E3A9"></rect>
                 <!--x, y remplacent le transforme translate + on part de l'angle haut gauche pour faire le rectangle-->
@@ -66,7 +66,17 @@
                 <!--LIGNES-->
                 <g id="graph"></g> <!--On rempli avec les rectangles après-->
                 <line x1="0" y1="0" x2="400" y2="0" stroke="black" marker-end="url(#arrow)"></line>
-                <line x1="0" y1="0" x2="0" y2="-100" stroke="black" marker-end="url(#arrow)"></line>
+                <line x1="0" y1="0" x2="0" y2="-200" stroke="black" marker-end="url(#arrow)"></line>
+                <!--LÉGENDES-->
+                <!--Légendes flèches-->
+                <text x="-20" y="-215" fill="#20252c" font-size="10">Nombre d'espèces</text>
+                <text x="380" y="30" fill="#20252c" font-size="10">Année</text>
+                <!--Légendes de l'axe des y-->
+                <text x="-20" y="-200" fill="#20252c" font-size="8">200</text>
+                <text x="-20" y="-150" fill="#20252c" font-size="8">150</text>
+                <text x="-20" y="-100" fill="#20252c" font-size="8">100</text>
+                <text x="-15" y="-50" fill="#20252c" font-size="8">50</text>
+                <text x="-10" y="0" fill="#20252c" font-size="8">0</text>
 
                 <!--FLECHE (voir cours) + mettre marker-end="url(#arrow)" sur lignes-->
                 <defs>

@@ -143,8 +143,17 @@ fieldset {
   margin: 0 20px;
   font-size: 1.2rem;
 }
-
 svg {
   margin-left: 5%;
-  width: 70vw;
+
+  width: 200vw;
+}
+.text_nb_espece{
+  display: flex;
+  flex-direction: column;
+}
+
+.camambert{
+  width: 200%;
+  height: 200%;
 }

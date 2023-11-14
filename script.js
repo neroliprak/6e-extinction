@@ -126,15 +126,25 @@ function barres(tab) {
       d3.select(this) //l'élément concerné par l'élément
         .style("opacity", 1); //devient opaque
 
-        // Création du texte du nombre d'espèce des barres
-        d3.selectAll(".histobarre")
+      //Appartition d'un rectangle avec le nombre exact d'espèces de la barre
+        d3.select(this)
+        .append("rect")
+        .attr("class","rectangle")
+        .attr("width", 70)
+        .attr("height", 30)
+        .style("fill", "white")
+        .attr("x",10)
+        .attr("y",(d) => -d.valeur-20)
+      d3.select(this)
         .append("text")
-        .text((d, i) => d.valeur)
-        .attr("y", 60)
         .attr("class", "text_nb_espece")
-        .attr("x", 0)
-        .attr("text-anchor", "end")
-        .style("font", "0.4rem poppins");
+        .text((d) => d.valeur + " espèces")
+        .attr("x",13)
+        .style("fill", "black")
+        .attr("y",(d) => -d.valeur)
+        .attr("font-size", "9")
+        .style("font", "0.4rem poppins")
+
     })
     .on("mouseleave", function (e) {
         //quand on ne survol plus par la souris
@@ -142,6 +152,8 @@ function barres(tab) {
 
         //Suppression des textes du nombre d'espèces
         d3.selectAll(".text_nb_espece")
+        .remove();
+        d3.selectAll(".rectangle")
         .remove();
     })
     //Apparition du deuxieme graphique

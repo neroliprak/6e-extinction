@@ -2,6 +2,4 @@ Problèmes à demander :
 
 * Comment espacer les légendes du graphique spiral ?
 
-* Comment adapter les hauteurs des barres bleues du graphique barre ?
-
-* Pourquoi l'affichage du texte ne marche pas sur FireFox (mais sur les autres navigateurs, si) ?
+* Comment faire pour que le rectangle du nombre précis d'espèce soit AU DESSUS des barres ?

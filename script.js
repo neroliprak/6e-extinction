@@ -54,7 +54,7 @@ function analyseRadio(listeExtinction) {
       document.querySelectorAll("input[type=radio]")
     ).filter((item) => item.checked)[0].value;
     //si dans le json, le statut est égal a la valeur du bouton radio coché, alors on l'ajoute au espece_par_annee (si on coche VU par exefmple, ca prend que les VU)
-    if (statut == stat || stat.length === 0) {
+    if (statut == stat) {
       //Si il y a une espèce VU dans l'année year...
       if (espece_par_annee[year]) {
         //...alors on augmente de 1 le nombre d'espèce de cette année

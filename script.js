@@ -126,6 +126,7 @@ function barres(tab) {
         .style("fill", "white")
         .attr("x",10)
         .attr("y",(d) => -d.valeur-20)
+      //Apparition des écritures + les mettre dans le rectangle blanc
       d3.select(this)
         .append("text")
         .attr("class", "text_nb_espece")
@@ -261,7 +262,7 @@ function barres(tab) {
             .join("path") // Créé une partie par famille
             .attr("d", arc) // Défini la forme de chaque partie
             .attr("class","path")
-            .attr("fill", (d) => color(d.data[1])) //Rempli les formes avec une couleur
+            .attr("fill", (d) => color(d.data[0])) //Rempli les formes avec une couleur
             .attr("stroke", "black")
             .style("stroke-width", "2px")
             .style("opacity", 0.7)

@@ -115,7 +115,8 @@ function barres(tab) {
       .style("opacity", 0.5); //toutes les barres deviennent transparentes
 
       d3.select(this) //l'élément concerné par l'élément
-        .style("opacity", 1); //devient opaque
+        .style("opacity", 1) //devient opaque
+        .raise(); 
 
       //Appartition d'un rectangle avec le nombre exact d'espèces de la barre
         d3.select(this)
@@ -198,6 +199,28 @@ function barres(tab) {
         function camambert() {
           //Suppression des graphiques camamberts déjà créés
           d3.select("#camambert").selectAll("*").remove();
+          
+          //Donne la version texte des abréviations
+          let statut_selectionne
+          if(stat == "EX"){
+            statut_selectionne = "éteintes"
+          }
+          if(stat == "CR"){
+            statut_selectionne = "en danger critique"
+          }
+          if(stat == "EN"){
+            statut_selectionne = "en danger"
+          }
+          if(stat == "VU"){
+            statut_selectionne = "vulnérables"
+          }
+          if(stat == "NT"){
+            statut_selectionne = "quasi menacées"
+          }
+          //Création du titre du graphique  
+          d3.select("#camambert")
+            .append("h3")
+            .text("Familles des espèces " + statut_selectionne + " en " + year);
 
           //Adaptation du code déposé publiquement sur GitHub de Laxmikanta Nayak (https://gist.github.com/laxmikanta415/dc33fe11344bf5568918ba690743e06f):
           // Dimensions du graphique camambert
@@ -208,6 +231,7 @@ function barres(tab) {
           const radius = Math.min(width, height) / 2 - margin; //taille du rond
 
           // Création d'un svg dans la div camambert
+
           const svg = d3
             .select("#camambert")
             .append("svg")
@@ -216,6 +240,8 @@ function barres(tab) {
             .attr("height", height)
             .append("g")
             .attr("transform", `translate(${width / 2},${height / 2})`);
+
+
 
           // Création d'une échelle de couleurs du graphique
           const color = d3.scaleOrdinal([

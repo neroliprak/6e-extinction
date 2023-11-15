@@ -172,7 +172,6 @@ function barres(tab) {
 
         //barre select prend l'annee et le nombre d'espèces qui correspondent à la barre sur laquelle on clic
         let barre_select = this.__data__;
-        console.log(barre_select);
         let annee_select = barre_select.annee;
 
         if (statut == stat && year == annee_select) {
@@ -248,16 +247,55 @@ function barres(tab) {
             .innerRadius(radius * 0.9)
             .outerRadius(radius * 0.9);
 
+
+
+
+
+
+
+
           // Création des différentes parties du cercle : chaque famille d'espèce est un "path"
           svg
             .selectAll("allSlices")
             .data(data_ready)
             .join("path") // Créé une partie par famille
             .attr("d", arc) // Défini la forme de chaque partie
+            .attr("class","path")
             .attr("fill", (d) => color(d.data[1])) //Rempli les formes avec une couleur
             .attr("stroke", "black")
             .style("stroke-width", "2px")
-            .style("opacity", 0.7);
+            .style("opacity", 0.7)
+          
+            .on("mouseenter",function(e,d){
+              d3.selectAll(".path")
+              .style("opacity",0.25);
+              d3.select(this)
+              .style("opacity",1);
+
+              d3.select(this)
+              .append("text")
+              .attr("class", "text_nb_famille")
+              .style("fill", "black")
+              .text("salt")
+              .attr("x",10)
+              .attr("font-size", "900")
+              .attr("y",10);
+              })
+            .on("mouseleave",function(e,d){
+              d3.selectAll(".path")
+              .style("opacity",1);
+            })
+
+            
+              
+            
+
+
+
+
+
+
+
 
           // Création des lignes qui relient les parties du cercle et leur légende
           svg
@@ -300,6 +338,6 @@ function barres(tab) {
         camambert(especes_select);
       });
 
-      console.log(especes_select);
+
     });
 }

@@ -78,15 +78,6 @@ function analyseRadio(listeExtinction) {
 function barres(tab) {
   let largeur_barre = 390 / tab.length; //Largeur des barres dépend du nombre d'années qui doivent être représentées
 
-/* 
-  //Calcul max des valeurs de tab_espece_annee pour calculer ensuite la hauteur des barres
-    const valeurs = tab_espece_annee.map(d => d.valeur); //créé un nouveau tableau avec juste les valeurs
-    const nb_espece_max_tab = Math.max(...valeurs); // "..." signifie qu'on regarde toutes les valeurs du tableau (voir syntaxe de décomposition)
-    const nb_espece_max_obj = Math.max(...Object.values(espece_par_annee)); 
-    let nb_espece_max = Math.max(nb_espece_max_tab, nb_espece_max_obj); //compare les valeurs max et prend la plus grande
-    console.log(nb_espece_max);
-*/    
-
   //Suppression des barres déjà créées
   d3.select("#graph").selectAll("*").remove();
 
@@ -243,7 +234,7 @@ function barres(tab) {
             .pie()
             .sort(null) // on ne les trie pas
             .value((d) => d[1]); // Valeur à utiliser pour le calcul de l'angle
-          const data_ready = pie(Object.entries(especes_select)); // Transforme les données especes_select pour qu'elles soient utilisablent dans le graphique
+          const data_ready = pie(Object.entries(especes_select)); // Transforme les données especes_select pour qu'elles soient utilisablent dans le graphique => créé objet avec le nombre d'espèces d'une même famille
 
           //Création de la forme générale du graphique
           const arc = d3

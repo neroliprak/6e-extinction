@@ -163,7 +163,7 @@ fieldset {
 }
 svg {
   margin-left: 5%;
-
+  margin-bottom: 0;
   width: 200vw;
 }
 .text_nb_espece {
@@ -178,7 +178,9 @@ h3 {
 
 #camambert {
   width: 100vw;
-
+  background-image: url(./images/background-camambert.svg);
+  background-repeat: no-repeat;
+  background-size: cover; 
 }
 
 .text_savoirplus {

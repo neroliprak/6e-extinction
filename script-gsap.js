@@ -68,7 +68,7 @@ let tlbulle2 = gsap.timeline({
   let tlbulle4 = gsap.timeline({
     scrollTrigger: {
       trigger: ".bulle4",
-      start: "-120px center",
+      start: "-190px center",
       end: "bottom center",
       scrub: true,
       markers: true,
@@ -76,6 +76,6 @@ let tlbulle2 = gsap.timeline({
   });
   
   tlbulle4.to(".bulle4", {
-    x:1300,
+    x:-1500,
   });
-  
+

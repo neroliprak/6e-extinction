@@ -12,7 +12,8 @@ fetch("donnees.json")
     analyseRadio(listeExtinction); //A chaque fois qu'on clic sur un nouveau bouton radio, ça recharge analyseRadio
 
     document.querySelectorAll("[name=stade]").forEach((el) => {
-      el.onclick = () => { //
+      el.onclick = () => {
+        //
         analyseRadio(listeExtinction); //A chaque fois qu'on clic sur un nouveau bouton radio, ça recharge analyseRadio
         fetch("texte_stade.json")
           .then((response) => {
@@ -94,7 +95,7 @@ function barres(tab) {
     .append("rect")
     .attr("fill", "#20252c")
     .attr("width", largeur_barre - 10)
-    .attr("height", (d, i) => d.valeur) //objet = d / numéro positionnnement = i 
+    .attr("height", (d, i) => d.valeur) //objet = d / numéro positionnnement = i
     .attr("transform", `scale(1, -1)`); //met les barres au dessus de la ligne des abscisses
 
   // Ajoute du texte pour afficher les années sous chaque barre
@@ -106,48 +107,42 @@ function barres(tab) {
     .attr("x", largeur_barre / 4.5) // Centre le texte par rapport à la barre
     .style("font", "0.4rem poppins");
 
-    
-
   d3.selectAll(".histobarre") //sur toutes les barres
     .on("mouseenter", function (e, d) {
       //au survol de la souris + mettre d en paramètre pour les barres verticales, d = données associaées à this
-      d3.selectAll(".histobarre")
-      .style("opacity", 0.5); //toutes les barres deviennent transparentes
+      d3.selectAll(".histobarre").style("opacity", 0.5); //toutes les barres deviennent transparentes
 
       d3.select(this) //l'élément concerné par l'élément
         .style("opacity", 1) //devient opaque
-        .raise(); 
+        .raise();
 
       //Appartition d'un rectangle avec le nombre exact d'espèces de la barre
-        d3.select(this)
+      d3.select(this)
         .append("rect")
-        .attr("class","rectangle")
+        .attr("class", "rectangle")
         .attr("width", 70)
         .attr("height", 30)
         .style("fill", "white")
-        .attr("x",10)
-        .attr("y",(d) => -d.valeur-20)
+        .attr("x", 10)
+        .attr("y", (d) => -d.valeur - 20);
       //Apparition des écritures + les mettre dans le rectangle blanc
       d3.select(this)
         .append("text")
         .attr("class", "text_nb_espece")
         .text((d) => d.valeur + " espèces")
-        .attr("x",13)
+        .attr("x", 13)
         .style("fill", "black")
-        .attr("y",(d) => -d.valeur)
+        .attr("y", (d) => -d.valeur)
         .attr("font-size", "9")
-        .style("font", "0.4rem poppins")
-
+        .style("font", "0.4rem poppins");
     })
     .on("mouseleave", function (e) {
-        //quand on ne survol plus par la souris
-        d3.selectAll(".histobarre").style("opacity", 1); //toutes les barres redeviennent opaquent
+      //quand on ne survol plus par la souris
+      d3.selectAll(".histobarre").style("opacity", 1); //toutes les barres redeviennent opaquent
 
-        //Suppression des textes du nombre d'espèces
-        d3.selectAll(".text_nb_espece")
-        .remove();
-        d3.selectAll(".rectangle")
-        .remove();
+      //Suppression des textes du nombre d'espèces
+      d3.selectAll(".text_nb_espece").remove();
+      d3.selectAll(".rectangle").remove();
     })
     //Apparition du deuxieme graphique
     .on("click", function (e) {
@@ -199,25 +194,25 @@ function barres(tab) {
         function camambert() {
           //Suppression des graphiques camamberts déjà créés
           d3.select("#camambert").selectAll("*").remove();
-          
+
           //Donne la version texte des abréviations
-          let statut_selectionne
-          if(stat == "EX"){
-            statut_selectionne = "éteintes"
+          let statut_selectionne;
+          if (stat == "EX") {
+            statut_selectionne = "éteintes";
           }
-          if(stat == "CR"){
-            statut_selectionne = "en danger critique"
+          if (stat == "CR") {
+            statut_selectionne = "en danger critique";
           }
-          if(stat == "EN"){
-            statut_selectionne = "en danger"
+          if (stat == "EN") {
+            statut_selectionne = "en danger";
           }
-          if(stat == "VU"){
-            statut_selectionne = "vulnérables"
+          if (stat == "VU") {
+            statut_selectionne = "vulnérables";
           }
-          if(stat == "NT"){
-            statut_selectionne = "quasi menacées"
+          if (stat == "NT") {
+            statut_selectionne = "quasi menacées";
           }
-          //Création du titre du graphique  
+          //Création du titre du graphique
           d3.select("#camambert")
             .append("h3")
             .text("Familles des espèces " + statut_selectionne + " en " + year);
@@ -241,8 +236,6 @@ function barres(tab) {
             .append("g")
             .attr("transform", `translate(${width / 2},${height / 2})`);
 
-
-
           // Création d'une échelle de couleurs du graphique
           const color = d3.scaleOrdinal([
             "#FFD057",
@@ -252,7 +245,7 @@ function barres(tab) {
             "#BF57FF",
             "#5A57FF",
             "#32CEFF",
-            "#FFEE57"
+            "#FFEE57",
           ]); //Couleurs à utiliser
 
           // Calcul des positions des familles
@@ -274,55 +267,39 @@ function barres(tab) {
             .innerRadius(radius * 0.9)
             .outerRadius(radius * 0.9);
 
-
-
-
-
-
-
-
           // Création des différentes parties du cercle : chaque famille d'espèce est un "path"
           svg
             .selectAll("allSlices")
             .data(data_ready)
             .join("path") // Créé une partie par famille
             .attr("d", arc) // Défini la forme de chaque partie
-            .attr("class","path")
+            .attr("class", "path")
             .attr("fill", (d) => color(d.data[0])) //Rempli les formes avec une couleur
             .attr("stroke", "black")
             .style("stroke-width", "2px")
             .style("opacity", 0.7)
-          
-            .on("mouseenter",function(e,d){
-              d3.selectAll(".path")
-              .style("opacity",0.25);
-              d3.select(this)
-              .style("opacity",1);
+
+            .on("mouseenter", function (e, d) {
+              d3.selectAll(".path").style("opacity", 0.25);
+              d3.select(this).style("opacity", 1);
 
               d3.select(this)
-              .append("text")
-              .attr("class", "text_nb_famille")
-              .style("fill", "black")
-              .text("salt")
-              .attr("x",10)
-              .attr("font-size", "900")
-              .attr("y",10);
-              })
-            .on("mouseleave",function(e,d){
-              d3.selectAll(".path")
-              .style("opacity",1);
+                .append("text")
+                .attr("class", "text_nb_famille")
+                .style("fill", "black")
+                .text("salt")
+                .attr("x", 10)
+                .attr("font-size", "900")
+                .attr("y", 10);
             })
 
             
-              
+
             
 
-
-
-
-
-
-
+            .on("mouseleave", function (e, d) {
+              d3.selectAll(".path").style("opacity", 1);
+            });
 
           // Création des lignes qui relient les parties du cercle et leur légende
           svg
@@ -356,6 +333,13 @@ function barres(tab) {
               pos[0] = radius * 0.99 * (midangle < Math.PI ? 1 : -1);
               return `translate(${pos})`;
             })
+
+            .on("mouseenter", function (e, d) {
+              d3.selectAll(".legende_cercle").style("opacity", 0.25);
+              d3.select(this).style("opacity", 1)
+            })
+                
+
             .style("text-anchor", function (d) {
               // Alignement des légendes par rapport aux lignes
               const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2;
@@ -364,7 +348,5 @@ function barres(tab) {
         }
         camambert(especes_select);
       });
-
-
     });
 }

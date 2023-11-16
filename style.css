@@ -9,10 +9,9 @@ body {
 }
 header {
   width: 100%;
-  background: url(./images/etoile.svg) top left no-repeat,
-    url(./images/accueil-vert.svg) top left no-repeat;
+  background: url(./images/etoile.svg) top left no-repeat,url(./images/accueil-vert.svg) top left no-repeat;
   background-repeat: no-repeat;
-  background-size: contain; 
+  background-size: contain;
   background-color: #20252c;
 }
 
@@ -37,7 +36,7 @@ h1 {
   text-align: center;
   margin-top: 200px;
   margin-left: -100px;
-  line-height:100px;
+  line-height: 100px;
 }
 
 .planete {
@@ -47,6 +46,16 @@ h1 {
   padding-top: 20vh;
   margin-left: auto;
   margin-right: auto;
+  animation: rotation_terre 160s linear infinite;
+}
+
+@keyframes rotation_terre {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .rocket {
@@ -57,86 +66,86 @@ h1 {
 }
 
 .bulle {
-    font-size: 2em;
-    font-weight: 600;
+  font-size: 2em;
+  font-weight: 600;
   border-radius: 28px;
   background: white;
   color: #20252c;
-  padding-left:30px;
-  padding-right: 30px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-    width: fit-content;
-    border: solid #20252c 3px;
+  padding: 50px;
+  text-align: center;
+  max-width: 400px;
+  width: fit-content;
+  border: solid #20252c 3px;
 }
 
-.bulle1{
-    position: absolute;
-    top: 800px;
-    left: -800px;
+.bulle1 {
+  position: absolute;
+  top: 800px;
+  left: -800px;
 }
 
-.bulle2{
-    position: absolute;
-    top: 1000px;
-    right: -800px;
+.bulle2 {
+  position: absolute;
+  top: 1000px;
+  right: -800px;
 }
 
-.bulle3{
-    position: absolute;
-    top: 1200px;
-    left: -900px;
+.bulle3 {
+  position: absolute;
+  top: 1200px;
+  left: -900px;
 }
 
-.bulle4{
+.bulle4 {
   position: absolute;
   top: 1400px;
-  left: -1050px;
+  right: -990px;
 }
 
-.histoire{
-    background-color: white;
-    margin-bottom: 150px;
+.histoire {
+  background-color: white;
+  margin-bottom: 150px;
 }
 
-.fin-header, .herbe{
-    margin: 0;
-    width: 100%;
-    height: fit-content;
+.fin-header,
+.herbe {
+  margin: 0;
+  width: 100%;
+  height: fit-content;
 }
-.contain-histoire{
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
+.contain-histoire {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
-.text{
-    width: 800px;
-    margin: auto;
-    justify-content: center;
+.text {
+  width: 800px;
+  margin: auto;
+  justify-content: center;
 }
-.text-histoire{
-    margin-top: 25px;
-    margin-left: 100px;    
-    font-size: 1.2rem;
-}
-
-.dino{
-    width: fit-content;
-    margin-right: 100px;
-}
-h2{
-    font-size: 6.25rem;
-    margin-left: 100px;
-    margin-bottom: 0px;
-}
-.graphique{
-    background-color: #92E3A9;
-}
-.herbe{
-    margin-top: -500px;
+.text-histoire {
+  margin-top: 25px;
+  margin-left: 100px;
+  font-size: 1.2rem;
 }
 
-.graphique_main{
+.dino {
+  width: fit-content;
+  margin-right: 100px;
+}
+h2 {
+  font-size: 6.25rem;
+  margin-left: 100px;
+  margin-bottom: 0px;
+}
+.graphique {
+  background-color: #92e3a9;
+}
+.herbe {
+  margin-top: -500px;
+}
+
+.graphique_main {
   display: flex;
   margin-top: 25px;
 }
@@ -157,33 +166,42 @@ svg {
 
   width: 200vw;
 }
-.text_nb_espece{
+.text_nb_espece {
   display: flex;
   flex-direction: column;
 }
 
-h3{
+h3 {
   text-align: center;
   font-size: 3rem;
 }
 
-.camambert{
-  width: 200%;
-  height: 200%;
+#camambert {
+  width: 100vw;
+
 }
 
-.text_savoirplus{
+.text_savoirplus {
   padding-bottom: 50px;
   margin-left: 25px;
   margin-bottom: 0;
   font-size: 1.2rem;
 }
-.text_savoirplus a{
+.text_savoirplus a {
   text-decoration: none;
   color: black;
-  font-weight:bold;
+  font-weight: bold;
   transition: all 0.2s;
 }
-.text_savoirplus a:hover{
+.text_savoirplus a:hover {
   color: #20252c;
+}
+/*  https://www.accede-web.com/notices/interface-riche/boutons-radio-personnalises-en-css/ : Changer les radios */
+.info-stade{
+  margin: auto;
+}
+.eteint{
+  padding-top: 30px;
+  display: flex;
+  margin: auto;
 }

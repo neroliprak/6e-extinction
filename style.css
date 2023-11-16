@@ -7,6 +7,9 @@ body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
+p{
+  font-size: 1.2rem;
+}
 header {
   width: 100%;
   background: url(./images/etoile.svg) top left no-repeat,url(./images/accueil-vert.svg) top left no-repeat;
@@ -25,7 +28,7 @@ header {
 .mot-eme {
   margin-bottom: 150px;
 }
-h1 {
+header h1 {
   max-width: 1000px;
   text-transform: uppercase;
   font-weight: 700;
@@ -126,14 +129,13 @@ h1 {
 .text-histoire {
   margin-top: 25px;
   margin-left: 100px;
-  font-size: 1.2rem;
 }
 
 .dino {
   width: fit-content;
   margin-right: 100px;
 }
-h2 {
+main h2 {
   font-size: 6.25rem;
   margin-left: 100px;
   margin-bottom: 0px;
@@ -159,7 +161,6 @@ fieldset {
 #text_stade {
   width: 35vw;
   margin: 0 20px;
-  font-size: 1.2rem;
 }
 svg {
   margin-left: 5%;
@@ -187,7 +188,6 @@ h3 {
   padding-bottom: 50px;
   margin-left: 25px;
   margin-bottom: 0;
-  font-size: 1.2rem;
 }
 .text_savoirplus a {
   text-decoration: none;
@@ -206,4 +206,36 @@ h3 {
   padding-top: 30px;
   display: flex;
   margin: auto;
+}
+
+/*Footer*/
+footer{
+  height: 200px;
+  background-color: #6CAE7E;
+}
+
+/*Mentions légales*/
+
+.mentions-legales {
+  margin-left: 30px;
+}
+.mentions-legales h1{
+  font-size: 6em;
+}
+.mentions-legales h2{
+  font-size: 3em;
+}
+.mentions-legales span{
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.mentions-legales p{
+  margin-left: 40px;
+}
+ul {
+  list-style: none;
+  font-size: 1.2rem;
+}
+.liste-puces {
+  list-style-type: circle;
 }

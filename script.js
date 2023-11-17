@@ -233,6 +233,9 @@ function barres(tab) {
             .attr("class", "camambert_svg")
             .attr("width", width)
             .attr("height", height)
+            .style("border", "5px solid black") // Ajout d'une bordure pour visualiser le conteneur
+            .style("display", "flex") // Affichage flexible
+            .style("margin", "auto") // Centrage au milieu
             .append("g")
             .attr("transform", `translate(${width / 2},${height / 2})`);
 
@@ -293,10 +296,6 @@ function barres(tab) {
                 .attr("y", 10);
             })
 
-            
-
-            
-
             .on("mouseleave", function (e, d) {
               d3.selectAll(".path").style("opacity", 1);
             });
@@ -313,6 +312,7 @@ function barres(tab) {
               //Définition du début et de la fin de la ligne
               const posA = arc.centroid(d); //Début de la ligne
               const posB = outerArc.centroid(d); //Fin de la ligne
+
               const posC = outerArc.centroid(d); //Coude de la ligne
               const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2; //Calcul d'angle pour savoir où la ligne horizontale doit être positionnée
               posC[0] = radius * 0.95 * (midangle < Math.PI ? 1 : -1); // Positionnement sur la gauche (-1) ou sur la droite (1)
@@ -330,15 +330,9 @@ function barres(tab) {
               //Positionnement des légendes
               const pos = outerArc.centroid(d);
               const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2;
-              pos[0] = radius * 0.99 * (midangle < Math.PI ? 1 : -1);
+              pos[0] = radius * 1 * (midangle < Math.PI ? 1 : -1); // Positionnement horizontal
               return `translate(${pos})`;
             })
-
-            .on("mouseenter", function (e, d) {
-              d3.selectAll(".legende_cercle").style("opacity", 0.25);
-              d3.select(this).style("opacity", 1)
-            })
-                
 
             .style("text-anchor", function (d) {
               // Alignement des légendes par rapport aux lignes

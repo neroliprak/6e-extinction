@@ -47,8 +47,7 @@ header h1 {
   max-width: 1000px;
   display: block;
   padding-top: 20vh;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   animation: rotation_terre 160s linear infinite;
 }
 
@@ -69,12 +68,15 @@ header h1 {
 }
 
 .bulle {
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: 600;
   border-radius: 28px;
   background: white;
   color: #20252c;
-  padding: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
   text-align: center;
   max-width: 400px;
   width: fit-content;
@@ -135,7 +137,7 @@ header h1 {
   width: fit-content;
   margin-right: 100px;
 }
-main h2 {
+h2 {
   font-size: 6.25rem;
   margin-left: 100px;
   margin-bottom: 0px;
@@ -214,28 +216,33 @@ footer{
   background-color: #6CAE7E;
 }
 
-/*Mentions légales*/
+@media(max-width:1430px){ /*A partir de 1430 cela ne s'affiche plus*/
+  header {
+    width: 100%;
+    background: url(./images/etoile.svg) top no-repeat,url(./images/accueil-vert.svg) top no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #20252c;
+  }
+  .planete {
+  width: 90%;
+}
 
-.mentions-legales {
-  margin-left: 30px;
+  
+.bulle1 {
+  top: 700px;
 }
-.mentions-legales h1{
-  font-size: 6em;
+
+.bulle2 {
+  top: 900px;
 }
-.mentions-legales h2{
-  font-size: 3em;
+
+.bulle3 {
+  top: 1100px;
 }
-.mentions-legales span{
-  font-weight: bold;
-  font-size: 1.3rem;
+
+.bulle4 {
+  top: 1300px;
 }
-.mentions-legales p{
-  margin-left: 40px;
 }
-ul {
-  list-style: none;
-  font-size: 1.2rem;
-}
-.liste-puces {
-  list-style-type: circle;
-}
+

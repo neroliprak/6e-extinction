@@ -1,0 +1,24 @@
+
+.mentions-legales {
+    margin-left: 30px;
+  }
+  .mentions-legales h1{
+    font-size: 6em;
+  }
+  .mentions-legales h2{
+    font-size: 3em;
+  }
+  .mentions-legales span{
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  .mentions-legales p{
+    margin-left: 40px;
+  }
+  ul {
+    list-style: none;
+    font-size: 1.2rem;
+  }
+  .liste-puces {
+    list-style-type: circle;
+  }

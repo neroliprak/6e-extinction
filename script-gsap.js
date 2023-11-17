@@ -76,6 +76,6 @@ let tlbulle2 = gsap.timeline({
   });
   
   tlbulle4.to(".bulle4", {
-    x:-1500,
+    x:-1300,
   });
 

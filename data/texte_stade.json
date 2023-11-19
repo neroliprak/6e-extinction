@@ -1,12 +1,17 @@
 [
     {"stade" : "EX",
-    "explication" : "Une espèce est considérée éteinte lorsque les études complètes la concernant prouvent qu'il n'existe plus aucun individu de cette espèce." }, 
+    "explication" : "Une espèce est considérée éteinte lorsque les études complètes la concernant prouvent qu'il n'existe plus aucun individu de cette espèce.",
+    "image" : "./images/EX-img.svg"}, 
     {"stade" : "CR",
-    "explication" : "Une espèce est considérée en danger critique lorsque qu'elle répond à au moins un des critères définis par l'UICN, par exemple, que la population totale de l'espèce est inférieur à 250individus adultes."}, 
+    "explication" : "Une espèce est considérée en danger critique lorsque qu'elle répond à au moins un des critères définis par l'UICN, par exemple, que la population totale de l'espèce est inférieur à 250individus adultes.",
+    "image" : "./images/CR-img.svg"}, 
     {"stade" : "EN",
-    "explication" : "Une espèce est considérée en danger lorsque qu'elle répond à au moins un des critères définis par l'UICN, par exemple, que la population totale de l'espèce est inféreiru à 2 500 individus adultes."}, 
+    "explication" : "Une espèce est considérée en danger lorsque qu'elle répond à au moins un des critères définis par l'UICN, par exemple, que la population totale de l'espèce est inféreiru à 2 500 individus adultes.",
+    "image" : "./images/EN-img.svg"}, 
     {"stade" : "VU",
-    "explication" : "Une espèce est considérée vulnérable lorsque qu'elle répond à au moins un des critères définis par l'UICN, par exemple, que la population totale de l'espèce est inféreiru à 10 000 individus adultes."}, 
+    "explication" : "Une espèce est considérée vulnérable lorsque qu'elle répond à au moins un des critères définis par l'UICN, par exemple, que la population totale de l'espèce est inféreiru à 10 000 individus adultes.",
+    "image" : "./images/VU-img.svg"}, 
     {"stade" : "NT",
-    "explication" : "Une espèce est considérée quasi menacée lorsque l'espèce s'approche des critères définis par l'UICN pour la catégorie Vulnérable."}
+    "explication" : "Une espèce est considérée quasi menacée lorsque l'espèce s'approche des critères définis par l'UICN pour la catégorie Vulnérable.",
+    "image" : "./images/NT-img.svg"}
 ]

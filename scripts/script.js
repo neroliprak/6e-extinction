@@ -36,7 +36,9 @@ function textStade(text) {
     let text_stat = item.stade;
     if (text_stat == stat) {
       let text_bon = item.explication;
+      let image_bonne = item.image;
       document.getElementById("text_stade").innerHTML = text_bon;
+      document.getElementById("image_stade").src = image_bonne;
     }
   });
 }

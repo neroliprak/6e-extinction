@@ -1,24 +1,66 @@
-
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #92e3a9;
+}
+nav{
+  padding-top: 25px;
+}
+nav a{
+  text-decoration: none;
+  color: black;
+  transition: all 0.2s;
+}
+nav a:hover{
+  text-decoration: none;
+  color: #92e3a9;
+  background-color: #294330;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 .mentions-legales {
-    margin-left: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+h1 {
+  background-color: #294330;
+  border-radius: 10px;
+  color: #92e3a9;
+  font-size: 5em;
+  margin: 20px 0 50px;
+  padding: 20px 0 90px;
+  text-align: center;
+}
+h2 {
+  font-size: 3em;
+}
+span {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+ul {
+  list-style: none;
+}
+.liste-puces {
+  list-style-type: circle;
+}
+.contenu_mentions_legales{
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px 50px;
+  margin: -100px 120px 0;
+}
+
+@media(max-width:1200px){
+  .contenu_mentions_legales{
+    margin-left: 80px;
+    margin-right:80px;
   }
-  .mentions-legales h1{
-    font-size: 6em;
+  .mentions-legales {
+    margin: 0;
   }
-  .mentions-legales h2{
-    font-size: 3em;
+  h1{
+    border-radius: 0;
   }
-  .mentions-legales span{
-    font-weight: bold;
-    font-size: 1.3rem;
-  }
-  .mentions-legales p{
-    margin-left: 40px;
-  }
-  ul {
-    list-style: none;
-    font-size: 1.2rem;
-  }
-  .liste-puces {
-    list-style-type: circle;
-  }
+}

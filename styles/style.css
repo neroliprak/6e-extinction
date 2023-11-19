@@ -164,6 +164,7 @@ fieldset {
   margin-top: 30px;
   border: none;
   font-size: 1.2rem;
+  border-left: 3px solid #20252c;
 }
 
 #text_stade {
@@ -191,7 +192,15 @@ legend h3{
   display: flex;
   margin: auto;
 }
-
+.image_stade{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 400px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
 /* -- GRAPHIQUE CAMEMBERT -- */
 
@@ -211,8 +220,12 @@ h3 {
 }
 
 .text_savoir_plus {
-  padding-bottom: 50px;
-  margin: 0 0 0 25px;
+  background-color: #6cae7e;
+  text-align: center;
+  margin-bottom: -50px;
+
+  padding-bottom:100px;
+  padding-top: 50px;
 }
 .text_savoir_plus a {
   text-decoration: none;
@@ -232,8 +245,28 @@ h3 {
 /* -- FOOTER -- */
 
 footer {
-  height: 200px;
   background-color: #6cae7e;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  background-image: url(./../images/footer3.svg);
+  background-repeat: no-repeat;
+  background-size: cover top;
+}
+
+footer a{
+  text-decoration: none;
+  color: #92e3a9;
+  font-weight: 700;
+  background-color: #20252c;
+  padding: 10px 20px;
+  border: 2px solid #20252c ;
+}
+
+footer a:hover{
+  background-color: #92e3a9;
+  color: #20252c;
+  border: 2px solid #20252c ;
 }
 
 @media (max-width: 1430px) {

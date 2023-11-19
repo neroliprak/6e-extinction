@@ -211,7 +211,7 @@ h3 {
 
 #camembert {
   width: 100vw;
-  background-image: url(./../images/background-camambert.svg);
+  background-image: url(./../images/background-camembert.svg);
   background-repeat: no-repeat;
   background-size: cover;
   margin: auto;
@@ -250,7 +250,6 @@ footer {
   padding-bottom: 40px;
   text-align: center;
   background-image: url(./../images/footer3.svg);
-  background-repeat: no-repeat;
   background-size: cover top;
 }
 

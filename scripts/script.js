@@ -43,9 +43,9 @@ function textStade(text) {
   });
 }
 
-//fonction d'anayse du bouton radio coché (et création de la liste des espèces par années en fonction)
+//fonction d'analyse du bouton radio coché (et création de la liste des espèces par année en fonction)
 function analyseRadio(listeExtinction) {
-  const espece_par_annee = {}; // Un objet pour stocker le nombre d'espèce par année
+  const espece_par_annee = {}; // Un objet pour stocker le nombre d'espèces par année
 
   listeExtinction.forEach((item) => {
     let year = item.date;
@@ -56,11 +56,11 @@ function analyseRadio(listeExtinction) {
     let stat = Array.from(
       document.querySelectorAll("input[type=radio]")
     ).filter((item) => item.checked)[0].value;
-    //si dans le json, le statut est égal a la valeur du bouton radio coché, alors on l'ajoute au espece_par_annee (si on coche VU par exefmple, ca prend que les VU)
+    //si dans le json, le statut est égal à la valeur du bouton radio coché, alors on l'ajoute au espece_par_annee (si on coche VU par exemple, ça ne prend que les VU)
     if (statut == stat) {
-      //Si il y a une espèce VU dans l'année year...
+      //S'il y a une espèce VU dans l'année year...
       if (espece_par_annee[year]) {
-        //...alors on augmente de 1 le nombre d'espèce de cette année
+        //...alors on augmente de 1 le nombre d'espèces de cette année
         espece_par_annee[year]++;
       } else {
         espece_par_annee[year] = 1;
@@ -79,7 +79,7 @@ function analyseRadio(listeExtinction) {
 
 //fonction de création des barres
 function barres(tab) {
-  let largeur_barre = 390 / tab.length; //Largeur des barres dépend du nombre d'années qui doivent être représentées
+  let largeur_barre = 390 / tab.length; //Largeur des barres dépend du nombre d'années qui doivent être représentés
 
   //Suppression des barres déjà créées
   d3.selectAll("#graph, #graph1").selectAll("*").remove();
@@ -97,8 +97,8 @@ function barres(tab) {
     .append("rect")
     .attr("fill", "#20252c")
     .attr("width", largeur_barre - 10)
-    .attr("height", (d, i) => d.valeur) //objet = d / numéro positionnnement = i
-    .attr("transform", `scale(1, -1)`); //met les barres au dessus de la ligne des abscisses
+    .attr("height", (d, i) => d.valeur) //objet = d / numéro positionnement = i
+    .attr("transform", `scale(1, -1)`); //mets les barres au-dessus de la ligne des abscisses
 
   // Ajoute du texte pour afficher les années sous chaque barre
   d3.selectAll(".histobarre")
@@ -111,14 +111,14 @@ function barres(tab) {
 
   d3.selectAll(".histobarre") //sur toutes les barres
     .on("mouseenter", function (e, d) {
-      //au survol de la souris + mettre d en paramètre pour les barres verticales, d = données associaées à this
+      //au survol de la souris + mettre d'en paramètre pour les barres verticales, d = données associés à this
       d3.selectAll(".histobarre").style("opacity", 0.5); //toutes les barres deviennent transparentes
 
       d3.select(this) //l'élément concerné par l'élément
         .style("opacity", 1) //devient opaque
         .raise();
 
-      //Appartition d'un rectangle avec le nombre exact d'espèces de la barre
+      //Apparition d'un rectangle avec le nombre exact d'espèces de la barre
       d3.select(this)
         .append("rect")
         .attr("class", "rectangle")
@@ -139,20 +139,20 @@ function barres(tab) {
         .style("font", "0.4rem poppins");
     })
     .on("mouseleave", function (e) {
-      //quand on ne survol plus par la souris
+      //quand on ne survole plus par la souris
       d3.selectAll(".histobarre").style("opacity", 1); //toutes les barres redeviennent opaquent
 
       //Suppression des textes du nombre d'espèces
       d3.selectAll(".text_nb_espece").remove();
       d3.selectAll(".rectangle").remove();
     })
-    //Apparition du deuxieme graphique
+    //Apparition du deuxième graphique
     .on("click", function (e) {
       //quand on click sur une barre
 
       // Récupérer les valeurs des boutons radio
       let stat = document.querySelector('input[name="stade"]:checked').value;
-      //barre select prend l'annee et le nombre d'espèces qui correspondent à la barre sur laquelle on clic
+      //barre select prend l'année et le nombre d'espèces qui correspondent à la barre sur laquelle on clic
       let annee_select = this.__data__.annee;
 
       const especes_select = {}; // Un objet pour stocker le nombre d'espèces qu'une famille, pour le graphique 2
@@ -163,9 +163,9 @@ function barres(tab) {
         let famille = item.groupe;
 
         if (statut == stat && year == annee_select) {
-          //Si il y a une espèce VU dans la famille espece...
+          //S'il y a une espèce VU dans la famille espèce...
           if (especes_select[famille]) {
-            //...alors on augmente de 1 le nombre d'espèce de cette famille, cette annee²
+            //...alors on augmente de 1 le nombre d'espèces de cette famille, cette annee²
             especes_select[famille]++;
           } else {
             especes_select[famille] = 1;
@@ -184,7 +184,7 @@ function barres(tab) {
         // }
       });
 
-      //fonction de création des camembert
+      //fonction de création des camemberts
       camembert(stat, annee_select, especes_select);
     });
 }
@@ -273,7 +273,7 @@ function camembert(stat, year, especes_select) {
     .selectAll("allSlices")
     .data(data_ready)
     .join("path") // Créé une partie par famille
-    .attr("d", arc) // Défini la forme de chaque partie
+    .attr("d", arc) // Définit la forme de chaque partie
     .attr("class", "path")
     .attr("fill", (d) => color(d.data[0])) //Rempli les formes avec une couleur
     .attr("stroke", "black")
@@ -307,7 +307,7 @@ function camembert(stat, year, especes_select) {
     .data(data_ready)
     .join("polyline") //Créé un élément "plusieurs lignes" par partie
     .attr("stroke", "black")
-    .style("fill", "none") // aucune couleur interieure (sans cette ligne, polyline forme un triangle et non des lignes)
+    .style("fill", "none") // aucune couleur intérieure (sans cette ligne, polyline forme un triangle et non des lignes)
     .attr("stroke-width", 1)
     .attr("points", function (d) {
       //Définition du début et de la fin de la ligne
@@ -325,7 +325,7 @@ function camembert(stat, year, especes_select) {
     .selectAll("allLabels")
     .data(data_ready)
     .join("text")
-    .text((d) => `${d.data[0]} (${d.data[1]})`) // Affiche text pour chaque famille & sa valeur
+    .text((d) => `${d.data[0]} (${d.data[1]})`) // Affiche texte pour chaque famille & sa valeur
     .attr("class", (d) => `legende_cercle legende_cercle_${d.index}`) //Ajout des deux class pour viser légende cercle
     .attr("transform", function (d) {
       //Positionnement des légendes

@@ -1,10 +1,12 @@
+// Faire envoler la fusée 
+
 let tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".rocket",
         start: "-150px center",
         end: "250px",
         scrub: true,
-        markers: true,
+        markers: false,
       },
     });
 
@@ -19,7 +21,7 @@ tl.to(".rocket", {
 });
 
 
-
+// Animation des bulles du header
 
 let tlbulle1 = gsap.timeline({
     scrollTrigger: {
@@ -27,7 +29,7 @@ let tlbulle1 = gsap.timeline({
       start: "-150px center",
       end: "bottom center",
       scrub: true,
-      markers: true,
+      markers: false,
     },
   });
   
@@ -42,7 +44,7 @@ let tlbulle2 = gsap.timeline({
       start: "-120px center",
       end: "bottom center",
       scrub: true,
-      markers: true,
+      markers: false,
     },
   });
   
@@ -57,7 +59,7 @@ let tlbulle2 = gsap.timeline({
       start: "-150px center",
       end: "bottom center",
       scrub: true,
-      markers: true,
+      markers: false,
     },
   });
   
@@ -71,7 +73,7 @@ let tlbulle2 = gsap.timeline({
       start: "-190px center",
       end: "bottom center",
       scrub: true,
-      markers: true,
+      markers: false,
     },
   });
   

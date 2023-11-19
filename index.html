@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dataviz</title>
+    <title>Dataviz - Extinction des espèces</title>
     <script src="./scripts/d3.js" defer></script>          
     <script src="./scripts/script.js" defer></script>
     <!--pour le graphique rond-->
@@ -27,10 +27,9 @@
         <img class="planete" src="./images/World.svg" alt="">
 
         <div class="bulle bulle1">L'espèce humaine bientôt éteinte ?</div>
-        <div class="bulle bulle2">De plus en plus d'espèce éteinte...</div>
+        <div class="bulle bulle2">De plus en plus d'espèces éteintes...</div>
         <div class="bulle bulle3">Tout n'est pas perdu, mais il faut agir</div>
         <div class="bulle bulle4">Changer ses habitudes, c'est garantir un avenir durable</div>
-
     </header>
     <div class="histoire">
         <svg class="fin_header" xmlns="http://www.w3.org/2000/svg" width="1640" height="331" viewBox="0 0 1640 331" fill="none">
@@ -42,11 +41,11 @@
                     Histoire
                 </h2>
                 <p class="contexte">
-                    Lorsque l’on parle d’extinction de masse, nous pensons le plus souvent aux dinosaures. Mais ils ne sont pas les seuls à avoir disparus. Nous vivons actuellement la 6e extinction de masse du monde. <br> <br>
+                    Lorsque l’on parle d’extinction de masse, nous pensons le plus souvent aux dinosaures. Mais ils ne sont pas les seuls à avoir disparu. Nous vivons actuellement la 6e extinction de masse du monde. <br> <br>
                     Grâce aux graphiques ci-dessous, rendez-vous mieux compte du nombre d'espèces qui disparaissent chaque année dans le monde. 
                 </p>
             </div>
-            <img class="dino" src="./images/Dinosaur.svg" alt="">
+            <img class="dino" src="./images/Dinosaur.svg" alt="" >
         </div>
     </div>
     <div class="graphique">
@@ -56,7 +55,7 @@
             <!--Graphique-->
 
         <!--Schéma-->
-        <svg class="graph1" width="90vw" height="calc(90vw * 220/420)" viewBox="-20 -160 450 120">
+        <svg aria-label="Diagramme bâton représentation du nombre d'espèces dans un stade d'extinction précis en fonction de l'année" class="graph1" width="90vw" height="calc(90vw * 220/420)" viewBox="-20 -160 450 120">
                 
             <!--FOND-->
             <rect x="0" y="-100" width="400" height="100" fill="#92E3A9"></rect>
@@ -87,7 +86,7 @@
         </svg>
 
         <!--Schéma2 - FLUIDITÉ -->
-        <svg class="graph2" width="90vw" height="calc(90vw * 220/420)" viewBox="-50 -110 1150 10">
+        <svg aria-label="Diagramme bâton représentation du nombre d'espèces dans un stade d'extinction précis en fonction de l'année" class="graph2" width="90vw" height="calc(90vw * 220/420)" viewBox="-50 -110 1150 10">
                 
             <!--FOND-->
             <rect x="0" y="-100" width="400" height="100" fill="#92E3A9"></rect>
@@ -143,7 +142,7 @@
                             <label for="quasi_menace">Quasi menacé</label>
                         </div>
                     </fieldset>
-                    <p id="text_stade">Une espèce est considérée en danger lorsque qu'elle répond à au moins un des critères définis par l'UICN, par exemple, que la population totale de l'espèce est inféreiru à 2 500 individus adultes.</p>
+                    <p id="text_stade">Une espèce est considérée en danger lorsqu'elle répond à au moins un des critères définis par l'UICN, par exemple, que la population totale de l'espèce est inférieure à 2 500 individus adultes.</p>
                     <img id="image_stade" class="image_stade" src="./images/EN-img.svg" alt="">
             </div>
         </section>
@@ -151,6 +150,7 @@
         <p class="text_savoir_plus">Vous voulez en savoir plus ? Rendez-vous sur <a href="https://www.iucn.org/fr">le site de l'UICN</a> !</p> 
 
         <div id="camembert"></div>
+        <div id="camembert2 "></div>
         
     </div>   
 </main>

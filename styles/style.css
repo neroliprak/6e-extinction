@@ -2,17 +2,23 @@ html {
   scroll-behavior: smooth;
 }
 
+/* -- GENERAL -- */
+
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
-p{
+p {
   font-size: 1.2rem;
 }
+
+/* -- HEADER -- */
+
 header {
   width: 100%;
-  background: url(./images/etoile.svg) top left no-repeat,url(./images/accueil-vert.svg) top left no-repeat;
+  background: url(./../images/etoile.svg) top left no-repeat,
+    url(./../images/accueil-vert.svg) top left no-repeat;
   background-repeat: no-repeat;
   background-size: contain;
   background-color: #20252c;
@@ -25,20 +31,19 @@ header {
   padding-left: 100px;
 }
 
-.mot-eme {
+.mot_eme {
   margin-bottom: 150px;
 }
+
 header h1 {
   max-width: 1000px;
   text-transform: uppercase;
   font-weight: 700;
-  margin: 0;
   color: #20252c;
   font-size: 7em;
   z-index: 2;
   text-align: center;
-  margin-top: 200px;
-  margin-left: -100px;
+  margin: 200px 0 0 -100px;
   line-height: 100px;
 }
 
@@ -67,16 +72,15 @@ header h1 {
   z-index: 2;
 }
 
+/* -- HEADER : bulle -- */
+
 .bulle {
   font-size: 1.8em;
   font-weight: 600;
   border-radius: 28px;
   background: white;
   color: #20252c;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 20px 50px;
   text-align: center;
   max-width: 400px;
   width: fit-content;
@@ -107,41 +111,43 @@ header h1 {
   right: -990px;
 }
 
+/* -- HISTOIRE -- */
+
 .histoire {
   background-color: white;
   margin-bottom: 150px;
 }
 
-.fin-header,
+.fin_header,
 .herbe {
   margin: 0;
   width: 100%;
   height: fit-content;
 }
-.contain-histoire {
+.contain_histoire {
   display: flex;
   margin-left: auto;
   margin-right: auto;
 }
-.text {
+.text_contexte {
   width: 800px;
   margin: auto;
   justify-content: center;
 }
-.text-histoire {
-  margin-top: 25px;
-  margin-left: 100px;
+.contexte {
+  margin: 25px 0 0 100px;
 }
-
+h2 {
+  font-size: 6.25rem;
+  margin: 0 0 0 100px;
+}
 .dino {
   width: fit-content;
   margin-right: 100px;
 }
-h2 {
-  font-size: 6.25rem;
-  margin-left: 100px;
-  margin-bottom: 0px;
-}
+
+/* -- GRAPHIQUE HISTOBARRE -- */
+
 .graphique {
   background-color: #92e3a9;
 }
@@ -169,80 +175,121 @@ svg {
   margin-bottom: 0;
   width: 200vw;
 }
-.text_nb_espece {
-  display: flex;
-  flex-direction: column;
+
+
+.info_stade {
+  margin: auto;
+  padding-right:50px ;
 }
+legend h3{
+  font-size: 2em;
+  text-align: left;
+  margin: 0;
+}
+.eteint {
+  padding-top: 30px;
+  display: flex;
+  margin: auto;
+}
+
+
+/* -- GRAPHIQUE CAMEMBERT -- */
 
 h3 {
   text-align: center;
   font-size: 3rem;
 }
 
-#camambert {
+#camembert {
   width: 100vw;
-  background-image: url(./images/background-camambert.svg);
+  background-image: url(./../images/background-camambert.svg);
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
+  margin: auto;
+  display: inline-block;
+
 }
 
-.text_savoirplus {
+.text_savoir_plus {
   padding-bottom: 50px;
-  margin-left: 25px;
-  margin-bottom: 0;
+  margin: 0 0 0 25px;
 }
-.text_savoirplus a {
+.text_savoir_plus a {
   text-decoration: none;
   color: black;
   font-weight: bold;
   transition: all 0.2s;
+  
 }
-.text_savoirplus a:hover {
-  color: #20252c;
-}
-/*  https://www.accede-web.com/notices/interface-riche/boutons-radio-personnalises-en-css/ : Changer les radios */
-.info-stade{
-  margin: auto;
-}
-.eteint{
-  padding-top: 30px;
-  display: flex;
-  margin: auto;
+.text_savoir_plus a:hover {
+  color: #92e3a9;
+  background-color: #20252c;
+  padding: 0 10px;
 }
 
-/*Footer*/
-footer{
+
+
+/* -- FOOTER -- */
+
+footer {
   height: 200px;
-  background-color: #6CAE7E;
+  background-color: #6cae7e;
 }
 
-@media(max-width:1430px){ /*A partir de 1430 cela ne s'affiche plus*/
+@media (max-width: 1430px) {
+  /*A partir de 1430 cela ne s'affiche plus */
   header {
     width: 100%;
-    background: url(./images/etoile.svg) top no-repeat,url(./images/accueil-vert.svg) top no-repeat;
+    background: url(./../images/etoile.svg) top no-repeat,
+      url(./../images/accueil-vert.svg) top no-repeat;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #20252c;
   }
   .planete {
-  width: 90%;
+    width: 90%;
+  }
+
+  .bulle1 {
+    top: 700px;
+  }
+
+  .bulle2 {
+    top: 900px;
+  }
+
+  .bulle3 {
+    top: 1100px;
+  }
+
+  .bulle4 {
+    top: 1300px;
+  }
 }
 
-  
-.bulle1 {
-  top: 700px;
+.graph2{
+  display: none;
 }
 
-.bulle2 {
-  top: 900px;
+@media(max-width:1200px){
+  .graphique_main {
+    display: flex;
+    flex-direction: column;
+  }
+  .graph2{
+    display: block;
+  }
+  .graph1{
+    display: none;
+  }
+  #text_stade, fieldset {
+    width: 80vw;
+    margin: auto;
+  }
+  legend h3{
+    margin-top: 50px;
+  }
+  .graphique h2{
+    margin-bottom:-50px ;
+  }
 }
-
-.bulle3 {
-  top: 1100px;
-}
-
-.bulle4 {
-  top: 1300px;
-}
-}
-

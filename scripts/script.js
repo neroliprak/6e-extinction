@@ -3,7 +3,7 @@ let tab_espece_annee;
 const espece_par_annee = {};
 
 // Pour charger un fichier JSON
-fetch("donnees.json")
+fetch("./data/donnees.json")
   .then((response) => {
     return response.json(); // renvoie les données JSON ()
   })
@@ -15,7 +15,7 @@ fetch("donnees.json")
       el.onclick = () => {
         //
         analyseRadio(listeExtinction); //A chaque fois qu'on clic sur un nouveau bouton radio, ça recharge analyseRadio
-        fetch("texte_stade.json")
+        fetch("./data/texte_stade.json")
           .then((response) => {
             return response.json(); // renvoie les données JSON ()
           })
@@ -80,14 +80,14 @@ function barres(tab) {
   let largeur_barre = 390 / tab.length; //Largeur des barres dépend du nombre d'années qui doivent être représentées
 
   //Suppression des barres déjà créées
-  d3.select("#graph").selectAll("*").remove();
+  d3.selectAll("#graph, #graph1").selectAll("*").remove();
 
   //Création barres
-  d3.select("#graph")
+  d3.selectAll("#graph, #graph1")
     .selectAll("a")
     .data(tab)
     .join("a")
-    .attr("href", "#camambert")
+    .attr("href", "#camembert")
     .attr("class", "histobarre")
     .attr("transform", (d, i) => `translate(${largeur_barre * i + 10} ,0)`); //l'emplacement horizontalement dépend de la largeur des barres et de l'emplacement dans le tableau (donc i)
 
@@ -120,17 +120,17 @@ function barres(tab) {
       d3.select(this)
         .append("rect")
         .attr("class", "rectangle")
-        .attr("width", 70)
-        .attr("height", 30)
+        .attr("width", 50)
+        .attr("height", 15)
         .style("fill", "white")
-        .attr("x", 10)
-        .attr("y", (d) => -d.valeur - 20);
+        .attr("x", 0)
+        .attr("y", (d) => -d.valeur - 10);
       //Apparition des écritures + les mettre dans le rectangle blanc
       d3.select(this)
         .append("text")
         .attr("class", "text_nb_espece")
         .text((d) => d.valeur + " espèces")
-        .attr("x", 13)
+        .attr("x", 7)
         .style("fill", "black")
         .attr("y", (d) => -d.valeur)
         .attr("font-size", "9")
@@ -169,26 +169,27 @@ function barres(tab) {
             especes_select[famille] = 1;
           }
         }
-        //Si on coche la case "tout" (la valeur est vide)
-        if (stat == "" && year == annee_select) {
-          //on prend toutes les espèce de toutes les années (pas seulement VU par exemple)
-          if (especes_select[famille]) {
-            especes_select[famille]++;
-          } else {
-            //Initialisation => égal à 1 parce qu'il y a forcément une espèce dans l'annee (sinon il n'y aurait pas l'année)
-            especes_select[famille] = 1;
-          }
-        }
+        // Absence de case "tout"
+        // //Si on coche la case "tout" (la valeur est vide)
+        // if (stat == "" && year == annee_select) {
+        //   //on prend toutes les espèce de toutes les années (pas seulement VU par exemple)
+        //   if (especes_select[famille]) {
+        //     especes_select[famille]++;
+        //   } else {
+        //     //Initialisation => égal à 1 parce qu'il y a forcément une espèce dans l'annee (sinon il n'y aurait pas l'année)
+        //     especes_select[famille] = 1;
+        //   }
+        // }
       });
 
-      //fonction de création des camambert
-      camambert(stat, annee_select, especes_select);
+      //fonction de création des camembert
+      camembert(stat, annee_select, especes_select);
     });
 }
 
-function camambert(stat, year, especes_select) {
-  //Suppression des graphiques camamberts déjà créés
-  d3.select("#camambert").selectAll("*").remove();
+function camembert(stat, year, especes_select) {
+  //Suppression des graphiques camemberts déjà créés
+  d3.select("#camembert").selectAll("*").remove();
 
   //Donne la version texte des abréviations
   let statut_selectionne;
@@ -208,29 +209,29 @@ function camambert(stat, year, especes_select) {
     statut_selectionne = "quasi menacées";
   }
   //Création du titre du graphique
-  d3.select("#camambert")
+  d3.select("#camembert")
     .append("h3")
     .text("Familles des espèces " + statut_selectionne + " en " + year);
 
   //Adaptation du code déposé publiquement sur GitHub de Laxmikanta Nayak (https://gist.github.com/laxmikanta415/dc33fe11344bf5568918ba690743e06f):
-  // Dimensions du graphique camambert
-  const width = 1500,
+  // Dimensions du graphique camembert
+
+  let width = 1500,
     height = 600,
     margin = 0;
 
+
+
   const radius = Math.min(width, height) / 2 - margin; //taille du rond
 
-  // Création d'un svg dans la div camambert
+  // Création d'un svg dans la div camembert
 
   const svg = d3
-    .select("#camambert")
+    .select("#camembert")
     .append("svg")
-    .attr("class", "camambert_svg")
+    .attr("class", "camembert_svg")
     .attr("width", width)
     .attr("height", height)
-    .style("border", "5px solid black") // Ajout d'une bordure pour visualiser le conteneur
-    .style("display", "flex") // Affichage flexible
-    .style("margin", "auto") // Centrage au milieu
     .append("g")
     .attr("transform", `translate(${width / 2},${height / 2})`);
 
@@ -280,19 +281,18 @@ function camambert(stat, year, especes_select) {
     .on("mouseenter", function (e, d) {
       d3.selectAll(".path").style("opacity", 0.25);
       d3.select(this).style("opacity", 1);
-      d3.selectAll(`.legende_cercle_${d.index}`).style("opacity", 1);
-
-      d3.select(this)
-        .append("text")
-        .attr("class", "text_nb_famille")
-        .style("fill", "black")
-        .text("salt")
-        .attr("x", 10)
-        .attr("y", 10);
+      d3.selectAll(".legende_cercle").style("opacity", 0.25);
+      d3.selectAll(`.legende_cercle_${d.index}`)
+        .style("opacity", 1)
+        .attr("font-weight", 700);
     })
 
     .on("mouseleave", function (e, d) {
-      d3.selectAll(`.legende_cercle_${d.index}`).style("opacity", 0.25);
+      d3.selectAll(`.legende_cercle_${d.index}`).style("opacity", 1);
+      d3.selectAll(".path").style("opacity", 1);
+      d3.selectAll(".legende_cercle")
+        .style("opacity", 1)
+        .attr("font-weight", 300);
     });
 
   d3.select(this).on("mouseleave", function (e, d) {
@@ -323,9 +323,8 @@ function camambert(stat, year, especes_select) {
     .selectAll("allLabels")
     .data(data_ready)
     .join("text")
-    .text((d) => `${d.data[0]} (${d.data[1]})`) // Créé un élément texte par famille
-    .attr("class", "") //Ajout d'une classe pour modifier leur CSS
-    .attr("class", (d) => `legende_cercle legende_cercle_${d.index}`)
+    .text((d) => `${d.data[0]} (${d.data[1]})`) // Affiche text pour chaque famille & sa valeur
+    .attr("class", (d) => `legende_cercle legende_cercle_${d.index}`) //Ajout des deux class pour viser légende cercle
     .attr("transform", function (d) {
       //Positionnement des légendes
       const pos = outerArc.centroid(d);

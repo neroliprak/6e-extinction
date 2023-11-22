@@ -5,7 +5,7 @@ ATTENTION selon le nom du dossier dans lequel vous stockez le site, il vous faud
 
 # Installation du site sur votre ordinateur
 Pour télécharger le site, rendez-vous sur notre dépôt GitHub et téléchargez le dossier .zip qui contient tous les fichiers nécessaires.
-Lien du dépôt GitHub : https://github.com/neroliprak/dataviz 
+Lien du dépôt GitHub : https://github.com/neroliprak/6e-extinction 
 
 # Technologies utilisées
 
